@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Петухова Светлана — Продуктовый дизайнер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hero iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== НАВБАР ===== -->
+  <header class="navbar-wrapper">
+    <a href="index.html" class="navbar__logo">
+      <span class="navbar__logo-emoji">🐓</span>
+    </a>
+
+    <nav class="navbar__pill">
+      <ul class="navbar__links">
+        <li><a href="#about" class="navbar__link">Обо мне</a></li>
+        <li><a href="#skills" class="navbar__link">Скиллы</a></li>
+        <li><a href="#portfolio" class="navbar__link">Портфолио</a></li>
+        <li><a href="#contacts" class="navbar__link">Контакты</a></li>
+      </ul>
+      <a href="Files/resume.pdf" class="navbar__cta" target="_blank" rel="noopener">
+        <span>Резюме</span>
+        <svg class="navbar__arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO: ТОЛЬКО 3D ===== -->
+    <section class="hero" id="about">
+      <iframe 
+        src="https://my.spline.design/windherocopycopy-LPh7FMqDlCAKCbWWY1K7JbcU-ih6/" 
+        frameborder="0" 
+        width="100%" 
+        height="100%">
+      </iframe>
+    </section>
+
+    <!-- ===== СКИЛЛЫ ===== -->
+    <section class="skills section-stack" id="skills">
+      <div class="container">
+
+        <p class="section-label">02 — Скиллы и инструменты</p>
+
+        <div class="skills__row">
+          <h2 class="skills__title">Инструменты</h2>
+          <div class="skills__tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Chat GPT</span>
+            <span class="tag">Framer</span>
+            <span class="tag">Recraft</span>
+            <span class="tag">WebFlow</span>
+            <span class="tag">Tilda</span>
+            <span class="tag">Miro</span>
+            <span class="tag">Photoshop</span>
+          </div>
+        </div>
+
+        <hr class="skills__divider">
+
+        <div class="skills__row">
+          <h2 class="skills__title">Хард скиллы</h2>
+          <div class="skills__tags">
+            <span class="tag">Auto Layout</span>
+            <span class="tag">Variants</span>
+            <span class="tag">Properties</span>
+            <span class="tag">Design Styles</span>
+            <span class="tag">CJM</span>
+            <span class="tag">Prototype</span>
+            <span class="tag">User Flow</span>
+            <span class="tag">Components</span>
+            <span class="tag">Tokens</span>
+            <span class="tag">Research</span>
+            <span class="tag">UX/UI Design</span>
+            <span class="tag">Design System</span>
+          </div>
+        </div>
+
+        <hr class="skills__divider">
+
+        <div class="skills__row">
+          <h2 class="skills__title">Софт скиллы</h2>
+          <div class="skills__tags">
+            <span class="tag">Работа в команде</span>
+            <span class="tag">Тайм-менеджмент</span>
+            <span class="tag">Ответственность</span>
+            <span class="tag">Любознательность</span>
+            <span class="tag">Исполнительность</span>
+            <span class="tag">Обучаемость</span>
+            <span class="tag">Эмпатия</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== КЕЙС ===== -->
+    <section class="case section-stack" id="portfolio">
+      <div class="container">
+
+        <p class="section-label">03 — Кейс</p>
+
+        <div class="case__head">
+          <h2 class="case__title">
+            Мобильное приложение BWT — сервис<br>
+            для записи в плавательный бассейн
+          </h2>
+
+          <a href="case-bwt.html" class="btn-case">
+            <span class="btn-case__label">Посмотреть кейс</span>
+            <span class="btn-case__icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="case__images">
+          <div class="case__item">
+            <span class="case__badge">Было</span>
+            <a href="images/bwt-1.jpg" class="case__link">
+              <img src="images/bwt-1.jpg" alt="BWT — было">
+            </a>
+          </div>
+          <div class="case__item">
+            <span class="case__badge">Стало</span>
+            <a href="images/bwt-2.jpg" class="case__link">
+              <img src="images/bwt-2.jpg" alt="BWT — стало">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ЕЩЁ ОБО МНЕ ===== -->
+    <section class="about-more section-stack" id="hiking">
+      <div class="container">
+
+        <p class="section-label">04 — Ещё обо мне</p>
+
+        <div class="about-more__head">
+          <h2 class="about-more__title">
+            Не бояться сложных маршрутов
+          </h2>
+          <p class="about-more__text">
+            В свободное время я хожу в походы по горам Урала. За время походов я поднималась
+            на Иремель — самую высокую гору Урала, открытую для восхождений, гуляла по
+            бескрайним просторам Ялангаса, любовалась видами с Айгира и покоряла
+            Откликной гребень на Таганае.
+          </p>
+          <p class="about-more__text">
+            На длинных и сложных маршрутах я тренирую не только выносливость, но и характер.
+            Горы учат меня простому, но важному правилу: любое препятствие можно преодолеть.
+          </p>
+        </div>
+
+        <div class="about-more__gallery">
+          <figure class="about-more__item">
+            <span class="about-more__badge">Ялангас</span>
+            <img src="images/hike-1.jpg" alt="Ялангас">
+          </figure>
+          <figure class="about-more__item">
+            <span class="about-more__badge">Серединная</span>
+            <img src="images/hike-2.jpg" alt="Серединная">
+          </figure>
+          <figure class="about-more__item">
+            <span class="about-more__badge">Айгир</span>
+            <img src="images/hike-3.jpg" alt="Айгир">
+          </figure>
+          <figure class="about-more__item">
+            <span class="about-more__badge">Таганай</span>
+            <img src="images/hike-4.jpg" alt="Таганай">
+          </figure>
+          <figure class="about-more__item">
+            <span class="about-more__badge">Иремель</span>
+            <img src="images/hike-5.jpg" alt="Иремель">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== СПАСИБО ЗА ВНИМАНИЕ ===== -->
+    <section class="thanks section-stack" id="thanks">
+      <div class="container">
+        <div class="thanks__content">
+          <h2 class="thanks__title">
+            Спасибо<br>за внимание!
+          </h2>
+          <div class="thanks__emoji" aria-hidden="true">😊</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section class="contacts section-stack" id="contacts">
+      <div class="container">
+
+        <p class="section-label">05 — Контакты</p>
+
+        <div class="contacts__content">
+
+          <a href="mailto:petuhovamgn@gmail.com" class="contacts__email">
+            petuhovamgn@gmail.com
+          </a>
+
+          <p class="contacts__hours">8:00—17:00 МСК</p>
+
+          <div class="contacts__list">
+            <a href="https://t.me/sv_pt" target="_blank" rel="noopener" class="contacts__row">
+              <span class="contacts__label">Телеграмм</span>
+              <span class="contacts__value">@sv_pt</span>
+            </a>
+            <a href="tel:+79518186295" class="contacts__row">
+              <span class="contacts__label">Телефон</span>
+              <span class="contacts__value">+79518186295</span>
+            </a>
+            <a href="https://vk.ru/svet_pt" target="_blank" rel="noopener" class="contacts__row">
+              <span class="contacts__label">ВК</span>
+              <span class="contacts__value">https://vk.ru/svet_pt</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Петухова Светлана</p>
+    </div>
+  </footer>
+
+  <!-- ===== ЛАЙТБОКС ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">✕</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
