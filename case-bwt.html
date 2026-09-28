@@ -58,16 +58,16 @@
   <!-- ===== HERO ===== -->
   <section class="case-hero">
     <div class="container">
-      <p class="case-hero__label">Кейс BWT</p>
+  
       <h1 class="case-hero__title">
-        Мобильное приложение BWT —<br>
-        сервис для записи<br>
-        в&nbsp;плавательный бассейн
+        Мобильное приложение BWT — <br>
+        сервис для записи в&nbsp;плавательный бассейн
       </h1>
       <p class="case-hero__subtitle">
         Кейс о том, как сделать запись на&nbsp;тренировки в&nbsp;бассейн BWT простыми и&nbsp;прозрачными,<br>
         а&nbsp;загруженность бассейна&nbsp;информативной.
       </p>
+
       <div class="case-compare">
         <div class="case-compare__item">
           <span class="case-compare__badge">Было</span>
@@ -83,6 +83,7 @@
 
   <!-- ===== КОНТЕКСТ ===== -->
   <section class="case-section">
+<section class="case-section">
     <div class="container">
       <div class="case-intro">
         <div class="case-intro__left">
@@ -123,7 +124,112 @@
       </div>
     </div>
   </section>
+ </section>
 
+
+
+    <!-- ===== TL;DR ===== -->
+    <section class="case-section">
+      <style>
+        .tldr-grid {
+          display: grid !important;
+          grid-template-columns: repeat(3, 1fr) !important;
+          gap: 20px !important;
+          margin-top: 40px !important;
+        }
+
+        .tldr-card {
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 16px !important;
+          padding: 32px !important;
+          background: #F0F0F0 !important;
+          border-radius: 20px !important;
+          box-sizing: border-box !important;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tldr-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 16px 40px rgba(23, 35, 29, 0.08);
+        }
+
+        .tldr-card__num {
+          display: inline-flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          width: 36px !important;
+          height: 36px !important;
+          flex-shrink: 0 !important;
+          background: #FFFFFF !important;
+          border-radius: 50% !important;
+          font-size: 13px !important;
+          font-weight: 600 !important;
+          color: #17231D !important;
+          margin: 0 !important;
+        }
+
+        .tldr-card__title {
+          font-size: 20px !important;
+          font-weight: 600 !important;
+          line-height: 1.25 !important;
+          letter-spacing: -0.01em !important;
+          color: #17231D !important;
+          margin: 0 !important;
+        }
+
+        .tldr-card__text {
+          font-size: 15px !important;
+          line-height: 1.6 !important;
+          color: #17231D !important;
+          opacity: 0.7 !important;
+          margin: 0 !important;
+        }
+
+        @media (max-width: 991px) {
+          .tldr-grid { grid-template-columns: 1fr !important; }
+        }
+
+        @media (max-width: 767px) {
+          .tldr-card { padding: 24px !important; }
+          .tldr-card__title { font-size: 17px !important; }
+          .tldr-card__text { font-size: 14px !important; }
+        }
+      </style>
+
+      <div class="container">
+
+        <h2 class="case-heading">Коротко о проекте</h2>
+
+        <div class="tldr-grid">
+
+          <div class="tldr-card">
+            <span class="tldr-card__num">01</span>
+            <h3 class="tldr-card__title">Проблема</h3>
+            <p class="tldr-card__text">
+              Приложение работало скорее как витрина. Целевые действия совершались через звонок или личное обращение в зал — потому что интерфейс был неочевидным, а путь к записи — запутанным. Это создавало дополнительную нагрузку на ресепшн 
+            </p>
+          </div>
+
+          <div class="tldr-card">
+            <span class="tldr-card__num">02</span>
+            <h3 class="tldr-card__title">Что сделала</h3>
+            <p class="tldr-card__text">
+              4 интервью → анализ сценариев → прототип → 4 usability-теста → итерация.
+            </p>
+          </div>
+
+          <div class="tldr-card">
+            <span class="tldr-card__num">03</span>
+            <h3 class="tldr-card__title">Результат</h3>
+            <p class="tldr-card__text">
+              4/4 пользователей завершили основной сценарий, в том числе благодаря добавлению функций подтверждения действий. Среднее время записи — 30 секунд           </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
   <!-- ===== ДИСКАВЕРИ ===== -->
   <section class="case-section">
     <div class="container">
@@ -135,7 +241,7 @@
             Изучила текущий флоу и&nbsp;провела устный опрос среди друзей-пользователей
             об&nbsp;их&nbsp;опыте использования приложения. Обратная связь подтвердила наличие
             узких мест, требующих внимания, всё это позволило мне определить
-            направление для&nbsp;дальнейшей работы.
+            направление для&nbsp;дальнейшей работы
           </p>
         </div>
         <div class="case-discovery__col">
@@ -143,7 +249,7 @@
           <p class="case-discovery__text">
             На&nbsp;основе анализа конкурентных решений я выдвинула гипотезы, которые
             проверила в&nbsp;ходе глубинных интервью. По&nbsp;итогам глубинных интервью
-            выделила пользовательские боли, переведя их&nbsp;в&nbsp;формат JTBD.
+            выделила пользовательские боли, переведя их&nbsp;в&nbsp;формат JTBD
           </p>
         </div>
         <div class="case-discovery__col">
@@ -151,7 +257,7 @@
           <p class="case-discovery__text">
             На&nbsp;основе проведённых исследований я определила необходимый функционал
             продукта, спроектировала путь пользователя, выбрала дизайн-решение
-            и&nbsp;отрисовала основные макеты.
+            и&nbsp;отрисовала основные макеты
           </p>
         </div>
       </div>
@@ -167,9 +273,7 @@
           <span class="case-card__num">01</span>
           <h3 class="case-card__title">Пользователи не&nbsp;могут быстро записаться</h3>
           <p class="case-card__text">
-            В&nbsp;текущей версии приложения процесс записи требует много действий:
-            единственная доступная точка входа для&nbsp;записи на&nbsp;тренировку — это
-            нажатие на&nbsp;карточку тренировки.
+            Возможность забронировать тренировку существует, но точка входа в этот сценарий неочевидна. Пользователи видят карточки занятий, но интерфейс не подсказывает, как перейти к финальному шагу. Из-за этого путь к записи требует лишних действий и догадок
           </p>
         </div>
         <div class="case-card">
@@ -186,26 +290,14 @@
           <h3 class="case-card__title">Интуитивно непонятная навигация в&nbsp;таб баре и самом приложении</h3>
           <p class="case-card__text">
             таб бар перегружен элементами, которые не&nbsp;являются ключевыми для&nbsp;пользователя.
-            Вместо быстрого доступа к основным сценариям (расписание, управление бронированиями, профиль) таб бар занимают второстепенные или информационные разделы, которые не помогают пользователю решить его задачу.
+            Вместо быстрого доступа к основным сценариям (расписание, управление бронированиями, профиль) таб бар занимают второстепенные или информационные разделы, которые не помогают пользователю решить его задачу
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== ИТОГ ===== -->
-  <section class="case-section">
-    <div class="container">
-      <h2 class="case-heading">Итог</h2>
-      <p class="case-section__text">
-        Приложение работало скорее как витрина: пользователи заходили, смотрели,
-        но&nbsp;редко доходили до&nbsp;записи. Целевые действия совершались через звонок
-        или личное обращение в&nbsp;зал — потому что интерфейс был неочевидным,
-        а&nbsp;путь к&nbsp;записи — запутанным. Это создавало дополнительную нагрузку
-        на&nbsp;ресепшн и&nbsp;снижало конверсию приложения.
-      </p>
-    </div>
-  </section>
+  
 
     <!-- ===== ЗАДАЧИ ===== -->
     <section class="case-section">
@@ -218,26 +310,23 @@
 
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px;">
 
-          <div style="position: relative; padding: 32px 28px 28px; background: #F0F0F0; border-radius: 24px; overflow: hidden;">
-            <div style="position: absolute; top: -10px; right: 16px; font-size: 120px; font-weight: 600; line-height: 1; color: #17231D; opacity: 0.06; letter-spacing: -0.05em;">01</div>
+          <div style="position: relative; padding: 32px 28px 28px; background: #F0F0F0; border-radius: 24px;">
             <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #ffffff; border-radius: 12px; margin-bottom: 60px; font-size: 22px;">⏱</div>
-            <p style="position: relative; font-size: 18px; font-weight: 500; line-height: 1.4; color: #17231D; margin: 0;">
+            <p style="font-size: 18px; font-weight: 500; line-height: 1.4; color: #17231D; margin: 0;">
               Сократить время записи на&nbsp;тренировку до&nbsp;30&nbsp;секунд
             </p>
           </div>
 
-          <div style="position: relative; padding: 32px 28px 28px; background: #F0F0F0; border-radius: 24px; overflow: hidden;">
-            <div style="position: absolute; top: -10px; right: 16px; font-size: 120px; font-weight: 600; line-height: 1; color: #17231D; opacity: 0.06; letter-spacing: -0.05em;">02</div>
+          <div style="position: relative; padding: 32px 28px 28px; background: #F0F0F0; border-radius: 24px;">
             <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #ffffff; border-radius: 12px; margin-bottom: 60px; font-size: 22px;">✓</div>
-            <p style="position: relative; font-size: 18px; font-weight: 500; line-height: 1.4; color: #17231D; margin: 0;">
+            <p style="font-size: 18px; font-weight: 500; line-height: 1.4; color: #17231D; margin: 0;">
               Добавить подтверждение действий при&nbsp;записи и&nbsp;отмене
             </p>
           </div>
 
-          <div style="position: relative; padding: 32px 28px 28px; background: #F0F0F0; border-radius: 24px; overflow: hidden;">
-            <div style="position: absolute; top: -10px; right: 16px; font-size: 120px; font-weight: 600; line-height: 1; color: #17231D; opacity: 0.06; letter-spacing: -0.05em;">03</div>
+          <div style="position: relative; padding: 32px 28px 28px; background: #F0F0F0; border-radius: 24px;">
             <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #ffffff; border-radius: 12px; margin-bottom: 60px; font-size: 22px;">↗</div>
-            <p style="position: relative; font-size: 18px; font-weight: 500; line-height: 1.4; color: #17231D; margin: 0;">
+            <p style="font-size: 18px; font-weight: 500; line-height: 1.4; color: #17231D; margin: 0;">
               Улучшить пользовательский путь при&nbsp;использовании приложения
             </p>
           </div>
@@ -246,15 +335,12 @@
       </div>
     </section>
 
-
+   
     <!-- ===== КРИТЕРИИ ===== -->
     <section class="case-section">
       <div class="container">
         <h2 class="case-heading">Критерии успеха</h2>
-        <p class="case-tasks__subtitle">
-          Так как&nbsp;проект учебный, я&nbsp;сформулировала гипотетические критерии успеха:
-        </p>
-
+        
         <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 48px;">
 
           <div style="display: grid; grid-template-columns: 60px 1fr; gap: 24px; align-items: center; padding: 24px 32px; background: #F0F0F0; border-radius: 20px;">
@@ -291,21 +377,21 @@
       <p class="case-section__text">
         Приложение BWT — это мост между бизнесом и&nbsp;клиентом: бизнес получает
         заполненные группы и&nbsp;разгруженный ресепшн, клиент получает контроль
-        над&nbsp;своим расписанием без&nbsp;звонков и&nbsp;ожидания.
+        над&nbsp;своим расписанием без&nbsp;звонков и&nbsp;ожидания
       </p>
       <div class="case-value">
         <div class="case-value__card">
           <span class="case-value__label">Для бизнеса</span>
           <p class="case-value__text">
             <strong>Главная задача:</strong> снизить нагрузку на&nbsp;администраторов
-            и&nbsp;увеличить заполняемость тренировок за&nbsp;счёт самообслуживания клиентов.
+            и&nbsp;увеличить заполняемость тренировок за&nbsp;счёт самообслуживания клиентов
           </p>
         </div>
         <div class="case-value__card">
           <span class="case-value__label">Для клиента</span>
           <p class="case-value__text">
-            <strong>Главная задача:</strong> дать клиенту бассейна ощущение контроля
-            над&nbsp;своим расписанием без&nbsp;звонков и&nbsp;уточнений.
+            <strong>Главная задача:</strong> дать пользователю ощущение контроля
+            над&nbsp;своим расписанием без&nbsp;звонков и&nbsp;уточнений
           </p>
         </div>
       </div>
@@ -351,29 +437,27 @@
         <div class="case-card">
           <span class="case-card__num">01</span>
           <p class="case-card__text">
-            Новички выбирают онлайн-запись не&nbsp;ради скорости, а&nbsp;чтобы избежать
-            стресса от&nbsp;личного контакта с&nbsp;администратором. Кроме того, им&nbsp;важно
-            видеть загруженность зала.
-          </p>
+            В рамках 4 интервью я заметила повторяющийся паттерн: новички выбирали онлайн-запись не&nbsp;ради скорости, а&nbsp;чтобы избежать
+            стресса от&nbsp;личного контакта с&nbsp;администратором          </p>
         </div>
         <div class="case-card">
           <span class="case-card__num">02</span>
           <p class="case-card__text">
-            3&nbsp;из&nbsp;4&nbsp;респондентов отметили важность функции загрузки зала.
+            3 из 4 респондентов упоминали, что им важно видеть загрузку зала
           </p>
         </div>
         <div class="case-card">
           <span class="case-card__num">03</span>
           <p class="case-card__text">
-            Аудитория, избегающая личных контактов, хочет полностью управлять
-            своим расписанием дистанционно.
+            2 из 4 респондентов говорили, что хотят полностью управлять
+            своим расписанием дистанционно
           </p>
         </div>
         <div class="case-card">
           <span class="case-card__num">04</span>
           <p class="case-card__text">
-            Пользователи хотят без&nbsp;чувства вины отменить тренировки — сейчас
-            для&nbsp;этого необходимо лично звонить на&nbsp;ресепшн.
+            Пользователи отметили, что хотят без&nbsp;чувства вины отменить тренировку — сейчас
+            для&nbsp;этого необходимо лично звонить на&nbsp;ресепшн
           </p>
         </div>
       </div>
@@ -416,49 +500,45 @@
       <p class="case-tasks__subtitle">
         На&nbsp;основе полученной информации я&nbsp;выдвинула гипотезы, которые помогли
         перейти от&nbsp;болевых точек пользователей к&nbsp;конкретным продуктовым
-        решениям.
+        решениям
       </p>
       <div class="case-hypotheses">
         <div class="case-hypothesis">
           <div class="case-hypothesis__head">
             <span class="case-hypothesis__num">01</span>
             <h3 class="case-hypothesis__title">Визуализация загруженности зала</h3>
-            <span class="case-hypothesis__priority">Приоритет: 3/3 = 1</span>
-          </div>
+                     </div>
           <p class="case-hypothesis__text">
             Если мы будем показывать заполненность бассейна в&nbsp;процентах, вместо
             абстрактного числа, то&nbsp;свободный посетитель сможет быстрее принять
-            решение по&nbsp;времени посещения бассейна.
+            решение по&nbsp;времени посещения бассейна
           </p>
         </div>
         <div class="case-hypothesis">
           <div class="case-hypothesis__head">
             <span class="case-hypothesis__num">02</span>
             <h3 class="case-hypothesis__title">Безопасная отмена записи</h3>
-            <span class="case-hypothesis__priority">Приоритет: 3/1 = 3</span>
-          </div>
+                      </div>
           <p class="case-hypothesis__text">
             Если мы визуально дифференцируем кнопку «Отменить» от&nbsp;кнопки «Записаться»,
-            то&nbsp;пользователи будут быстрее распознавать доступное действие.
+            то&nbsp;пользователи будут быстрее распознавать доступное действие
           </p>
         </div>
         <div class="case-hypothesis">
           <div class="case-hypothesis__head">
             <span class="case-hypothesis__num">03</span>
             <h3 class="case-hypothesis__title">Быстрая запись в&nbsp;один клик</h3>
-            <span class="case-hypothesis__priority">Приоритет: 3/1 = 3</span>
-          </div>
+                     </div>
           <p class="case-hypothesis__text">
             Если мы вынесем кнопку «Записаться», цену и&nbsp;счётчик свободных мест прямо
-            в&nbsp;карточку тренировки, то&nbsp;пользователь сможет записаться в&nbsp;один клик.
+            в&nbsp;карточку тренировки, то&nbsp;пользователь сможет записаться в&nbsp;один клик
           </p>
         </div>
         <div class="case-hypothesis">
           <div class="case-hypothesis__head">
             <span class="case-hypothesis__num">04</span>
             <h3 class="case-hypothesis__title">Фильтрация тренировок</h3>
-            <span class="case-hypothesis__priority">Приоритет: 2/2 = 1</span>
-          </div>
+                      </div>
           <p class="case-hypothesis__text">
             Если мы добавим фильтр по&nbsp;параметрам (тип занятия, время, тренер),
             то&nbsp;пользователь сможет быстро найти подходящую тренировку.
@@ -472,26 +552,25 @@
           </div>
           <p class="case-hypothesis__text">
             Если разместить компактный календарь с&nbsp;ближайшими датами прямо
-            на&nbsp;главном экране, то&nbsp;пользователи смогут быстрее находить нужную тренировку.
+            на&nbsp;главном экране, то&nbsp;пользователи смогут быстрее находить нужную тренировку
           </p>
         </div>
         <div class="case-hypothesis">
           <div class="case-hypothesis__head">
             <span class="case-hypothesis__num">06</span>
             <h3 class="case-hypothesis__title">Подтверждение действий через модальное окно</h3>
-            <span class="case-hypothesis__priority">Приоритет: 3/2 = 1,5</span>
+            
           </div>
           <p class="case-hypothesis__text">
             Если добавить модальное окно подтверждения с&nbsp;краткой сводкой и&nbsp;двумя
-            чётко различимыми кнопками — то&nbsp;пользователь будет увереннее совершать действие.
+            чётко различимыми кнопками — то&nbsp;пользователь будет увереннее совершать действие
           </p>
         </div>
         <div class="case-hypothesis">
           <div class="case-hypothesis__head">
             <span class="case-hypothesis__num">07</span>
             <h3 class="case-hypothesis__title">Добавление календаря в&nbsp;раздел «Мои тренировки»</h3>
-            <span class="case-hypothesis__priority">Приоритет: 1/2 = 0,5</span>
-          </div>
+                     </div>
           <p class="case-hypothesis__text">
             Если мы добавим календарь с&nbsp;горизонтальной лентой дат в&nbsp;раздел
             «Тренировки», то&nbsp;пользователь сможет быстро находить свои занятия
