@@ -369,51 +369,47 @@
       <hana-viewer url="https://prod.spline.design/gZUGNToLE1E0ENSa-8nS/scene.hanacode"></hana-viewer>
     </section>
 
+
     <!-- ===== ПОРТФОЛИО ===== -->
     <section class="case section-stack" id="portfolio">
       <div class="container">
 
-        <h2 class="section-title">Портфолио</h2>
+        <p class="section-label">03 — Портфолио</p>
 
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; padding-bottom: 60px;">
+        <h2 class="case__title" style="margin-bottom: 60px;">Портфолио</h2>
+
+        <div class="portfolio-grid">
 
           <!-- КАРТОЧКА 1: BWT -->
-          <a href="case-bwt.html"
-             style="display: flex; flex-direction: column; background: #EFEEEB; border-radius: 20px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.5s cubic-bezier(0.22,1,0.36,1), box-shadow 0.5s cubic-bezier(0.22,1,0.36,1);"
-             onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 30px 60px rgba(23,35,29,0.15)';"
-             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+          <a href="case-bwt.html" class="portfolio-card">
 
-            <div style="position: relative; width: 100%; aspect-ratio: 1.6 / 1; overflow: hidden; background: #D8CFF0;">
+            <div class="portfolio-card__media">
+              <div class="portfolio-card__preview">
 
-              <div style="display: flex; align-items: center; justify-content: center; gap: 20px; height: 100%; padding: 40px 32px 60px; box-sizing: border-box;">
-
-                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: center;">
-                  <span style="font-size: 11px; font-weight: 500; color: #17231D; background: rgba(255,255,255,0.85); padding: 4px 14px; border-radius: 100px; letter-spacing: 0.04em;">БЫЛО</span>
-                  <img src="images/bwt-1.jpg" alt="BWT — было"
-                       style="max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; display: block; filter: drop-shadow(0 8px 24px rgba(0,0,0,0.15));">
+                <div class="portfolio-card__item">
+                  <span class="portfolio-card__label">БЫЛО</span>
+                  <img src="images/bwt-1.jpg" alt="BWT — было" class="portfolio-card__img">
                 </div>
 
-                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: center;">
-                  <span style="font-size: 11px; font-weight: 500; color: #17231D; background: rgba(255,255,255,0.85); padding: 4px 14px; border-radius: 100px; letter-spacing: 0.04em;">СТАЛО</span>
-                  <img src="images/bwt-2.jpg" alt="BWT — стало"
-                       style="max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; display: block; filter: drop-shadow(0 8px 24px rgba(0,0,0,0.15));">
+                <div class="portfolio-card__item">
+                  <span class="portfolio-card__label">СТАЛО</span>
+                  <img src="images/bwt-2.jpg" alt="BWT — стало" class="portfolio-card__img">
                 </div>
 
               </div>
 
-              <span style="position: absolute; bottom: 16px; left: 16px; z-index: 5; display: inline-flex; align-items: center; padding: 8px 18px; background: rgba(255, 255, 255, 0.85); border-radius: 100px; font-size: 13px; font-weight: 500; color: #17231D;">B2C</span>
+              <span class="portfolio-card__badge">B2C</span>
             </div>
 
-            <div style="display: flex; flex-direction: column; gap: 16px; padding: 32px;">
-              <h3 style="font-size: 28px; font-weight: 500; line-height: 1.15; color: #17231D; margin: 0;">BWT</h3>
-              <p style="font-size: 15px; line-height: 1.55; color: #17231D; opacity: 0.65; margin: 0 0 16px 0;">
+            <div class="portfolio-card__body">
+              <h3 class="portfolio-card__title">BWT</h3>
+              <p class="portfolio-card__desc">
                 Мобильное приложение для&nbsp;записи в&nbsp;плавательный бассейн:
                 от&nbsp;исследования до&nbsp;финального интерфейса
               </p>
-
-              <span style="display: inline-flex; align-items: center; gap: 14px; padding: 8px 8px 8px 28px; border: 1px solid rgba(23,35,29,0.25); border-radius: 100px; font-size: 17px; font-weight: 500; color: #17231D; align-self: flex-start;">
-                Посмотреть кейс
-                <span style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #BFDB39; border-radius: 50%; flex-shrink: 0;">
+              <span class="portfolio-card__btn">
+                <span>Посмотреть кейс</span>
+                <span class="portfolio-card__btn-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12h14M13 6l6 6-6 6" stroke="#17231D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -423,29 +419,24 @@
           </a>
 
           <!-- КАРТОЧКА 2: ПУСТАЯ -->
-          <div style="display: flex; flex-direction: column; background: #EFEEEB; border-radius: 20px; overflow: hidden;">
+          <div class="portfolio-card portfolio-card--soon">
 
-            <div style="position: relative; width: 100%; aspect-ratio: 1.6 / 1; padding: 20px; box-sizing: border-box;">
+            <div class="portfolio-card__media portfolio-card__media--soon">
+              <div class="portfolio-card__soon-inner">
+                <span class="portfolio-card__badge portfolio-card__badge--soon">Скоро</span>
 
-              <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 1.5px dashed rgba(23,35,29,0.2); border-radius: 16px; position: relative;">
-
-                <span style="position: absolute; bottom: 16px; left: 16px; display: inline-flex; align-items: center; padding: 8px 18px; background: rgba(23,35,29,0.06); border-radius: 100px; font-size: 13px; font-weight: 500; color: #17231D; opacity: 0.7;">Скоро</span>
-
-                <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 50%; background: rgba(23,35,29,0.05); color: #17231D; opacity: 0.4;">
+                <div class="portfolio-card__soon-icon">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                   </svg>
                 </div>
-
               </div>
             </div>
 
-            <div style="display: flex; flex-direction: column; gap: 16px; padding: 32px;">
-              <h3 style="font-size: 28px; font-weight: 500; line-height: 1.15; color: #17231D; margin: 0;">
-                Скоро здесь появится новый кейс
-              </h3>
-              <p style="font-size: 15px; line-height: 1.55; color: #17231D; opacity: 0.65; margin: 0;">
-                Следите за&nbsp;обновлениями
+            <div class="portfolio-card__body">
+              <h3 class="portfolio-card__title">Скоро здесь появится новый кейс</h3>
+              <p class="portfolio-card__desc">
+                Я&nbsp;работаю над&nbsp;новыми проектами. Следите за&nbsp;обновлениями
               </p>
             </div>
           </div>
@@ -454,6 +445,9 @@
       </div>
     </section>
 
+
+
+    
     <!-- ===== ОПЫТ ===== -->
     <section id="about" class="experience-section">
       <div class="container">
