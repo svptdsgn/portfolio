@@ -11,8 +11,6 @@
 
   <script type="module" src="https://cdn.spline.design/@splinetool/hana-viewer@1.2.54/hana-viewer.js"></script>
 
-  
-
   <style>
     body {
       margin: 0;
@@ -38,102 +36,36 @@
       display: block;
     }
 
-    /* ============================================================
-       ОБЩИЙ ЗАГОЛОВОК СЕКЦИЙ
-       ============================================================ */
-    .section-title {
-      font-size: 36px;
-      font-weight: 500;
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      color: #17231D;
-      margin: 0 0 40px 0;
-    }
-
-    /* ============================================================
-       БЕЛЫЙ БЛОК СО СКРУГЛЕНИЕМ — для всех секций после портфолио
-       ============================================================ */
-
-    /* Опыт — отдельный блок как «Спасибо» */
-    .experience-section {
-      position: relative;
-      z-index: 3;
-      padding: 60px 0 !important;
-      background: #F7F6F4;
-      border-radius: 40px 40px 0 0;
-      box-shadow: 0 -20px 40px rgba(23, 35, 29, 0.06);
-      margin-top: -40px;
-    }
-
-    /* Стек — тоже отдельный блок */
-    .stack-section {
-      position: relative;
-      z-index: 4;
-      padding: 60px 0 !important;
-      background: #F7F6F4;
-      border-radius: 40px 40px 0 0;
-      box-shadow: 0 -20px 40px rgba(23, 35, 29, 0.06);
-      margin-top: -40px;
-    }
-
-    /* Портфолио — первый блок после hero, без наезда */
-    .case.section-stack {
-      position: relative;
-      z-index: 2;
-      padding: 60px 0 !important;
-      background: #F7F6F4;
-      border-radius: 40px 40px 0 0;
-      box-shadow: 0 -20px 40px rgba(23, 35, 29, 0.06);
-      margin-top: -40px;
-    }
-
-    /* Ещё обо мне, Контакты — как было */
-    .about-more.section-stack,
-    .contacts.section-stack {
-      padding: 60px 0 !important;
-      background: #F7F6F4;
-    }
-
-    /* ============================================================
-       ОПЫТ РАБОТЫ — серая карточка с аккордеоном
-       ============================================================ */
-    #about .container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 60px;
-      box-sizing: border-box;
-    }
-
+    /* ===== ОПЫТ РАБОТЫ — аккордеон ===== */
     #about .experience-list {
-      display: flex !important;
-      flex-direction: column !important;
-      gap: 16px !important;
-      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
     }
 
     #about .experience-item {
-      background: #f0f0f0 !important;
-      border-radius: 24px !important;
-      overflow: hidden !important;
-      width: 100% !important;
-      display: block !important;
+      background: #f0f0f0;
+      border-radius: 24px;
+      overflow: hidden;
+      width: 100%;
       transition: background 0.2s ease, box-shadow 0.2s ease;
     }
 
     #about .experience-item.is-open {
-      background: #fff !important;
+      background: #fff;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     }
 
     #about .experience-header {
-      display: flex !important;
-      justify-content: space-between !important;
-      align-items: center !important;
-      gap: 16px !important;
-      width: 100% !important;
-      padding: 28px 32px !important;
-      background: transparent !important;
-      border: none !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      padding: 28px 32px;
+      background: transparent;
+      border: none;
       cursor: pointer;
       text-align: left;
       font-family: inherit;
@@ -141,69 +73,67 @@
     }
 
     #about .experience-header__left {
-      display: flex !important;
-      flex-direction: column !important;
-      gap: 6px !important;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
     }
 
     #about .experience-header__title {
-      font-size: 20px !important;
-      font-weight: 700 !important;
-      margin: 0 !important;
-      color: #17231D !important;
-      line-height: 1.3 !important;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      color: #17231D;
+      line-height: 1.3;
     }
 
     #about .experience-header__place {
-      font-size: 15px !important;
-      color: #888 !important;
-      margin: 0 !important;
+      font-size: 15px;
+      color: #888;
+      margin: 0;
     }
 
     #about .experience-header__icon {
-      position: relative !important;
-      display: block !important;
-      width: 44px !important;
-      height: 44px !important;
-      min-width: 44px !important;
-      min-height: 44px !important;
-      max-width: 44px !important;
-      max-height: 44px !important;
-      background: #666 !important;
-      border-radius: 50% !important;
-      flex-shrink: 0 !important;
+      position: relative;
+      display: block;
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      min-height: 44px;
+      background: #666;
+      border-radius: 50%;
+      flex-shrink: 0;
       transition: transform 0.25s ease, background 0.25s ease;
-      padding: 0 !important;
-      box-sizing: border-box !important;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     #about .experience-header__icon::before {
-      content: "" !important;
-      position: absolute !important;
-      top: 50% !important;
-      left: 50% !important;
-      width: 18px !important;
-      height: 2px !important;
-      background: #fff !important;
-      transform: translate(-50%, -50%) !important;
-      border-radius: 2px !important;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 18px;
+      height: 2px;
+      background: #fff;
+      transform: translate(-50%, -50%);
+      border-radius: 2px;
     }
 
     #about .experience-header__icon::after {
-      content: "" !important;
-      position: absolute !important;
-      top: 50% !important;
-      left: 50% !important;
-      width: 2px !important;
-      height: 18px !important;
-      background: #fff !important;
-      transform: translate(-50%, -50%) !important;
-      border-radius: 2px !important;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 18px;
+      background: #fff;
+      transform: translate(-50%, -50%);
+      border-radius: 2px;
     }
 
     #about .experience-item.is-open .experience-header__icon {
-      background: #17231D !important;
-      transform: rotate(45deg) !important;
+      background: #17231D;
+      transform: rotate(45deg);
     }
 
     #about .experience-body {
@@ -219,124 +149,87 @@
     }
 
     #about .experience-body__list {
-      list-style: none !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      display: flex !important;
-      flex-direction: column !important;
-      gap: 16px !important;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 
     #about .experience-body__list li {
-      position: relative !important;
-      padding-left: 28px !important;
-      font-size: 16px !important;
-      color: #555 !important;
-      line-height: 1.6 !important;
-      list-style: none !important;
+      position: relative;
+      padding-left: 28px;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
     }
 
     #about .experience-body__list li::before {
-      content: "" !important;
-      position: absolute !important;
-      left: 0 !important;
-      top: 11px !important;
-      width: 14px !important;
-      height: 2px !important;
-      background: #BFDB39 !important;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 14px;
+      height: 2px;
+      background: #BFDB39;
     }
 
     #about .experience-body__list strong {
-      color: #17231D !important;
+      color: #17231D;
     }
 
-    /* ============================================================
-       СТЕК
-       ============================================================ */
-    #stack .container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 60px;
-      box-sizing: border-box;
-    }
-
+    /* ===== СТЕК ===== */
     #stack .stack-grid {
-      display: grid !important;
-      grid-template-columns: repeat(2, 1fr) !important;
-      gap: 16px !important;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
     }
 
     #stack .stack-card {
-      background: #f0f0f0 !important;
-      border-radius: 24px !important;
-      padding: 28px 32px !important;
+      background: #f0f0f0;
+      border-radius: 24px;
+      padding: 28px 32px;
       transition: background 0.2s ease;
       box-sizing: border-box;
     }
 
     #stack .stack-card:hover {
-      background: #e8e8e8 !important;
+      background: #e8e8e8;
     }
 
     #stack .stack-card__title {
-      font-size: 20px !important;
-      font-weight: 700 !important;
-      margin: 0 0 12px 0 !important;
-      color: #17231D !important;
-      line-height: 1.3 !important;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 12px 0;
+      color: #17231D;
+      line-height: 1.3;
     }
 
     #stack .stack-card__list {
-      font-size: 16px !important;
-      line-height: 1.6 !important;
-      color: #555 !important;
-      margin: 0 !important;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+      margin: 0;
     }
 
-    /* ============================================================
-       АДАПТИВ
-       ============================================================ */
-    @media (max-width: 991px) {
-      .section-title { font-size: 32px; }
-    }
-
+    /* ===== АДАПТИВ ===== */
     @media (max-width: 767px) {
-      .experience-section,
-      .stack-section,
-      .case.section-stack,
-      .about-more.section-stack,
-      .contacts.section-stack {
-        padding-top: 40px !important;
-        padding-bottom: 40px !important;
-      }
-
-      .section-title {
-        font-size: 24px;
-        margin-bottom: 32px;
-      }
-
-      #about .container,
-      #stack .container {
-        padding: 0 20px !important;
-      }
-
-      #about .experience-header { padding: 20px !important; }
-      #about .experience-body { padding: 0 20px !important; }
-      #about .experience-item.is-open .experience-body { padding: 0 20px 20px 20px !important; }
-      #about .experience-header__title { font-size: 17px !important; }
+      #about .experience-header { padding: 20px; }
+      #about .experience-body { padding: 0 20px; }
+      #about .experience-item.is-open .experience-body { padding: 0 20px 20px 20px; }
+      #about .experience-header__title { font-size: 17px; }
       #about .experience-header__icon {
-        width: 38px !important;
-        height: 38px !important;
-        min-width: 38px !important;
-        min-height: 38px !important;
-        max-width: 38px !important;
-        max-height: 38px !important;
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+        min-height: 38px;
       }
 
-      #stack .stack-grid { grid-template-columns: 1fr !important; }
-      #stack .stack-card { padding: 20px !important; }
-      #stack .stack-card__title { font-size: 17px !important; }
-      #stack .stack-card__list { font-size: 15px !important; }
+      #stack .stack-grid { grid-template-columns: 1fr; }
+      #stack .stack-card { padding: 20px; }
+      #stack .stack-card__title { font-size: 17px; }
+      #stack .stack-card__list { font-size: 15px; }
     }
   </style>
 </head>
@@ -375,45 +268,38 @@
 
         <h2 class="section-title">Портфолио</h2>
 
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; padding-bottom: 60px;">
+        <div class="portfolio-grid">
 
           <!-- КАРТОЧКА 1: BWT -->
-          <a href="case-bwt.html"
-             style="display: flex; flex-direction: column; background: #EFEEEB; border-radius: 20px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.5s cubic-bezier(0.22,1,0.36,1), box-shadow 0.5s cubic-bezier(0.22,1,0.36,1);"
-             onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 30px 60px rgba(23,35,29,0.15)';"
-             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+          <a href="case-bwt.html" class="portfolio-card">
 
-            <div style="position: relative; width: 100%; aspect-ratio: 1.6 / 1; overflow: hidden; background: #D8CFF0;">
+            <div class="portfolio-card__media">
+              <div class="portfolio-card__preview">
 
-              <div style="display: flex; align-items: center; justify-content: center; gap: 20px; height: 100%; padding: 40px 32px 60px; box-sizing: border-box;">
-
-                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: center;">
-                  <span style="font-size: 11px; font-weight: 500; color: #17231D; background: rgba(255,255,255,0.85); padding: 4px 14px; border-radius: 100px; letter-spacing: 0.04em;">БЫЛО</span>
-                  <img src="images/bwt-1.jpg" alt="BWT — было"
-                       style="max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; display: block; filter: drop-shadow(0 8px 24px rgba(0,0,0,0.15));">
+                <div class="portfolio-card__item">
+                  <span class="portfolio-card__label">БЫЛО</span>
+                  <img src="images/bwt-1.jpg" alt="BWT — было" class="portfolio-card__img">
                 </div>
 
-                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: center;">
-                  <span style="font-size: 11px; font-weight: 500; color: #17231D; background: rgba(255,255,255,0.85); padding: 4px 14px; border-radius: 100px; letter-spacing: 0.04em;">СТАЛО</span>
-                  <img src="images/bwt-2.jpg" alt="BWT — стало"
-                       style="max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; display: block; filter: drop-shadow(0 8px 24px rgba(0,0,0,0.15));">
+                <div class="portfolio-card__item">
+                  <span class="portfolio-card__label">СТАЛО</span>
+                  <img src="images/bwt-2.jpg" alt="BWT — стало" class="portfolio-card__img">
                 </div>
 
               </div>
 
-              <span style="position: absolute; bottom: 16px; left: 16px; z-index: 5; display: inline-flex; align-items: center; padding: 8px 18px; background: rgba(255, 255, 255, 0.85); border-radius: 100px; font-size: 13px; font-weight: 500; color: #17231D;">B2C</span>
+              <span class="portfolio-card__badge">B2C</span>
             </div>
 
-            <div style="display: flex; flex-direction: column; gap: 16px; padding: 32px;">
-              <h3 style="font-size: 28px; font-weight: 500; line-height: 1.15; color: #17231D; margin: 0;">BWT</h3>
-              <p style="font-size: 15px; line-height: 1.55; color: #17231D; opacity: 0.65; margin: 0 0 16px 0;">
+            <div class="portfolio-card__body">
+              <h3 class="portfolio-card__title">BWT</h3>
+              <p class="portfolio-card__desc">
                 Мобильное приложение для&nbsp;записи в&nbsp;плавательный бассейн:
                 от&nbsp;исследования до&nbsp;финального интерфейса
               </p>
-
-              <span style="display: inline-flex; align-items: center; gap: 14px; padding: 8px 8px 8px 28px; border: 1px solid rgba(23,35,29,0.25); border-radius: 100px; font-size: 17px; font-weight: 500; color: #17231D; align-self: flex-start;">
-                Посмотреть кейс
-                <span style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #BFDB39; border-radius: 50%; flex-shrink: 0;">
+              <span class="portfolio-card__btn">
+                <span>Посмотреть кейс</span>
+                <span class="portfolio-card__btn-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12h14M13 6l6 6-6 6" stroke="#17231D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -423,28 +309,23 @@
           </a>
 
           <!-- КАРТОЧКА 2: ПУСТАЯ -->
-          <div style="display: flex; flex-direction: column; background: #EFEEEB; border-radius: 20px; overflow: hidden;">
+          <div class="portfolio-card portfolio-card--soon">
 
-            <div style="position: relative; width: 100%; aspect-ratio: 1.6 / 1; padding: 20px; box-sizing: border-box;">
+            <div class="portfolio-card__media portfolio-card__media--soon">
+              <div class="portfolio-card__soon-inner">
+                <span class="portfolio-card__badge portfolio-card__badge--soon">Скоро</span>
 
-              <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 1.5px dashed rgba(23,35,29,0.2); border-radius: 16px; position: relative;">
-
-                <span style="position: absolute; bottom: 16px; left: 16px; display: inline-flex; align-items: center; padding: 8px 18px; background: rgba(23,35,29,0.06); border-radius: 100px; font-size: 13px; font-weight: 500; color: #17231D; opacity: 0.7;">Скоро</span>
-
-                <div style="display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 50%; background: rgba(23,35,29,0.05); color: #17231D; opacity: 0.4;">
+                <div class="portfolio-card__soon-icon">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                   </svg>
                 </div>
-
               </div>
             </div>
 
-            <div style="display: flex; flex-direction: column; gap: 16px; padding: 32px;">
-              <h3 style="font-size: 28px; font-weight: 500; line-height: 1.15; color: #17231D; margin: 0;">
-                Скоро здесь появится новый кейс
-              </h3>
-              <p style="font-size: 15px; line-height: 1.55; color: #17231D; opacity: 0.65; margin: 0;">
+            <div class="portfolio-card__body">
+              <h3 class="portfolio-card__title">Скоро здесь появится новый кейс</h3>
+              <p class="portfolio-card__desc">
                 Следите за&nbsp;обновлениями
               </p>
             </div>
@@ -475,7 +356,7 @@
             <div class="experience-body">
               <ul class="experience-body__list">
                 <li><strong>Визуальные коммуникации:</strong> ежемесячно разрабатывала 30+ макетов для социальных сетей медиацентра</li>
-                <li><strong>Результат:</strong>  1,5 больше реакций относительно среднего показателя группы</li>
+                <li><strong>Результат:</strong> 1,5 больше реакций относительно среднего показателя группы</li>
                 <li><strong>Скорость и дедлайны:</strong> заявки от редакции и SMM-команды приходили быстро и часто. Я выполняла их одной из первых — это позволяло команде не тормозить контент-план и выпускать материалы вовремя.</li>
                 <li><strong>Работа с командой:</strong> работала в связке с редакцией и SMM-командой — от получения ТЗ до финального макета. Согласовывала правки с главными дизайнерами.</li>
               </ul>
@@ -487,7 +368,7 @@
       </div>
     </section>
 
-        <!-- ===== СТЕК ===== -->
+    <!-- ===== СТЕК ===== -->
     <section id="stack" class="stack-section">
       <div class="container">
 
@@ -497,12 +378,12 @@
 
           <div class="stack-card">
             <h3 class="stack-card__title">Product Design</h3>
-            <p class="stack-card__list">User Flows · Prototyping · UI Design · Design Systems </p>
+            <p class="stack-card__list">User Flows · Prototyping · UI Design · Design Systems</p>
           </div>
 
           <div class="stack-card">
             <h3 class="stack-card__title">Research &amp; Validation</h3>
-            <p class="stack-card__list">User Interviews  · CJM · Usability Testing · Hypothesis Validation</p>
+            <p class="stack-card__list">User Interviews · CJM · Usability Testing · Hypothesis Validation</p>
           </div>
 
           <div class="stack-card">
@@ -576,7 +457,6 @@
     <section class="contacts section-stack" id="contacts">
       <div class="container">
 
-      
         <div class="contacts__content">
 
           <a href="mailto:petuhovamgn@gmail.com" class="contacts__email">
