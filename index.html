@@ -36,7 +36,7 @@
       display: block;
     }
 
-    /* ===== ОПЫТ РАБОТЫ — аккордеон ===== */
+    /* ===== ОПЫТ — аккордеон ===== */
     #about .experience-list {
       display: flex;
       flex-direction: column;
@@ -213,7 +213,6 @@
       margin: 0;
     }
 
-    /* ===== АДАПТИВ ===== */
     @media (max-width: 767px) {
       #about .experience-header { padding: 20px; }
       #about .experience-body { padding: 0 20px; }
@@ -343,7 +342,6 @@
 
         <div class="experience-list">
 
-          <!-- Плашка 1 -->
           <div class="experience-item">
             <button class="experience-header" onclick="toggleExperience(this)">
               <div class="experience-header__left">
@@ -396,113 +394,91 @@
       </div>
     </section>
 
-    <!-- ===== ЕЩЁ ОБО МНЕ ===== -->
-    <section class="about-more section-stack" id="hiking">
+       <!-- ===== ЕЩЁ ОБО МНЕ ===== -->
+    <section class="about-more section-stack" id="hiking" style="padding: 60px 0; background: var(--bg); border-radius: 40px 40px 0 0; box-shadow: 0 -20px 40px rgba(23,35,29,0.06); margin-top: -40px; position: relative; z-index: 5;">
       <div class="container">
 
-        <h2 class="section-title">Не бояться сложных маршрутов</h2>
+        <h2 class="section-title" style="font-size: 36px; font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; color: #17231D; margin: 0 0 40px 0;">Не бояться сложных маршрутов</h2>
 
-        <div class="about-more__head">
-          <p class="about-more__text">
+        <div style="max-width: 100%; margin-bottom: 60px;">
+          <p style="font-size: 17px; line-height: 1.6; color: #17231D; opacity: 0.7; margin-bottom: 20px;">
             В свободное время я хожу в походы по горам Урала. За время походов я поднималась
             на Иремель — самую высокую гору Урала, открытую для восхождений, гуляла по
             бескрайним просторам Ялангаса, любовалась видами с Айгира и покоряла
             Откликной гребень на Таганае.
           </p>
-          <p class="about-more__text">
+          <p style="font-size: 17px; line-height: 1.6; color: #17231D; opacity: 0.7; margin: 0;">
             На длинных и сложных маршрутах я тренирую не только выносливость, но и характер.
             Горы учат меня простому, но важному правилу: любое препятствие можно преодолеть.
           </p>
         </div>
 
-        <div class="about-more__gallery">
-          <figure class="about-more__item">
-            <span class="about-more__badge">Ялангас</span>
-            <img src="images/hike-1.jpg" alt="Ялангас">
+        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; padding-bottom: 60px;">
+          <figure style="position: relative; width: 100%; height: 340px; border-radius: 20px; overflow: hidden; margin: 0; cursor: zoom-in;">
+            <span style="position: absolute; top: 16px; left: 16px; z-index: 2; display: inline-flex; align-items: center; padding: 8px 20px; background: #BFDB39; color: #17231D; border-radius: 100px; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; box-shadow: 0 8px 24px rgba(191,219,57,0.4), 0 2px 8px rgba(23,35,29,0.08);">Ялангас</span>
+            <img src="images/hike-1.jpg" alt="Ялангас" style="width: 100%; height: 100%; display: block; object-fit: cover; border-radius: 20px;">
           </figure>
-          <figure class="about-more__item">
-            <span class="about-more__badge">Серединная</span>
-            <img src="images/hike-2.jpg" alt="Серединная">
+
+          <figure style="position: relative; width: 100%; height: 340px; border-radius: 20px; overflow: hidden; margin: 0; cursor: zoom-in;">
+            <span style="position: absolute; top: 16px; left: 16px; z-index: 2; display: inline-flex; align-items: center; padding: 8px 20px; background: #BFDB39; color: #17231D; border-radius: 100px; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; box-shadow: 0 8px 24px rgba(191,219,57,0.4), 0 2px 8px rgba(23,35,29,0.08);">Серединная</span>
+            <img src="images/hike-2.jpg" alt="Серединная" style="width: 100%; height: 100%; display: block; object-fit: cover; border-radius: 20px;">
           </figure>
-          <figure class="about-more__item">
-            <span class="about-more__badge">Айгир</span>
-            <img src="images/hike-3.jpg" alt="Айгир">
+
+          <figure style="position: relative; width: 100%; height: 340px; border-radius: 20px; overflow: hidden; margin: 0; cursor: zoom-in;">
+            <span style="position: absolute; top: 16px; left: 16px; z-index: 2; display: inline-flex; align-items: center; padding: 8px 20px; background: #BFDB39; color: #17231D; border-radius: 100px; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; box-shadow: 0 8px 24px rgba(191,219,57,0.4), 0 2px 8px rgba(23,35,29,0.08);">Айгир</span>
+            <img src="images/hike-3.jpg" alt="Айгир" style="width: 100%; height: 100%; display: block; object-fit: cover; border-radius: 20px;">
           </figure>
-          <figure class="about-more__item">
-            <span class="about-more__badge">Таганай</span>
-            <img src="images/hike-4.jpg" alt="Таганай">
+
+          <figure style="position: relative; width: 100%; height: 340px; border-radius: 20px; overflow: hidden; margin: 0; cursor: zoom-in;">
+            <span style="position: absolute; top: 16px; left: 16px; z-index: 2; display: inline-flex; align-items: center; padding: 8px 20px; background: #BFDB39; color: #17231D; border-radius: 100px; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; box-shadow: 0 8px 24px rgba(191,219,57,0.4), 0 2px 8px rgba(23,35,29,0.08);">Таганай</span>
+            <img src="images/hike-4.jpg" alt="Таганай" style="width: 100%; height: 100%; display: block; object-fit: cover; border-radius: 20px;">
           </figure>
-          <figure class="about-more__item">
-            <span class="about-more__badge">Иремель</span>
-            <img src="images/hike-5.jpg" alt="Иремель">
+
+          <figure style="position: relative; width: 100%; height: 340px; border-radius: 20px; overflow: hidden; margin: 0; cursor: zoom-in;">
+            <span style="position: absolute; top: 16px; left: 16px; z-index: 2; display: inline-flex; align-items: center; padding: 8px 20px; background: #BFDB39; color: #17231D; border-radius: 100px; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; box-shadow: 0 8px 24px rgba(191,219,57,0.4), 0 2px 8px rgba(23,35,29,0.08);">Иремель</span>
+            <img src="images/hike-5.jpg" alt="Иремель" style="width: 100%; height: 100%; display: block; object-fit: cover; border-radius: 20px;">
           </figure>
         </div>
 
       </div>
     </section>
 
-    <!-- ===== СПАСИБО ЗА ВНИМАНИЕ ===== -->
-    <section class="thanks section-stack" id="thanks">
-      <div class="container">
-        <div class="thanks__content">
-          <h2 class="thanks__title">
-            Спасибо<br>за внимание!
-          </h2>
-          <div class="thanks__emoji" aria-hidden="true">😊</div>
-        </div>
+      <!-- ===== СПАСИБО ЗА ВНИМАНИЕ ===== -->
+    <section class="thanks section-stack" id="thanks" style="padding: 100px 0; background: var(--bg); border-radius: 40px 40px 0 0; box-shadow: 0 -20px 40px rgba(23,35,29,0.06); margin-top: -40px; position: relative; z-index: 6; text-align: center;">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h2 style="font-size: 96px; font-weight: 500; line-height: 1.05; letter-spacing: -0.03em; color: #17231D; margin: 0;">
+          Спасибо<br>за внимание!
+        </h2>
+        <div style="font-size: 80px; line-height: 1; margin-top: 20px;" aria-hidden="true">😊</div>
       </div>
     </section>
 
-    <!-- ===== КОНТАКТЫ ===== -->
-    <section class="contacts section-stack" id="contacts">
+       <!-- ===== КОНТАКТЫ ===== -->
+    <section class="contacts section-stack" id="contacts" style="padding: 80px 0; background: var(--bg); border-radius: 40px 40px 0 0; box-shadow: 0 -20px 40px rgba(23,35,29,0.06); margin-top: -40px; position: relative; z-index: 7;">
       <div class="container">
 
-        <div class="contacts__content">
+        <a href="mailto:petuhovamgn@gmail.com" style="display: inline-block; font-size: clamp(36px, 6vw, 96px); font-weight: 500; line-height: 1.05; letter-spacing: -0.03em; color: #17231D; margin-bottom: 20px; word-break: break-word; text-decoration: none;">
+          petuhovamgn@gmail.com
+        </a>
 
-          <a href="mailto:petuhovamgn@gmail.com" class="contacts__email">
-            petuhovamgn@gmail.com
+        <div style="display: flex; flex-direction: column; border-top: 1px solid rgba(23,35,29,0.15); margin-top: 40px;">
+
+          <a href="https://t.me/sv_pt" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(23,35,29,0.15); font-size: 16px; color: #17231D; text-decoration: none;">
+            <span>Телеграм</span>
+            <span>@sv_pt</span>
           </a>
 
-          <div class="contacts__list">
-            <a href="https://t.me/sv_pt" target="_blank" rel="noopener" class="contacts__row">
-              <span class="contacts__label">Телеграм</span>
-              <span class="contacts__value">@sv_pt</span>
-            </a>
-            <a href="tel:+79518186295" class="contacts__row">
-              <span class="contacts__label">Телефон</span>
-              <span class="contacts__value">+79518186295</span>
-            </a>
-            <a href="https://vk.ru/svet_pt" target="_blank" rel="noopener" class="contacts__row">
-              <span class="contacts__label">ВК</span>
-              <span class="contacts__value">https://vk.ru/svet_pt</span>
-            </a>
-          </div>
+          <a href="tel:+79518186295" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(23,35,29,0.15); font-size: 16px; color: #17231D; text-decoration: none;">
+            <span>Телефон</span>
+            <span>+79518186295</span>
+          </a>
+
+          <a href="https://vk.ru/svet_pt" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(23,35,29,0.15); font-size: 16px; color: #17231D; text-decoration: none;">
+            <span>ВК</span>
+            <span>https://vk.ru/svet_pt</span>
+          </a>
 
         </div>
 
       </div>
     </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Петухова Светлана</p>
-    </div>
-  </footer>
-
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">✕</button>
-    <img class="lightbox__img" id="lightboxImg" src="" alt="">
-  </div>
-
-  <script>
-    function toggleExperience(button) {
-      const item = button.closest('.experience-item');
-      item.classList.toggle('is-open');
-    }
-  </script>
-
-  <script src="script.js"></script>
-</body>
-</html>
