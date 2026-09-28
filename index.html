@@ -11,6 +11,8 @@
 
   <script type="module" src="https://cdn.spline.design/@splinetool/hana-viewer@1.2.54/hana-viewer.js"></script>
 
+  
+
   <style>
     body {
       margin: 0;
@@ -37,7 +39,7 @@
     }
 
     /* ============================================================
-       ОБЩИЙ ЗАГОЛОВОК СЕКЦИЙ — единый размер
+       ОБЩИЙ ЗАГОЛОВОК СЕКЦИЙ
        ============================================================ */
     .section-title {
       font-size: 36px;
@@ -49,20 +51,51 @@
     }
 
     /* ============================================================
-       ЕДИНЫЕ ОТСТУПЫ ДЛЯ ВСЕХ СЕКЦИЙ
+       БЕЛЫЙ БЛОК СО СКРУГЛЕНИЕМ — для всех секций после портфолио
        ============================================================ */
-    .experience-section.section-stack,
-    .stack-section.section-stack,
-    .case.section-stack,
+
+    /* Опыт — отдельный блок как «Спасибо» */
+    .experience-section {
+      position: relative;
+      z-index: 3;
+      padding: 60px 0 !important;
+      background: #F7F6F4;
+      border-radius: 40px 40px 0 0;
+      box-shadow: 0 -20px 40px rgba(23, 35, 29, 0.06);
+      margin-top: -40px;
+    }
+
+    /* Стек — тоже отдельный блок */
+    .stack-section {
+      position: relative;
+      z-index: 4;
+      padding: 60px 0 !important;
+      background: #F7F6F4;
+      border-radius: 40px 40px 0 0;
+      box-shadow: 0 -20px 40px rgba(23, 35, 29, 0.06);
+      margin-top: -40px;
+    }
+
+    /* Портфолио — первый блок после hero, без наезда */
+    .case.section-stack {
+      position: relative;
+      z-index: 2;
+      padding: 60px 0 !important;
+      background: #F7F6F4;
+      border-radius: 40px 40px 0 0;
+      box-shadow: 0 -20px 40px rgba(23, 35, 29, 0.06);
+      margin-top: -40px;
+    }
+
+    /* Ещё обо мне, Контакты — как было */
     .about-more.section-stack,
     .contacts.section-stack {
-      padding-top: 80px !important;
-      padding-bottom: 80px !important;
+      padding: 60px 0 !important;
       background: #F7F6F4;
     }
 
     /* ============================================================
-       ОПЫТ РАБОТЫ
+       ОПЫТ РАБОТЫ — серая карточка с аккордеоном
        ============================================================ */
     #about .container {
       max-width: 1400px;
@@ -268,13 +301,13 @@
     }
 
     @media (max-width: 767px) {
-      .experience-section.section-stack,
-      .stack-section.section-stack,
+      .experience-section,
+      .stack-section,
       .case.section-stack,
       .about-more.section-stack,
       .contacts.section-stack {
-        padding-top: 60px !important;
-        padding-bottom: 60px !important;
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
       }
 
       .section-title {
@@ -317,8 +350,8 @@
 
     <nav class="navbar__pill">
       <ul class="navbar__links">
-        <li><a href="#about" class="navbar__link">Обо мне</a></li>
         <li><a href="#portfolio" class="navbar__link">Портфолио</a></li>
+        <li><a href="#about" class="navbar__link">Опыт</a></li>
         <li><a href="#contacts" class="navbar__link">Контакты</a></li>
       </ul>
       <a href="Files/resume.pdf" class="navbar__cta" target="_blank" rel="noopener">
@@ -334,72 +367,6 @@
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
       <hana-viewer url="https://prod.spline.design/gZUGNToLE1E0ENSa-8nS/scene.hanacode"></hana-viewer>
-    </section>
-
-    <!-- ===== ОПЫТ ===== -->
-    <section id="about" class="experience-section section-stack">
-      <div class="container">
-
-        <h2 class="section-title">Опыт работы</h2>
-
-        <div class="experience-list">
-
-          <!-- Плашка 1 -->
-          <div class="experience-item">
-            <button class="experience-header" onclick="toggleExperience(this)">
-              <div class="experience-header__left">
-                <h3 class="experience-header__title">Коммуникационный дизайнер Студенческий медиацентр МГТУ</h3>
-                <p class="experience-header__place">Декабрь 2025 — Февраль 2026</p>
-              </div>
-              <span class="experience-header__icon"></span>
-            </button>
-
-            <div class="experience-body">
-              <ul class="experience-body__list">
-                <li><strong>Визуальные коммуникации:</strong> ежемесячно разрабатывала 30+ макетов для социальных сетей медиацентра</li>
-                <li><strong>Результат:</strong> посты с моими макетами набирали в 1,5 раза больше реакций, чем средние по группе</li>
-                <li><strong>Скорость и дедлайны:</strong> заявки от редакции и SMM-команды приходили быстро и часто. Я выполняла их одной из первых — это позволяло команде не тормозить контент-план и выпускать материалы вовремя.</li>
-                <li><strong>Работа с командой:</strong> работала в связке с редакцией и SMM-командой — от получения ТЗ до финального макета. Согласовывала правки с главными дизайнерами и заказчиками.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== СТЕК ===== -->
-    <section id="stack" class="stack-section section-stack">
-      <div class="container">
-
-        <h2 class="section-title">Стек</h2>
-
-        <div class="stack-grid">
-
-          <div class="stack-card">
-            <h3 class="stack-card__title">Design</h3>
-            <p class="stack-card__list">Figma (Auto Layout, Variants, Components, Tokens), Adobe Illustrator, Adobe Photoshop, Framer</p>
-          </div>
-
-          <div class="stack-card">
-            <h3 class="stack-card__title">Research</h3>
-            <p class="stack-card__list">Глубинные интервью, CJM, JTBD, User Flow, usability-тестирование</p>
-          </div>
-
-          <div class="stack-card">
-            <h3 class="stack-card__title">Prototyping</h3>
-            <p class="stack-card__list">Figma Prototype, Miro</p>
-          </div>
-
-          <div class="stack-card">
-            <h3 class="stack-card__title">Web</h3>
-            <p class="stack-card__list">Webflow, Tilda (Zero Block), Framer, and other no-code platforms</p>
-          </div>
-
-        </div>
-
-      </div>
     </section>
 
     <!-- ===== ПОРТФОЛИО ===== -->
@@ -487,6 +454,67 @@
       </div>
     </section>
 
+    <!-- ===== ОПЫТ ===== -->
+    <section id="about" class="experience-section">
+      <div class="container">
+
+        <h2 class="section-title">Опыт работы</h2>
+
+        <div class="experience-list">
+
+          <!-- Плашка 1 -->
+          <div class="experience-item">
+            <button class="experience-header" onclick="toggleExperience(this)">
+              <div class="experience-header__left">
+                <h3 class="experience-header__title">Коммуникационный дизайнер Студенческий медиацентр МГТУ</h3>
+                <p class="experience-header__place">Декабрь 2025 — Февраль 2026</p>
+              </div>
+              <span class="experience-header__icon"></span>
+            </button>
+
+            <div class="experience-body">
+              <ul class="experience-body__list">
+                <li><strong>Визуальные коммуникации:</strong> ежемесячно разрабатывала 30+ макетов для социальных сетей медиацентра</li>
+                <li><strong>Результат:</strong>  1,5 больше реакций относительно среднего показателя группы</li>
+                <li><strong>Скорость и дедлайны:</strong> заявки от редакции и SMM-команды приходили быстро и часто. Я выполняла их одной из первых — это позволяло команде не тормозить контент-план и выпускать материалы вовремя.</li>
+                <li><strong>Работа с командой:</strong> работала в связке с редакцией и SMM-командой — от получения ТЗ до финального макета. Согласовывала правки с главными дизайнерами.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+        <!-- ===== СТЕК ===== -->
+    <section id="stack" class="stack-section">
+      <div class="container">
+
+        <h2 class="section-title">Стек</h2>
+
+        <div class="stack-grid">
+
+          <div class="stack-card">
+            <h3 class="stack-card__title">Product Design</h3>
+            <p class="stack-card__list">User Flows · Prototyping · UI Design · Design Systems </p>
+          </div>
+
+          <div class="stack-card">
+            <h3 class="stack-card__title">Research &amp; Validation</h3>
+            <p class="stack-card__list">User Interviews  · CJM · Usability Testing · Hypothesis Validation</p>
+          </div>
+
+          <div class="stack-card">
+            <h3 class="stack-card__title">Tools</h3>
+            <p class="stack-card__list">Figma · Miro · Framer · Adobe Illustrator · Adobe Photoshop</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     <!-- ===== ЕЩЁ ОБО МНЕ ===== -->
     <section class="about-more section-stack" id="hiking">
       <div class="container">
@@ -548,8 +576,7 @@
     <section class="contacts section-stack" id="contacts">
       <div class="container">
 
-        <h2 class="section-title">Контакты</h2>
-
+      
         <div class="contacts__content">
 
           <a href="mailto:petuhovamgn@gmail.com" class="contacts__email">
