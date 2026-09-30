@@ -193,13 +193,17 @@ a {
   50% { transform: translateY(-4px) rotate(4deg); }
 }
 
-/* Бургер */
+/* ============================================================
+   БУРГЕР-МЕНЮ (телефон + планшет)
+   ============================================================ */
+
+/* Бургер — по умолчанию скрыт */
 .navbar__burger {
   display: none;
   position: fixed;
   top: 16px;
   right: 16px;
-  z-index: 1100;
+  z-index: 1200;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -229,8 +233,9 @@ a {
 .navbar__burger.is-open span:nth-child(2) { opacity: 0; }
 .navbar__burger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* Полноэкранное меню — скрыто, пока нет .is-open */
 .navbar__mobile-menu {
-  display: none !important;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -239,7 +244,7 @@ a {
   background: rgba(247, 246, 244, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  z-index: 1050;
+  z-index: 1100;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -249,7 +254,7 @@ a {
 }
 
 .navbar__mobile-menu.is-open {
-  display: flex !important;
+  display: flex;
 }
 
 .navbar__mobile-menu a {
@@ -275,7 +280,6 @@ a {
   margin-top: 16px;
 }
 
-
 /* ============================================================
    HERO
    ============================================================ */
@@ -291,7 +295,7 @@ a {
 }
 
 /* ============================================================
-   СЕКЦИИ — единый стиль, без пустых полос
+   СЕКЦИИ
    ============================================================ */
 .section-stack {
   position: relative;
@@ -305,6 +309,7 @@ a {
 .hero + .section-stack {
   margin-top: 10px;
 }
+
 /* ============================================================
    ПОРТФОЛИО
    ============================================================ */
@@ -521,9 +526,6 @@ a {
   margin-top: -40px;
   z-index: 3;
 }
-.experience-section .section-title {
-  margin-top: 0;
-}
 
 #about .experience-list {
   display: flex;
@@ -681,6 +683,7 @@ a {
   margin-top: -40px;
   z-index: 4;
 }
+
 #stack .stack-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -713,7 +716,6 @@ a {
   color: #555;
   margin: 0;
 }
-
 
 /* ============================================================
    ЕЩЁ ОБО МНЕ — галерея
@@ -771,7 +773,6 @@ a {
   transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Айгир — сдвиг влево, чтобы человек был в кадре */
 .about-more__item:nth-child(3) img {
   object-position: 25% center;
 }
@@ -801,7 +802,7 @@ a {
 }
 
 /* ============================================================
-   СПАСИБО ЗА ВНИМАНИЕ
+   СПАСИБО
    ============================================================ */
 .thanks {
   position: relative;
@@ -853,7 +854,9 @@ a {
   box-shadow: 0 -20px 40px rgba(23, 35, 29, 0.06);
   margin-top: -40px;
   z-index: 7;
-}.contacts .container {
+}
+
+.contacts .container {
   width: 100%;
 }
 
@@ -1004,30 +1007,23 @@ a {
 /* ============================================================
    АДАПТИВ
    ============================================================ */
-@media (max-width: 1200px) {
-  .about-more__gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
+/* Планшет и меньше — показываем бургер, скрываем пилюлю и петушка */
 @media (max-width: 991px) {
   .container {
     padding: 0 32px;
   }
 
-  .navbar__logo {
-    left: 32px;
-    width: 48px;
-    height: 48px;
-    font-size: 30px;
-  }
+  .navbar__logo { display: none !important; }
+  .navbar__pill { display: none !important; }
+  .navbar__burger { display: flex; }
 
   .section-title {
     font-size: 32px;
   }
 
   .about-more__gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .about-more__item {
@@ -1045,8 +1041,13 @@ a {
   .contacts__email {
     font-size: 42px;
   }
+
+  .portfolio-grid {
+    gap: 24px;
+  }
 }
 
+/* Телефон */
 @media (max-width: 767px) {
   body {
     padding-top: 80px;
@@ -1061,17 +1062,10 @@ a {
     margin-bottom: 32px;
   }
 
-  /* Навбар */
-  .navbar__logo { display: none !important; }
-  .navbar__pill { display: none !important; }
-  .navbar__burger { display: flex; }
-
-  /* Hero */
   .hero + .section-stack {
     margin-top: 40px;
   }
 
-  /* Все секции на мобильном — с наездом и скруглением */
   .experience-section,
   .stack-section,
   .about-more,
@@ -1083,16 +1077,10 @@ a {
     padding: 40px 0;
   }
 
-  .thanks {
-    padding: 60px 0 80px;
-  }
+  .thanks { padding: 60px 0 80px; }
+  .contacts { padding: 40px 0 80px; }
 
-  .contacts {
-    padding: 40px 0 80px;
-  }
-
-
-  /* Портфолио */
+  /* Портфолио — 1 колонка */
   .portfolio-grid {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -1123,36 +1111,17 @@ a {
   .about-more__item { height: 280px; }
 
   /* Спасибо */
-  .thanks { padding: 60px 0 80px; }
   .thanks__title { font-size: 44px; }
   .thanks__emoji { font-size: 48px; }
 
   /* Контакты */
-  .contacts { padding: 0 0 80px; }
   .contacts__email { font-size: 28px; }
   .contacts__hours { margin-bottom: 40px; }
   .contacts__row { font-size: 14px; padding: 16px 0; }
 }
 
-@media (min-width: 768px) {
+/* Бургер и меню — скрыты на десктопе */
+@media (min-width: 992px) {
   .navbar__burger { display: none !important; }
   .navbar__mobile-menu { display: none !important; }
-}
-/* Бургер и меню — только на мобильном */
-@media (max-width: 991px) {
-  .navbar__burger {
-    display: flex !important;
-  }
-  .navbar__logo {
-    display: none !important;
-  }
-  .navbar__pill {
-    display: none !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .navbar__mobile-menu.is-open {
-    display: flex !important;
-  }
 }
