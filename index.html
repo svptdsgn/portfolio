@@ -58,22 +58,6 @@
         </svg>
       </a>
     </nav>
-
-    <button class="navbar__burger" id="burgerBtn" aria-label="Открыть меню">
-      <span></span><span></span><span></span>
-    </button>
-
-    <div class="navbar__mobile-menu" id="mobileMenu">
-      <a href="#portfolio" data-close>Портфолио</a>
-      <a href="#about" data-close>Опыт</a>
-      <a href="#contacts" data-close>Контакты</a>
-      <a href="Files/resume.pdf" class="navbar__mobile-cta" target="_blank" rel="noopener">
-        <span>Резюме</span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 12h14M13 6l6 6-6 6" stroke="#17231D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </div>
   </header>
 
   <main>
@@ -154,9 +138,7 @@
         </div>
       </div>
     </section>
-
-
-    <!-- ===== ОПЫТ ===== -->
+        <!-- ===== ОПЫТ ===== -->
     <section id="about" class="experience-section">
       <div class="container">
 
@@ -289,8 +271,6 @@
             petuhovamgn@gmail.com
           </a>
 
-       
-
           <div class="contacts__list">
             <a href="https://t.me/sv_pt" target="_blank" rel="noopener" class="contacts__row">
               <span class="contacts__label">Телеграм</span>
@@ -324,7 +304,8 @@
     <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">✕</button>
     <img class="lightbox__img" id="lightboxImg" src="" alt="">
   </div>
- <script>
+
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
 
       // Аккордеон опыта
@@ -332,26 +313,6 @@
         const item = button.closest('.experience-item');
         item.classList.toggle('is-open');
       };
-
-      // Бургер-меню
-      var burger = document.getElementById('burgerBtn');
-      var menu = document.getElementById('mobileMenu');
-
-      if (burger && menu) {
-        burger.addEventListener('click', function () {
-          burger.classList.toggle('is-open');
-          menu.classList.toggle('is-open');
-          document.body.style.overflow = menu.classList.contains('is-open') ? 'hidden' : '';
-        });
-
-        menu.querySelectorAll('a').forEach(function (link) {
-          link.addEventListener('click', function () {
-            burger.classList.remove('is-open');
-            menu.classList.remove('is-open');
-            document.body.style.overflow = '';
-          });
-        });
-      }
 
       // Лайтбокс для галереи
       var lightbox = document.getElementById('lightbox');
