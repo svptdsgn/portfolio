@@ -1138,3 +1138,21 @@ a {
   .navbar__burger { display: none !important; }
   .navbar__mobile-menu { display: none !important; }
 }
+/* Бургер и меню — только на мобильном */
+@media (max-width: 991px) {
+  .navbar__burger {
+    display: flex !important;
+  }
+  .navbar__logo {
+    display: none !important;
+  }
+  .navbar__pill {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar__mobile-menu.is-open {
+    display: flex !important;
+  }
+}
