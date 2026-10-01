@@ -1,19 +1,27 @@
 /* ============================================================
-   ЛАЙТБОКС — открытие фото по клику
+   ЛАЙТБОКС
    ============================================================ */
 document.addEventListener('DOMContentLoaded', function () {
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const closeBtn = document.getElementById('lightboxClose');
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+  var closeBtn = document.getElementById('lightboxClose');
 
   if (!lightbox || !lightboxImg || !closeBtn) return;
 
-  const images = document.querySelectorAll(
-    '.case-interview-photo img, .case-process__item img, .case-compare__item img, .case-screen__phone img'
+  var images = document.querySelectorAll(
+    '.case-interview-photo img, ' +
+    '.case-process__item img, ' +
+    '.case-compare__item img, ' +
+    '.case-screen__phone img, ' +
+    '.case-schedule__center img, ' +
+    '.case-confirm__phone img'
   );
 
   images.forEach(function (img) {
-    img.addEventListener('click', function () {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
       lightboxImg.src = this.src;
       lightboxImg.alt = this.alt || 'Просмотр';
       lightbox.classList.add('is-open');
@@ -21,48 +29,65 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  closeBtn.addEventListener('click', function () {
+  function close() {
     lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
     document.body.style.overflow = '';
+  }
+
+  closeBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    close();
   });
 
   lightbox.addEventListener('click', function (e) {
-    if (e.target === lightbox) {
-      lightbox.classList.remove('is-open');
-      document.body.style.overflow = '';
-    }
+    if (e.target === lightbox) close();
   });
 
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && lightbox.classList.contains('is-open')) {
-      lightbox.classList.remove('is-open');
-      document.body.style.overflow = '';
-    }
+    if (e.key === 'Escape') close();
   });
 });
 
-
 /* ============================================================
-   БУРГЕР-МЕНЮ для мобильной версии
+   БУРГЕР-МЕНЮ
    ============================================================ */
 document.addEventListener('DOMContentLoaded', function () {
-  const burger = document.getElementById('burgerBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
+  var burger = document.getElementById('burgerBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
 
   if (!burger || !mobileMenu) return;
 
-  burger.addEventListener('click', function () {
+  burger.addEventListener('click', function (e) {
+    e.stopPropagation();
     burger.classList.toggle('is-open');
     mobileMenu.classList.toggle('is-open');
     document.body.style.overflow =
       mobileMenu.classList.contains('is-open') ? 'hidden' : '';
   });
 
+  /* Закрываем меню при клике по ссылке */
   mobileMenu.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
       burger.classList.remove('is-open');
       mobileMenu.classList.remove('is-open');
       document.body.style.overflow = '';
+    });
+  });
+});
+
+/* ============================================================
+   ПЛАВНЫЙ СКРОЛЛ ПО ЯКОРЯМ
+   ============================================================ */
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var id = this.getAttribute('href');
+      if (id === '#' || id.length < 2) return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 });
