@@ -1366,3 +1366,78 @@ html {
     padding: 5px 6px 5px 8px !important;
   }
 }
+
+
+/* ============================================================
+   КРИТЕРИИ УСПЕХА
+   ============================================================ */
+.case-criteria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.case-criterion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background: var(--bg-2, #F0F0F0);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-criterion:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(23, 35, 29, 0.08);
+}
+
+.case-criterion__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.case-criterion__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.case-criterion__text {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Планшет */
+@media (max-width: 991px) {
+  .case-criteria {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Телефон */
+@media (max-width: 767px) {
+  .case-criterion {
+    padding: 20px;
+  }
+  .case-criterion__text {
+    font-size: 14px;
+  }
+  .case-criterion__num {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+}
