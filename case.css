@@ -1158,3 +1158,211 @@ html {
   /* Карточки */
   .case-card { padding: 20px; }
   .case
+     .case-card__title { font-size: 17px; }
+  .case-card__text { font-size: 14px; }
+
+  /* Гипотезы */
+  .case-hypothesis { padding: 20px; }
+  .case-hypothesis__title { font-size: 17px; }
+  .case-hypothesis__text { font-size: 14px; }
+  .case-hypothesis__num { width: 32px; height: 32px; font-size: 12px; }
+  .case-hypothesis__priority { font-size: 12px; padding: 6px 12px; }
+  .case-hypothesis__badge { font-size: 12px; padding: 6px 12px; }
+
+  /* Дискавери */
+  .case-discovery { grid-template-columns: 1fr; gap: 24px; }
+  .case-discovery__label,
+  .case-discovery__text { font-size: 15px; }
+
+  /* Фото было/стало */
+  .case-compare { flex-direction: column; align-items: center; gap: 20px; }
+  .case-compare__item img { height: 260px; }
+
+  /* Фото интервью */
+  .case-interview-photo { max-width: 100%; margin: 24px auto; }
+  .case-interview-photo--small { max-width: 100%; padding: 8px; }
+
+  /* Ценность */
+  .case-value { grid-template-columns: 1fr; }
+  .case-value__card { padding: 24px; }
+  .case-value__card:first-child {
+    border-right: none;
+    border-bottom: 1px solid rgba(23, 35, 29, 0.08);
+  }
+  .case-value__text { font-size: 15px; }
+
+  /* Заметка */
+  .case-note { padding: 20px 24px; gap: 16px; }
+  .case-note__emoji { font-size: 28px; }
+  .case-note__text { font-size: 15px; }
+
+  /* Процесс */
+  .case-process { flex-direction: column; align-items: center; }
+  .case-process__item { max-width: 100%; }
+  .case-process__item img { max-height: 400px; }
+
+  /* Главный экран */
+  .case-screen { grid-template-columns: 1fr; gap: 30px; }
+  .case-screen__side--left,
+  .case-screen__side--right { align-items: center; text-align: center; }
+  .case-screen__item { max-width: 100%; }
+  .case-screen__phone { width: 100%; max-width: 260px; }
+  .case-screen__text { font-size: 14px; }
+
+  /* Расписание */
+  .case-schedule { grid-template-columns: 1fr; gap: 24px; padding: 0 20px; margin-top: 32px; }
+  .case-schedule__col,
+  .case-schedule__col--left,
+  .case-schedule__col--right {
+    max-width: 100%;
+    justify-self: center;
+    text-align: left;
+  }
+  .case-schedule__center { grid-row: 2; width: 100%; max-width: 320px; }
+  .case-schedule__text { font-size: 14px; }
+
+  /* Подтверждение */
+  .case-confirm { grid-template-columns: 1fr; gap: 24px; padding: 0 20px; margin-top: 32px; }
+  .case-confirm__text,
+  .case-confirm__text--left,
+  .case-confirm__text--right {
+    max-width: 100%;
+    justify-self: center;
+    text-align: center;
+  }
+  .case-confirm__phone { width: 100%; max-width: 280px; order: -1; }
+
+  /* Результаты */
+  .case-results { grid-template-columns: 1fr; margin-top: 32px; }
+  .case-result { padding: 20px; }
+  .case-result__title { font-size: 17px; }
+  .case-result__text { font-size: 14px; }
+
+  /* Точки роста */
+  .case-growth { grid-template-columns: 1fr; margin-top: 32px; }
+  .case-growth__item { padding: 20px 24px; gap: 16px; }
+  .case-growth__num { width: 40px; height: 40px; font-size: 13px; }
+  .case-growth__text { font-size: 15px; }
+
+  /* Рефлексия */
+  .case-reflection { grid-template-columns: 1fr; margin-top: 32px; }
+  .case-reflection__item { padding: 20px; }
+  .case-reflection__title { font-size: 17px; }
+  .case-reflection__text { font-size: 14px; }
+
+  /* СПАСИБО */
+  .case-thanks { padding: 40px 0 20px !important; }
+  .case-thanks__title { font-size: 28px !important; line-height: 1.15 !important; }
+  .case-thanks__subtitle { font-size: 14px !important; }
+  .case-thanks__cat { max-width: 240px !important; }
+
+  /* Контакты */
+  .case-contacts { padding: 40px 0 60px; }
+  .case-contacts__title { font-size: 28px; }
+  .case-contacts__subtitle { font-size: 15px; margin-bottom: 32px; }
+  .case-contacts__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 20px;
+  }
+  .case-contacts__label { font-size: 11px; }
+  .case-contacts__value { font-size: 14px; text-align: left; word-break: break-word; }
+
+  /* Лайтбокс */
+  .lightbox__close { top: 16px; right: 16px; width: 42px; height: 42px; }
+  .lightbox__close svg { width: 18px; height: 18px; }
+}
+
+/* ============================================================
+   ХЕДЕР НА ТЕЛЕФОНЕ — компактный
+   ============================================================ */
+@media (max-width: 767px) {
+  body {
+    padding-top: 70px !important;
+    overflow-x: hidden !important;
+  }
+
+  html {
+    overflow-x: hidden !important;
+  }
+
+  .navbar-wrapper {
+    top: 8px !important;
+    padding: 0 8px !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+  }
+
+  .navbar__pill {
+    padding: 3px !important;
+    gap: 1px !important;
+    max-width: calc(100vw - 60px) !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .navbar__pill::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar__links {
+    gap: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .navbar__link {
+    padding: 6px 8px !important;
+    font-size: 11px !important;
+    white-space: nowrap !important;
+  }
+
+  .navbar__cta {
+    padding: 6px 8px 6px 10px !important;
+    font-size: 11px !important;
+    gap: 4px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .navbar__cta span {
+    display: none !important;
+  }
+
+  .navbar__arrow {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+/* ============================================================
+   ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (≤ 479px)
+   ============================================================ */
+@media (max-width: 479px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .case-hero__title { font-size: 26px; }
+  .case-heading,
+  .case-subheading { font-size: 20px; }
+  .case-section__text,
+  .case-tasks__subtitle,
+  .case-tasks__list li { font-size: 14px; }
+
+  .case-thanks__title { font-size: 24px !important; }
+  .case-thanks__cat { max-width: 200px !important; }
+
+  .case-screen__phone { max-width: 220px; }
+  .case-schedule__center,
+  .case-confirm__phone { max-width: 240px; }
+
+  .navbar__link {
+    padding: 5px 6px !important;
+    font-size: 10px !important;
+  }
+
+  .navbar__cta {
+    padding: 5px 6px 5px 8px !important;
+  }
+}
