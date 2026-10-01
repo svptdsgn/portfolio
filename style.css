@@ -156,7 +156,6 @@ a {
   transform: translateX(3px);
 }
 
-/* Петушок */
 .navbar__logo {
   position: fixed;
   top: 20px;
@@ -440,27 +439,27 @@ a {
   z-index: 3;
 }
 
+/* Список плашек — жёсткий flex с gap */
 #about .experience-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
   width: 100%;
 }
 
+/* Плашка */
 #about .experience-item {
-  background: #f0f0f0;
-  border-radius: 24px;
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: 16px;
+  display: block !important;
+  background: #f0f0f0 !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  margin: 0 !important;
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
-#about .experience-item:last-child {
-  margin-bottom: 0;
-}
 #about .experience-item.is-open {
-  background: #fff;
+  background: #fff !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
@@ -922,10 +921,8 @@ a {
 }
 
 /* ============================================================
-   АДАПТИВ
+   АДАПТИВ — ПЛАНШЕТ
    ============================================================ */
-
-/* Планшет */
 @media (max-width: 991px) {
   .container {
     padding: 0 32px;
@@ -999,7 +996,9 @@ a {
   }
 }
 
-/* Телефон */
+/* ============================================================
+   АДАПТИВ — ТЕЛЕФОН
+   ============================================================ */
 @media (max-width: 767px) {
   body {
     padding-top: 80px;
@@ -1079,7 +1078,10 @@ a {
   .portfolio-card__body { padding: 24px; }
   .portfolio-card__preview { gap: 12px; padding: 24px 20px 40px; }
 
-  /* Опыт */
+  /* Опыт — отступы сохраняются */
+  #about .experience-list {
+    gap: 16px !important;
+  }
   #about .experience-header { padding: 20px; }
   #about .experience-body { padding: 0 20px; }
   #about .experience-item.is-open .experience-body { padding: 0 20px 20px 20px; }
@@ -1110,7 +1112,9 @@ a {
   .contacts__row { font-size: 14px; padding: 16px 0; }
 }
 
-/* Совсем маленькие экраны */
+/* ============================================================
+   АДАПТИВ — МАЛЕНЬКИЕ ЭКРАНЫ
+   ============================================================ */
 @media (max-width: 479px) {
   .navbar__link {
     padding: 6px 7px;
@@ -1120,4 +1124,4 @@ a {
   .navbar__cta {
     padding: 6px 7px 6px 10px;
   }
-
+}
