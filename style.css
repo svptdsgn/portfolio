@@ -194,93 +194,6 @@ a {
 }
 
 /* ============================================================
-   БУРГЕР-МЕНЮ (телефон + планшет)
-   ============================================================ */
-
-/* Бургер — по умолчанию скрыт */
-.navbar__burger {
-  display: none;
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 1200;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 8px 32px rgba(23, 35, 29, 0.08);
-  cursor: pointer;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding: 0;
-}
-
-.navbar__burger span {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: var(--text);
-  border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.navbar__burger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.navbar__burger.is-open span:nth-child(2) { opacity: 0; }
-.navbar__burger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-/* Полноэкранное меню — скрыто, пока нет .is-open */
-.navbar__mobile-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(247, 246, 244, 0.98);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  z-index: 1100;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding: 40px 20px;
-  box-sizing: border-box;
-}
-
-.navbar__mobile-menu.is-open {
-  display: flex;
-}
-
-.navbar__mobile-menu a {
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--text);
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: var(--r-pill);
-}
-
-.navbar__mobile-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 28px;
-  background: var(--lime);
-  color: var(--text);
-  border-radius: var(--r-pill);
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  margin-top: 16px;
-}
-
-/* ============================================================
    HERO
    ============================================================ */
 .hero {
@@ -1008,15 +921,50 @@ a {
    АДАПТИВ
    ============================================================ */
 
-/* Планшет и меньше — показываем бургер, скрываем пилюлю и петушка */
+/* Планшет */
 @media (max-width: 991px) {
   .container {
     padding: 0 32px;
   }
 
-  .navbar__logo { display: none !important; }
-  .navbar__pill { display: none !important; }
-  .navbar__burger { display: flex; }
+  .navbar-wrapper {
+    top: 12px;
+    padding: 0 12px;
+  }
+
+  .navbar__pill {
+    padding: 4px;
+    gap: 2px;
+    max-width: calc(100vw - 90px);
+  }
+
+  .navbar__links {
+    gap: 0;
+  }
+
+  .navbar__link {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .navbar__cta {
+    padding: 8px 12px 8px 16px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .navbar__arrow {
+    width: 14px;
+    height: 14px;
+  }
+
+  .navbar__logo {
+    top: 12px;
+    left: 12px;
+    width: 44px;
+    height: 44px;
+    font-size: 26px;
+  }
 
   .section-title {
     font-size: 32px;
@@ -1055,6 +1003,44 @@ a {
 
   .container {
     padding: 0 20px;
+  }
+
+  .navbar-wrapper {
+    top: 10px;
+    padding: 0 8px;
+  }
+
+  .navbar__pill {
+    padding: 3px;
+    max-width: calc(100vw - 70px);
+  }
+
+  .navbar__link {
+    padding: 7px 9px;
+    font-size: 12px;
+  }
+
+  .navbar__cta {
+    padding: 7px 9px 7px 12px;
+    font-size: 12px;
+    gap: 4px;
+  }
+
+  .navbar__cta span {
+    display: none;
+  }
+
+  .navbar__arrow {
+    width: 12px;
+    height: 12px;
+  }
+
+  .navbar__logo {
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
   }
 
   .section-title {
@@ -1120,8 +1106,18 @@ a {
   .contacts__row { font-size: 14px; padding: 16px 0; }
 }
 
-/* Бургер и меню — скрыты на десктопе */
-@media (min-width: 992px) {
-  .navbar__burger { display: none !important; }
-  .navbar__mobile-menu { display: none !important; }
+/* Совсем маленькие экраны */
+@media (max-width: 479px) {
+  .navbar__link {
+    padding: 6px 7px;
+    font-size: 11px;
+  }
+
+  .navbar__cta {
+    padding: 6px 7px 6px 10px;
+  }
+
+  .navbar__cta {
+    display: none;
+  }
 }
