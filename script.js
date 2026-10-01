@@ -16,26 +16,26 @@ document.addEventListener('DOMContentLoaded', function () {
     img.addEventListener('click', function () {
       lightboxImg.src = this.src;
       lightboxImg.alt = this.alt || 'Просмотр';
-      lightbox.classList.add('active');
+      lightbox.classList.add('is-open');
       document.body.style.overflow = 'hidden';
     });
   });
 
   closeBtn.addEventListener('click', function () {
-    lightbox.classList.remove('active');
+    lightbox.classList.remove('is-open');
     document.body.style.overflow = '';
   });
 
   lightbox.addEventListener('click', function (e) {
     if (e.target === lightbox) {
-      lightbox.classList.remove('active');
+      lightbox.classList.remove('is-open');
       document.body.style.overflow = '';
     }
   });
 
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-      lightbox.classList.remove('active');
+    if (e.key === 'Escape' && lightbox.classList.contains('is-open')) {
+      lightbox.classList.remove('is-open');
       document.body.style.overflow = '';
     }
   });
