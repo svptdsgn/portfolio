@@ -272,6 +272,9 @@ html {
   font-size: 17px;
   line-height: 1.6;
   color: var(--text);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 .case-tasks__list li::before {
   content: "";
@@ -332,7 +335,6 @@ html {
 }
 .case-interview-photo img:hover { transform: scale(1.01); }
 
-/* Юзер флоу — уменьшенное */
 .case-interview-photo--small {
   max-width: 500px;
   padding: 16px;
@@ -676,157 +678,12 @@ html {
 }
 
 /* ============================================================
-   МОБИЛЬНОЕ БУРГЕР-МЕНЮ
-   ============================================================ */
-.navbar__burger {
-  display: none;
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 1100;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 8px 32px rgba(23, 35, 29, 0.08);
-  cursor: pointer;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding: 0;
-}
-.navbar__burger span {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: #17231D;
-  border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.navbar__burger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.navbar__burger.is-open span:nth-child(2) { opacity: 0; }
-.navbar__burger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-.navbar__mobile-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  z-index: 1050;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding: 40px 20px;
-  opacity: 0;
-}
-.navbar__mobile-menu.is-open {
-  display: flex;
-  opacity: 1;
-}
-.navbar__mobile-menu a {
-  font-size: 22px;
-  font-weight: 500;
-  color: #17231D;
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 100px;
-}
-.navbar__mobile-menu .navbar__cta {
-  background: #C4F82A;
-  padding: 14px 28px;
-  font-size: 18px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 16px;
-}
-
-/* ============================================================
-   АДАПТИВ
-   ============================================================ */
-@media (max-width: 991px) {
-  .navbar__logo { left: 32px; width: 48px; height: 48px; font-size: 30px; }
-  .case-hero__title { font-size: 48px; }
-  .case-intro { grid-template-columns: 1fr; gap: 40px; }
-  .case-discovery { grid-template-columns: 1fr; gap: 32px; }
-  .case-grid, .case-grid--3, .case-hypotheses { grid-template-columns: 1fr; }
-  .case-screen { grid-template-columns: 1fr; gap: 40px; }
-  .case-screen__side--left,
-  .case-screen__side--right { align-items: center; text-align: center; }
-  .case-screen__item { align-items: center; max-width: 500px; }
-  .case-screen__phone { grid-row: 2; width: 100%; max-width: 260px; }
-  .case-screen__side--right { grid-row: 3; }
-}
-
-@media (max-width: 767px) {
-  .navbar__logo { display: none !important; }
-  .navbar__pill { display: none !important; }
-  .navbar__burger { display: flex; }
-
-  .case-hero { padding: 20px 0 40px; }
-  .case-hero__title { font-size: 32px; }
-  .case-hero__subtitle { font-size: 16px; }
-
-  .case-section { padding: 40px 0 60px; margin-top: -20px; }
-  .case-heading, .case-subheading { font-size: 22px; margin-bottom: 16px; }
-  .case-section__text, .case-tasks__subtitle { font-size: 15px; margin-bottom: 24px; }
-  .case-tasks__list li { font-size: 15px; }
-
-  .case-card { padding: 24px; }
-  .case-card__title { font-size: 17px; }
-  .case-card__text { font-size: 14px; }
-
-  .case-note { padding: 20px 24px; gap: 16px; }
-  .case-note__emoji { font-size: 28px; }
-  .case-note__text { font-size: 15px; }
-
-  .case-hypothesis { padding: 24px; }
-  .case-hypothesis__title { font-size: 17px; }
-  .case-hypothesis__text { font-size: 14px; }
-  .case-hypothesis__num { width: 32px; height: 32px; font-size: 12px; }
-
-  .case-discovery__label, .case-discovery__text { font-size: 15px; }
-
-  .case-compare { flex-direction: column; align-items: center; }
-  .case-compare__item img { height: 300px; }
-
-  .case-interview-photo { max-width: 100%; margin: 24px auto; }
-  .case-interview-photo--small { max-width: 100%; }
-
-  .case-value { grid-template-columns: 1fr; }
-  .case-value__card { padding: 28px 24px; }
-  .case-value__card:first-child {
-    border-right: none;
-    border-bottom: 1px solid rgba(23, 35, 29, 0.08);
-  }
-  .case-value__text { font-size: 15px; }
-
-  .case-process { flex-direction: column; align-items: center; }
-  .case-process__item { max-width: 100%; }
-  .case-process__item img { max-height: 480px; }
-
-  .lightbox__close { top: 16px; right: 16px; width: 42px; height: 42px; }
-  .lightbox__close svg { width: 18px; height: 18px; }
-}
-
-
-/* ============================================================
    РАСПИСАНИЕ ЗАНЯТИЙ
    ============================================================ */
 .case-schedule {
   display: grid;
-  grid-template-columns: 1fr 600px 1fr;   /* ← фото стало 600px */
-  gap: 40px;                              /* ← отступ уменьшили */
+  grid-template-columns: 1fr 600px 1fr;
+  gap: 40px;
   align-items: start;
   width: 100%;
   max-width: 1400px;
@@ -839,7 +696,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 260px;                        /* ← тексты стали уже */
+  max-width: 260px;
 }
 
 .case-schedule__col--left {
@@ -854,7 +711,7 @@ html {
 
 .case-schedule__center {
   justify-self: center;
-  width: 600px;                            /* ← фото 600px */
+  width: 600px;
 }
 
 .case-schedule__center img {
@@ -870,28 +727,6 @@ html {
   color: var(--text);
   margin: 0;
 }
-
-/* Адаптив */
-@media (max-width: 991px) {
-  .case-schedule {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 0 20px;
-  }
-  .case-schedule__col,
-  .case-schedule__col--left,
-  .case-schedule__col--right {
-    max-width: 100%;
-    justify-self: center;
-    text-align: left;
-  }
-  .case-schedule__center {
-    grid-row: 2;
-    width: 100%;
-    max-width: 340px;
-  }
-}
-
 
 /* ============================================================
    ПОДТВЕРЖДЕНИЕ ДЕЙСТВИЙ — 3 колонки: текст / фото / текст
@@ -909,7 +744,6 @@ html {
   box-sizing: border-box;
 }
 
-/* Тексты */
 .case-confirm__text {
   display: flex;
   flex-direction: column;
@@ -934,7 +768,6 @@ html {
   margin: 0;
 }
 
-/* Фото */
 .case-confirm__phone {
   width: 500px;
   justify-self: center;
@@ -946,31 +779,6 @@ html {
   display: block;
   cursor: zoom-in;
 }
-
-/* Адаптив */
-@media (max-width: 991px) {
-  .case-confirm {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 0 20px;
-  }
-  .case-confirm__text,
-  .case-confirm__text--left,
-  .case-confirm__text--right {
-    max-width: 500px;
-    justify-self: center;
-    text-align: center;
-  }
-  .case-confirm__phone {
-    width: 100%;
-    max-width: 340px;
-    justify-self: center;
-    order: -1;              /* фото сверху */
-  }
-}
-
-
-
 
 /* ============================================================
    РЕЗУЛЬТАТ — 3 карточки
@@ -1013,26 +821,6 @@ html {
   opacity: 0.7;
   margin: 0;
 }
-
-/* Адаптив */
-@media (max-width: 991px) {
-  .case-results {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 767px) {
-  .case-result {
-    padding: 24px;
-  }
-  .case-result__title {
-    font-size: 17px;
-  }
-  .case-result__text {
-    font-size: 14px;
-  }
-}
-
 
 /* ============================================================
    ТОЧКИ РОСТА — 4 карточки
@@ -1083,30 +871,6 @@ html {
   margin: 0;
 }
 
-/* Адаптив */
-@media (max-width: 991px) {
-  .case-growth {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 767px) {
-  .case-growth__item {
-    padding: 24px;
-    gap: 18px;
-  }
-  .case-growth__num {
-    width: 40px;
-    height: 40px;
-    font-size: 13px;
-  }
-  .case-growth__text {
-    font-size: 15px;
-  }
-}
-
-
-
 /* ============================================================
    РЕФЛЕКСИЯ — 4 карточки 2×2
    ============================================================ */
@@ -1149,34 +913,12 @@ html {
   margin: 0;
 }
 
-/* Адаптив */
-@media (max-width: 991px) {
-  .case-reflection {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 767px) {
-  .case-reflection__item {
-    padding: 24px;
-  }
-  .case-reflection__title {
-    font-size: 17px;
-  }
-  .case-reflection__text {
-    font-size: 14px;
-  }
-}
-
-
-
-
 /* ============================================================
    СПАСИБО ЗА ВНИМАНИЕ
    ============================================================ */
 .case-thanks {
   text-align: center;
-  padding: 100px 0 80px !important;
+  padding: 60px 0 40px;
 }
 
 .case-thanks__inner {
@@ -1187,8 +929,7 @@ html {
 }
 
 .case-thanks__title {
-  font-size: clamp(36px, 5vw, 64px);
-  font-weight: 600;
+  font-size: clamp(28px, 5vw, 64px);
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--text);
@@ -1224,10 +965,10 @@ html {
 }
 
 /* ============================================================
-   КОНТАКТЫ
+   КОНТАКТЫ (кейса)
    ============================================================ */
 .case-contacts {
-  padding: 100px 0 120px;
+  padding: 60px 0 80px;
   background: var(--bg);
   border-top: 1px solid rgba(23, 35, 29, 0.08);
   position: relative;
@@ -1235,7 +976,7 @@ html {
 }
 
 .case-contacts__title {
-  font-size: clamp(32px, 4vw, 56px);
+  font-size: clamp(28px, 4vw, 56px);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -1249,7 +990,7 @@ html {
   line-height: 1.5;
   color: var(--text);
   opacity: 0.5;
-  margin: 0 0 60px 0;
+  margin: 0 0 40px 0;
   max-width: 600px;
 }
 
@@ -1295,99 +1036,125 @@ html {
   text-align: right;
 }
 
-/* Адаптив */
-@media (max-width: 767px) {
-  .case-thanks {
-    padding: 60px 0 40px !important;
+/* ============================================================
+   АДАПТИВ — ПЛАНШЕТ (≤ 991px)
+   ============================================================ */
+@media (max-width: 991px) {
+  .navbar__logo { left: 32px; width: 48px; height: 48px; font-size: 30px; }
+  .case-hero__title { font-size: 48px; }
+  .case-intro { grid-template-columns: 1fr; gap: 40px; }
+  .case-discovery { grid-template-columns: 1fr; gap: 32px; }
+  .case-grid, .case-grid--3, .case-hypotheses { grid-template-columns: 1fr; }
+  .case-screen { grid-template-columns: 1fr; gap: 40px; }
+  .case-screen__side--left,
+  .case-screen__side--right { align-items: center; text-align: center; }
+  .case-screen__item { align-items: center; max-width: 500px; }
+  .case-screen__phone { grid-row: 2; width: 100%; max-width: 260px; }
+  .case-screen__side--right { grid-row: 3; }
+
+  .case-schedule {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
   }
-  .case-thanks__cat {
-    max-width: 280px;
+  .case-schedule__col,
+  .case-schedule__col--left,
+  .case-schedule__col--right {
+    max-width: 100%;
+    justify-self: center;
+    text-align: left;
+  }
+  .case-schedule__center {
+    grid-row: 2;
+    width: 100%;
+    max-width: 340px;
   }
 
-  .case-contacts {
-    padding: 60px 0 80px;
+  .case-confirm {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
   }
-  .case-contacts__item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    padding: 20px 24px;
+  .case-confirm__text,
+  .case-confirm__text--left,
+  .case-confirm__text--right {
+    max-width: 500px;
+    justify-self: center;
+    text-align: center;
   }
-  .case-contacts__value {
-    text-align: left;
-    font-size: 15px;
+  .case-confirm__phone {
+    width: 100%;
+    max-width: 340px;
+    justify-self: center;
+    order: -1;
   }
+
+  .case-results { grid-template-columns: 1fr; }
+  .case-growth { grid-template-columns: 1fr; }
+  .case-reflection { grid-template-columns: 1fr; }
 }
 
 /* ============================================================
-   СПАСИБО ЗА ВНИМАНИЕ — фото котика
+   АДАПТИВ — ТЕЛЕФОН (≤ 767px)
    ============================================================ */
-.thanks__cat {
-  width: 100%;
-  max-width: 340px;
-  margin: 0 auto;
-}
-
-.thanks__cat img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 20px;
-  cursor: zoom-in;
-  transition: transform 0.3s ease;
-}
-
-.thanks__cat img:hover {
-  transform: scale(1.02);
-}
-
 @media (max-width: 767px) {
-  .thanks__cat {
-    max-width: 240px;
+  .navbar__logo { display: none !important; }
+
+  /* Общий фикс */
+  .case-page,
+  .case-main {
+    overflow-x: hidden;
+    width: 100%;
   }
-}
 
+  .case-section {
+    padding: 30px 0 40px;
+    margin-top: -16px;
+    border-radius: 24px 24px 0 0;
+    overflow: hidden;
+  }
 
+  .container {
+    padding: 0 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
+  /* Hero */
+  .case-hero { padding: 20px 0 30px; }
+  .case-hero__title { font-size: 32px; }
+  .case-hero__subtitle { font-size: 16px; margin-bottom: 40px; }
 
-    <!-- ===== КРИТЕРИИ ===== -->
-    <section class="case-section">
-      <div class="container">
-        <h2 class="case-heading">Критерии успеха</h2>
-        <p class="case-tasks__subtitle">
-          Так как&nbsp;проект учебный, я&nbsp;сформулировала гипотетические критерии успеха:
-        </p>
+  /* Заголовки */
+  .case-heading,
+  .case-subheading {
+    font-size: 22px;
+    margin-bottom: 16px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 
-        <div class="case-criteria">
+  /* Текст */
+  .case-section__text,
+  .case-tasks__subtitle {
+    font-size: 15px;
+    margin-bottom: 24px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 
-          <div class="case-criterion">
-            <span class="case-criterion__num">01</span>
-            <div class="case-criterion__body">
-              <p class="case-criterion__text">
-                Запись понятна пользователю и&nbsp;занимает не&nbsp;более 30&nbsp;секунд
-              </p>
-            </div>
-          </div>
+  /* Задачи */
+  .case-tasks__list li {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+  .case-tasks__list li::before {
+    left: 4px;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+  }
 
-          <div class="case-criterion">
-            <span class="case-criterion__num">02</span>
-            <div class="case-criterion__body">
-              <p class="case-criterion__text">
-                Пользователь понимает, что&nbsp;он&nbsp;записался или&nbsp;отменил тренировку
-              </p>
-            </div>
-          </div>
-
-          <div class="case-criterion">
-            <span class="case-criterion__num">03</span>
-            <div class="case-criterion__body">
-              <p class="case-criterion__text">
-                Пользователь успешно завершает сценарий с&nbsp;первой попытки,
-                без&nbsp;ошибок и&nbsp;возвратов назад
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
+  /* Карточки */
+  .case-card { padding: 20px; }
+  .case
