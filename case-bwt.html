@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BWT — кейс | Светлана Петухова</title>
+  <title>BWT — Кейс | Петухова Светлана</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="case.css">
 </head>
-<body>
+<body class="case-page">
 
   <!-- ===== НАВБАР ===== -->
   <header class="navbar-wrapper">
@@ -22,7 +22,7 @@
       <ul class="navbar__links">
         <li><a href="index.html" class="navbar__link">На главную</a></li>
         <li><a href="#problems" class="navbar__link">Проблемы</a></li>
-        <li><a href="#solution" class="navbar__link">Решение</a></li>
+        <li><a href="#main-screen" class="navbar__link">Решение</a></li>
         <li><a href="#contacts" class="navbar__link">Контакты</a></li>
       </ul>
       <a href="Files/resume.pdf" class="navbar__cta" target="_blank" rel="noopener">
@@ -32,25 +32,40 @@
         </svg>
       </a>
     </nav>
+
+    <button class="navbar__burger" id="burgerBtn" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="navbar__mobile-menu" id="mobileMenu">
+      <a href="index.html">На главную</a>
+      <a href="#problems">Проблемы</a>
+      <a href="#main-screen">Решение</a>
+      <a href="#contacts">Контакты</a>
+      <a href="Files/resume.pdf" class="navbar__cta" target="_blank" rel="noopener">
+        <span>Резюме</span>
+        <svg class="navbar__arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
   </header>
 
-  <main class="case-page">
+  <main class="case-main">
 
-    <!-- ===== HERO КЕЙСА ===== -->
+    <!-- ===== HERO ===== -->
     <section class="case-hero">
       <div class="container">
-        <p class="case-hero__label">Кейс</p>
-        <h1 class="case-hero__title">Мобильное приложение BWT — сервис для записи в плавательный бассейн</h1>
-        <p class="case-hero__subtitle">
-          Кейс о том, как сделать запись на тренировки в бассейн BWT простыми и прозрачными,
-          а загруженность бассейна информативной.
-        </p>
-      </div>
-    </section>
 
-    <!-- ===== ФОТО БЫЛО / СТАЛО ===== -->
-    <section class="case-section" id="compare">
-      <div class="container">
+        <h1 class="case-hero__title">
+          Мобильное приложение BWT — <br>
+          сервис для записи в&nbsp;плавательный бассейн
+        </h1>
+        <p class="case-hero__subtitle">
+          Кейс о том, как сделать запись на&nbsp;тренировки в&nbsp;бассейн BWT простыми и&nbsp;прозрачными,<br>
+          а&nbsp;загруженность бассейна&nbsp;информативной.
+        </p>
+
         <div class="case-compare">
           <div class="case-compare__item">
             <span class="case-compare__badge">Было</span>
@@ -63,37 +78,34 @@
         </div>
       </div>
     </section>
-        <!-- ===== КОНТЕКСТ ===== -->
-    <section class="case-section" id="context">
+
+    <!-- ===== КОНТЕКСТ ===== -->
+    <section class="case-section">
       <div class="container">
-        <h2 class="case-heading">Контекст</h2>
         <div class="case-intro">
           <div class="case-intro__left">
+            <h2 class="case-heading">Контекст</h2>
             <p class="case-section__text">
-              BWT — фитнес-клуб с бассейном. В приложении уже была возможность записи
-              на тренировки, но пользователи ей почти не пользовались: путь к записи
-              был запутанным, а после нажатия «Записаться» не приходило подтверждения.
-              Цель — сделать запись быстрой и понятной, чтобы пользователи записывались
-              сами, без звонков администратору.
+              BWT — городской бассейн, где можно заниматься с&nbsp;тренером или самостоятельно.
+              Приложение выполняло две основные функции: показывало загруженность бассейна
+              и&nbsp;позволяло бронировать тренировки. Однако эти функции были реализованы
+              с&nbsp;рядом проблем, которые я выявила в&nbsp;ходе непосредственного использования.
             </p>
           </div>
           <div class="case-intro__right">
             <div class="case-intro__block">
               <p class="case-intro__eyebrow">Роль</p>
-              <div class="case-intro__tags">
-                <span class="case-chip">Product Designer</span>
-              </div>
-            </div>
-            <div class="case-intro__block">
-              <p class="case-intro__eyebrow">Тип проекта</p>
-              <div class="case-intro__tags">
-                <span class="case-chip">Учебный</span>
-              </div>
+              <div class="case-intro__tags"><span class="case-chip">Продуктовый дизайнер</span></div>
             </div>
             <div class="case-intro__block">
               <p class="case-intro__eyebrow">Год</p>
+              <div class="case-intro__tags"><span class="case-chip">2026</span></div>
+            </div>
+            <div class="case-intro__block">
+              <p class="case-intro__eyebrow">Тип</p>
               <div class="case-intro__tags">
-                <span class="case-chip">2026</span>
+                <span class="case-chip">B2C</span>
+                <span class="case-chip">Мобильное приложение</span>
               </div>
             </div>
             <div class="case-intro__block">
@@ -101,8 +113,83 @@
               <div class="case-intro__tags">
                 <span class="case-chip">Figma</span>
                 <span class="case-chip">Miro</span>
+                <span class="case-chip">Яндекс Телемост</span>
+                <span class="case-chip">Блокнот</span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TL;DR ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Коротко о проекте</h2>
+
+        <div class="tldr-grid">
+
+          <div class="tldr-card">
+            <span class="tldr-card__num">01</span>
+            <h3 class="tldr-card__title">Проблема</h3>
+            <p class="tldr-card__text">
+              Приложение работало скорее как витрина. Целевые действия совершались
+              через звонок или личное обращение в зал — потому что интерфейс был
+              неочевидным, а путь к записи — запутанным. Это создавало дополнительную
+              нагрузку на ресепшн.
+            </p>
+          </div>
+
+          <div class="tldr-card">
+            <span class="tldr-card__num">02</span>
+            <h3 class="tldr-card__title">Что сделала</h3>
+            <p class="tldr-card__text">
+              4 интервью → анализ сценариев → прототип → 4 usability-теста → итерация.
+            </p>
+          </div>
+
+          <div class="tldr-card">
+            <span class="tldr-card__num">03</span>
+            <h3 class="tldr-card__title">Результат</h3>
+            <p class="tldr-card__text">
+              4/4 пользователей завершили основной сценарий, в том числе благодаря
+              добавлению функций подтверждения действий. Среднее время записи — 30 секунд.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ДИСКАВЕРИ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Дискавери</h2>
+        <div class="case-discovery">
+          <div class="case-discovery__col">
+            <span class="case-discovery__label">Погружение в&nbsp;задачу</span>
+            <p class="case-discovery__text">
+              Изучила текущий флоу и&nbsp;провела устный опрос среди друзей-пользователей
+              об&nbsp;их&nbsp;опыте использования приложения. Обратная связь подтвердила
+              наличие узких мест, требующих внимания, всё это позволило мне определить
+              направление для&nbsp;дальнейшей работы
+            </p>
+          </div>
+          <div class="case-discovery__col">
+            <span class="case-discovery__label">Исследование</span>
+            <p class="case-discovery__text">
+              На&nbsp;основе анализа конкурентных решений я выдвинула гипотезы, которые
+              проверила в&nbsp;ходе глубинных интервью. По&nbsp;итогам глубинных интервью
+              выделила пользовательские боли, переведя их&nbsp;в&nbsp;формат JTBD
+            </p>
+          </div>
+          <div class="case-discovery__col">
+            <span class="case-discovery__label">Проектирование</span>
+            <p class="case-discovery__text">
+              На&nbsp;основе проведённых исследований я определила необходимый функционал
+              продукта, спроектировала путь пользователя, выбрала дизайн-решение
+              и&nbsp;отрисовала основные макеты
+            </p>
           </div>
         </div>
       </div>
@@ -112,19 +199,16 @@
     <section class="case-section" id="problems">
       <div class="container">
         <h2 class="case-heading">Проблемы</h2>
-        <p class="case-section__text">
-          В&nbsp;приложении есть запись на&nbsp;тренировку, но&nbsp;пользователю непонятно,
-          как ей&nbsp;воспользоваться. В&nbsp;ходе анализа я&nbsp;выделила три ключевые
-          проблемы сценария.
-        </p>
+        <div class="case-grid case-grid--3">
 
-        <div class="case-grid--3">
           <div class="case-card">
             <span class="case-card__num">01</span>
-            <h3 class="case-card__title">Сложный путь к&nbsp;записи</h3>
+            <h3 class="case-card__title">Пользователи не&nbsp;могут быстро записаться</h3>
             <p class="case-card__text">
-              Единственная точка входа — нажатие на&nbsp;карточку тренировки.
-              Это требует лишних действий и&nbsp;делает запись неочевидной.
+              Возможность забронировать тренировку существует, но точка входа в этот
+              сценарий неочевидна. Пользователи видят карточки занятий, но интерфейс
+              не подсказывает, как перейти к финальному шагу. Из-за этого путь к записи
+              требует лишних действий и догадок.
             </p>
           </div>
 
@@ -132,133 +216,345 @@
             <span class="case-card__num">02</span>
             <h3 class="case-card__title">Нет подтверждения действий</h3>
             <p class="case-card__text">
-              После нажатия «Записаться» или&nbsp;«Отменить» пользователь не&nbsp;получает
-              обратной связи — непонятно, сработало действие или нет.
+              После нажатия «Записаться» пользователь не&nbsp;получает подтверждения
+              действия, то&nbsp;же самое и&nbsp;с&nbsp;кнопкой «Отменить». В процессе
+              использования приложения пользователь может нажать кнопку случайно
+              и&nbsp;отменить тренировку. Все это вызывает неопределенность у пользователя.
             </p>
           </div>
 
           <div class="case-card">
             <span class="case-card__num">03</span>
-            <h3 class="case-card__title">Непонятная навигация</h3>
+            <h3 class="case-card__title">Непонятная навигация в&nbsp;таб-баре</h3>
             <p class="case-card__text">
-              Таб-бар перегружен второстепенными разделами. Ключевые сценарии
-              (расписание, мои записи, профиль) теряются среди них.
+              Таб-бар перегружен элементами, которые не&nbsp;являются ключевыми для
+              пользователя. Вместо быстрого доступа к основным сценариям (расписание,
+              управление бронированиями, профиль) таб-бар занимают второстепенные
+              или информационные разделы, которые не помогают решить задачу.
             </p>
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- ===== ЗАДАЧИ ===== -->
-    <section class="case-section" id="tasks">
+    <section class="case-section">
       <div class="container">
-        <h2 class="case-heading">Задачи</h2>
+        <h2 class="case-heading">Задачи в&nbsp;рамках проекта</h2>
         <p class="case-tasks__subtitle">
-          На&nbsp;основе выявленных проблем я&nbsp;сформулировала задачи, которые
-          определили направление дальнейшей работы.
+          На&nbsp;основе выявленных проблем я&nbsp;сформулировала задачи,
+          которые определили направление дальнейшей работы
         </p>
 
-        <ul class="case-tasks__list">
-          <li>Сократить время записи на&nbsp;тренировку до&nbsp;30&nbsp;секунд.</li>
-          <li>Добавить подтверждение действий при&nbsp;записи и&nbsp;отмене.</li>
-          <li>Упростить навигацию: оставить в&nbsp;таб-баре только ключевые сценарии.</li>
-        </ul>
+        <div class="case-tasks">
+
+          <div class="case-task">
+            <span class="case-task__icon">⏱</span>
+            <p class="case-task__text">
+              Сократить время записи на&nbsp;тренировку до&nbsp;30&nbsp;секунд
+            </p>
+          </div>
+
+          <div class="case-task">
+            <span class="case-task__icon">✓</span>
+            <p class="case-task__text">
+              Добавить подтверждение действий при&nbsp;записи и&nbsp;отмене
+            </p>
+          </div>
+
+          <div class="case-task">
+            <span class="case-task__icon">↗</span>
+            <p class="case-task__text">
+              Улучшить пользовательский путь при&nbsp;использовании приложения
+            </p>
+          </div>
+
+        </div>
       </div>
     </section>
 
     <!-- ===== КРИТЕРИИ УСПЕХА ===== -->
-    <section class="case-section" id="criteria">
+    <section class="case-section">
       <div class="container">
         <h2 class="case-heading">Критерии успеха</h2>
-        <p class="case-tasks__subtitle">
-          Так как&nbsp;проект учебный, я&nbsp;сформулировала гипотетические критерии успеха:
-        </p>
 
         <div class="case-criteria">
 
           <div class="case-criterion">
-            <span class="case-criterion__num">01</span>
-            <div class="case-criterion__body">
-              <p class="case-criterion__text">
-                Запись понятна пользователю и&nbsp;занимает не&nbsp;более 30&nbsp;секунд
-              </p>
-            </div>
+            <span class="case-criterion__num">✓</span>
+            <p class="case-criterion__text">
+              Запись понятна пользователю и&nbsp;занимает не&nbsp;более 30&nbsp;секунд
+            </p>
           </div>
 
           <div class="case-criterion">
-            <span class="case-criterion__num">02</span>
-            <div class="case-criterion__body">
-              <p class="case-criterion__text">
-                Пользователь понимает, что&nbsp;он&nbsp;записался или&nbsp;отменил тренировку
-              </p>
-            </div>
+            <span class="case-criterion__num">✓</span>
+            <p class="case-criterion__text">
+              Пользователь понимает, что&nbsp;он&nbsp;записался или&nbsp;отменил тренировку
+            </p>
           </div>
 
           <div class="case-criterion">
-            <span class="case-criterion__num">03</span>
-            <div class="case-criterion__body">
-              <p class="case-criterion__text">
-                Пользователь успешно завершает сценарий с&nbsp;первой попытки,
-                без&nbsp;ошибок и&nbsp;возвратов назад
-              </p>
-            </div>
+            <span class="case-criterion__num">✓</span>
+            <p class="case-criterion__text">
+              Пользователь успешно завершает сценарий с&nbsp;первой попытки,
+              без&nbsp;ошибок и&nbsp;возвратов назад
+            </p>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+        <!-- ===== ЦЕННОСТЬ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Ценность приложения</h2>
+        <p class="case-section__text">
+          Приложение BWT — это мост между бизнесом и&nbsp;клиентом: бизнес получает
+          заполненные группы и&nbsp;разгруженный ресепшн, клиент получает контроль
+          над&nbsp;своим расписанием без&nbsp;звонков и&nbsp;ожидания.
+        </p>
+        <div class="case-value">
+          <div class="case-value__card">
+            <span class="case-value__label">Для бизнеса</span>
+            <p class="case-value__text">
+              <strong>Главная задача:</strong> снизить нагрузку на&nbsp;администраторов
+              и&nbsp;увеличить заполняемость тренировок за&nbsp;счёт самообслуживания клиентов
+            </p>
+          </div>
+          <div class="case-value__card">
+            <span class="case-value__label">Для клиента</span>
+            <p class="case-value__text">
+              <strong>Главная задача:</strong> дать пользователю ощущение контроля
+              над&nbsp;своим расписанием без&nbsp;звонков и&nbsp;уточнений
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ГЛУБИННЫЕ ИНТЕРВЬЮ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Глубинные интервью</h2>
+        <p class="case-section__text">
+          Чтобы проверить свои предположения и&nbsp;понять, что на&nbsp;самом деле движет
+          пользователями, я созвонилась с&nbsp;4&nbsp;людьми, которые пользуются бассейном
+          BWT. На&nbsp;основе этих интервью я выделила ключевые персоны, которые отражают
+          разные сценарии использования приложения.
+        </p>
+        <figure class="case-interview-photo">
+          <img src="images/interview.jpg" alt="Глубинные интервью">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== ЗАМЕТКА ===== -->
+    <section class="case-section">
+      <div class="container">
+        <div class="case-note">
+          <span class="case-note__emoji" aria-hidden="true">💡</span>
+          <p class="case-note__text">
+            После проведения глубинных интервью я свела ответы респондентов в&nbsp;единую
+            таблицу, чтобы выявить болевые точки и&nbsp;критерии принятия решений.
+            Благодаря таблице я смогла обнаружить инсайты, которые и&nbsp;легли
+            в&nbsp;основу продуктового решения.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- ===== ИНСАЙТЫ ===== -->
-    <section class="case-section" id="insights">
+    <section class="case-section">
       <div class="container">
         <h2 class="case-heading">Ключевые инсайты после глубинных интервью</h2>
-
         <div class="case-grid">
+
           <div class="case-card">
             <span class="case-card__num">01</span>
             <p class="case-card__text">
-              В&nbsp;рамках 4&nbsp;интервью я&nbsp;заметила повторяющийся паттерн:
-              новички выбирают онлайн-запись не&nbsp;ради скорости, а&nbsp;чтобы избежать
-              стресса от&nbsp;личного контакта с&nbsp;администратором.
-              Это качественная гипотеза, которую стоит проверить на&nbsp;большей выборке.
+              В рамках 4 интервью я заметила повторяющийся паттерн: новички выбирали
+              онлайн-запись не&nbsp;ради скорости, а&nbsp;чтобы избежать
+              стресса от&nbsp;личного контакта с&nbsp;администратором
             </p>
           </div>
+
           <div class="case-card">
             <span class="case-card__num">02</span>
             <p class="case-card__text">
-              3&nbsp;из&nbsp;4&nbsp;респондентов упоминали, что им&nbsp;важно видеть
-              загрузку зала. Поэтому я&nbsp;сформулировала гипотезу: если показать
-              загрузку визуально, пользователь быстрее примет решение.
+              3 из 4 респондентов упоминали, что им важно видеть загрузку зала
             </p>
           </div>
+
           <div class="case-card">
             <span class="case-card__num">03</span>
             <p class="case-card__text">
-              2&nbsp;из&nbsp;4&nbsp;респондентов говорили, что хотят полностью управлять
-              расписанием дистанционно — без&nbsp;звонков и&nbsp;личных контактов.
-              Это не&nbsp;вывод обо&nbsp;всей аудитории, а&nbsp;сигнал.
+              2 из 4 респондентов говорили, что хотят полностью управлять
+              своим расписанием дистанционно
             </p>
           </div>
+
           <div class="case-card">
             <span class="case-card__num">04</span>
             <p class="case-card__text">
-              2&nbsp;из&nbsp;4&nbsp;респондентов упоминали, что отмена тренировки сейчас
-              требует звонка на&nbsp;ресепшн, и&nbsp;это вызывает неловкость.
-              Я&nbsp;сформулировала гипотезу: если добавить отмену в&nbsp;приложение,
-              пользователи будут чувствовать себя свободнее.
+              Пользователи отметили, что хотят без&nbsp;чувства вины отменить тренировку —
+              сейчас для&nbsp;этого необходимо лично звонить на&nbsp;ресепшн
             </p>
           </div>
+
         </div>
       </div>
-    </section>    <!-- ===== ПРОЦЕСС РАБОТЫ ===== -->
-    <section class="case-section" id="process">
+    </section>
+
+    <!-- ===== ПЕРСОНЫ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Персоны</h2>
+        <p class="case-tasks__subtitle">
+          Чтобы спроектировать продукт, который будет удобен разным типам пользователей,
+          необходимо сегментировать аудиторию по&nbsp;потребностям.
+        </p>
+        <figure class="case-interview-photo">
+          <img src="images/personas.jpg" alt="Персоны">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== ДЖОБ СТОРИ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Джоб стори</h2>
+        <p class="case-section__text">
+          На&nbsp;основе глубинных интервью я выделила ключевые сценарии пользователей
+          и&nbsp;сформулировала джоб стори. Это позволило мне перейти от&nbsp;пользовательских
+          болей к&nbsp;конкретным продуктовым решениям.
+        </p>
+        <figure class="case-interview-photo">
+          <img src="images/JobStory.jpg" alt="Джоб стори">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== ГИПОТЕЗЫ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Гипотезы</h2>
+        <p class="case-tasks__subtitle">
+          На&nbsp;основе полученной информации я&nbsp;выдвинула гипотезы, которые помогли
+          перейти от&nbsp;болевых точек пользователей к&nbsp;конкретным продуктовым решениям
+        </p>
+
+        <div class="case-hypotheses">
+
+          <div class="case-hypothesis">
+            <div class="case-hypothesis__head">
+              <span class="case-hypothesis__num">01</span>
+              <h3 class="case-hypothesis__title">Визуализация загруженности зала</h3>
+            </div>
+            <p class="case-hypothesis__text">
+              Если мы будем показывать заполненность бассейна в&nbsp;процентах, вместо
+              абстрактного числа, то&nbsp;свободный посетитель сможет быстрее принять
+              решение по&nbsp;времени посещения бассейна
+            </p>
+          </div>
+
+          <div class="case-hypothesis">
+            <div class="case-hypothesis__head">
+              <span class="case-hypothesis__num">02</span>
+              <h3 class="case-hypothesis__title">Безопасная отмена записи</h3>
+            </div>
+            <p class="case-hypothesis__text">
+              Если мы визуально дифференцируем кнопку «Отменить» от&nbsp;кнопки «Записаться»,
+              то&nbsp;пользователи будут быстрее распознавать доступное действие
+            </p>
+          </div>
+
+          <div class="case-hypothesis">
+            <div class="case-hypothesis__head">
+              <span class="case-hypothesis__num">03</span>
+              <h3 class="case-hypothesis__title">Быстрая запись в&nbsp;один клик</h3>
+            </div>
+            <p class="case-hypothesis__text">
+              Если мы вынесем кнопку «Записаться», цену и&nbsp;счётчик свободных мест прямо
+              в&nbsp;карточку тренировки, то&nbsp;пользователь сможет записаться в&nbsp;один клик
+            </p>
+          </div>
+
+          <div class="case-hypothesis">
+            <div class="case-hypothesis__head">
+              <span class="case-hypothesis__num">04</span>
+              <h3 class="case-hypothesis__title">Фильтрация тренировок</h3>
+            </div>
+            <p class="case-hypothesis__text">
+              Если мы добавим фильтр по&nbsp;параметрам (тип занятия, время, тренер),
+              то&nbsp;пользователь сможет быстро найти подходящую тренировку.
+            </p>
+          </div>
+
+          <div class="case-hypothesis case-hypothesis--rejected">
+            <div class="case-hypothesis__head">
+              <span class="case-hypothesis__num">05</span>
+              <h3 class="case-hypothesis__title">Календарь на&nbsp;главной странице</h3>
+              <span class="case-hypothesis__badge">Гипотеза не&nbsp;подтвердилась</span>
+            </div>
+            <p class="case-hypothesis__text">
+              Если разместить компактный календарь с&nbsp;ближайшими датами прямо
+              на&nbsp;главном экране, то&nbsp;пользователи смогут быстрее находить
+              нужную тренировку
+            </p>
+          </div>
+
+          <div class="case-hypothesis">
+            <div class="case-hypothesis__head">
+              <span class="case-hypothesis__num">06</span>
+              <h3 class="case-hypothesis__title">Подтверждение действий через модальное окно</h3>
+            </div>
+            <p class="case-hypothesis__text">
+              Если добавить модальное окно подтверждения с&nbsp;краткой сводкой и&nbsp;двумя
+              чётко различимыми кнопками — то&nbsp;пользователь будет увереннее совершать действие
+            </p>
+          </div>
+
+          <div class="case-hypothesis">
+            <div class="case-hypothesis__head">
+              <span class="case-hypothesis__num">07</span>
+              <h3 class="case-hypothesis__title">Календарь в&nbsp;раздел «Мои тренировки»</h3>
+            </div>
+            <p class="case-hypothesis__text">
+              Если мы добавим календарь с&nbsp;горизонтальной лентой дат в&nbsp;раздел
+              «Тренировки», то&nbsp;пользователь сможет быстро находить свои занятия
+              на&nbsp;конкретный день.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ЮЗЕР ФЛОУ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Юзер флоу</h2>
+        <p class="case-section__text">
+          Прежде чем рисовать экраны, я спроектировала путь пользователя, который помог
+          мне визуализировать, как именно пользователь будет двигаться по&nbsp;приложению.
+        </p>
+        <figure class="case-interview-photo case-interview-photo--small">
+          <img src="images/user.jpg" alt="Юзер флоу">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== ПРОЦЕСС ===== -->
+    <section class="case-section">
       <div class="container">
         <h2 class="case-heading">Процесс работы</h2>
         <p class="case-section__text">
-          Интервью дали мне понимание проблем. Дальше я&nbsp;начала делать наброски
+          Интервью дали мне понимание проблем. Дальше я начала делать наброски
           для&nbsp;первой визуализации своего решения. В&nbsp;этом разделе — мои черновики.
         </p>
-
         <div class="case-process">
           <figure class="case-process__item">
             <img src="images/image-1.jpg" alt="Черновик 1">
@@ -273,12 +569,12 @@
       </div>
     </section>
 
-    <!-- ===== ГЛАВНЫЙ ЭКРАН (1) ===== -->
+        <!-- ===== ГЛАВНЫЙ ЭКРАН (1) ===== -->
     <section class="case-section" id="main-screen">
       <div class="container">
         <h2 class="case-heading">Главный экран (1)</h2>
         <p class="case-section__text">
-          После проведённых интервью и&nbsp;проектирования юзер флоу я&nbsp;перешла
+          После проведённых интервью и&nbsp;проектирования юзер флоу я перешла
           к&nbsp;отрисовке макетов. Основные фичи описаны ниже.
         </p>
 
@@ -288,16 +584,16 @@
               <p class="case-screen__text">
                 <strong>1.</strong> Добавлен процентный индикатор на&nbsp;главный экран
                 в&nbsp;зону максимального внимания. Ранее в&nbsp;приложении отображалось
-                просто число без&nbsp;контекста наполняемости. Теперь процент заполненности
-                даёт мгновенное понимание ситуации.
+                просто число без&nbsp;контекста наполняемости. Эти данные не&nbsp;помогали
+                принять решение. Теперь процент заполненности даёт мгновенное понимание ситуации.
               </p>
             </div>
             <div class="case-screen__item">
               <p class="case-screen__text">
                 <strong>2.</strong> Пересобран тап-бар: «Новости» и&nbsp;«О&nbsp;нас» — это
                 информация, а&nbsp;не&nbsp;сценарии. Я&nbsp;убрала их&nbsp;из&nbsp;нижней
-                навигации и&nbsp;оставила четыре ключевых раздела: главная, расписание
-                тренировок, мои записи, личный кабинет.
+                навигации и&nbsp;оставила четыре ключевых раздела, которые закрывают основные
+                задачи пользователя (главная, расписание тренировок, мои записи, личный кабинет).
               </p>
             </div>
           </div>
@@ -312,7 +608,8 @@
                 <strong>3.</strong> Добавлена кнопка «Все акции» для&nbsp;быстрого просмотра
                 всех предложений. Уменьшен блок акций и&nbsp;сделан в&nbsp;виде компактных
                 квадратов. Теперь пользователь видит сразу несколько предложений,
-                а&nbsp;экран не&nbsp;перегружен.
+                а&nbsp;экран не&nbsp;перегружен — акции не&nbsp;конкурируют с&nbsp;кнопкой
+                записи за&nbsp;внимание.
               </p>
             </div>
           </div>
@@ -336,12 +633,14 @@
               <p class="case-screen__text">
                 <strong>1.</strong> Свитчер «Детские / Взрослые» тренировки позволяет быстро
                 переключаться между расписаниями для&nbsp;разных сегментов пользователей.
+                Родителям не&nbsp;нужно искать детские дорожки среди взрослых.
               </p>
             </div>
             <div class="case-screen__item">
               <p class="case-screen__text">
                 <strong>2.</strong> Карточка тренировки показывает заполненность конкретного
-                слота. Это даёт пользователю полную прозрачность.
+                слота. Это даёт пользователю полную прозрачность — он&nbsp;видит, сколько
+                мест осталось, и&nbsp;принимает решение без&nbsp;звонков и&nbsp;сомнений.
               </p>
             </div>
           </div>
@@ -353,21 +652,22 @@
           <div class="case-screen__side case-screen__side--right">
             <div class="case-screen__item">
               <p class="case-screen__text">
-                <strong>3.</strong> Добавлена кнопка для&nbsp;быстрого перехода
-                к&nbsp;полному расписанию.
+                <strong>3.</strong> Добавлена кнопка для&nbsp;быстрого перехода к&nbsp;полному
+                расписанию для&nbsp;тех, кто хочет посмотреть все тренировки.
               </p>
             </div>
             <div class="case-screen__item">
               <p class="case-screen__text">
-                <strong>4.</strong> На&nbsp;карточку добавлена цена, чтобы пользователь
-                сразу видел стоимость.
+                <strong>4.</strong> На&nbsp;карточку добавлена цена, чтобы пользователь сразу
+                видел стоимость и&nbsp;мог оценить, подходит&nbsp;ли ему предложение.
+                Это убирает неопределённость и&nbsp;сокращает путь к&nbsp;записи.
               </p>
             </div>
             <div class="case-screen__item">
               <p class="case-screen__text">
-                <strong>5.</strong> Кнопка «Записаться» вынесена на&nbsp;карточку
-                тренировки в&nbsp;общем списке — пользователь видит слот, цену,
-                свободные места и&nbsp;может записаться сразу.
+                <strong>5.</strong> Кнопка «Записаться» вынесена на&nbsp;карточку тренировки
+                в&nbsp;общем списке — пользователь видит слот, цену, свободные места
+                и&nbsp;может записаться сразу, без&nbsp;лишних переходов.
               </p>
             </div>
           </div>
@@ -390,7 +690,8 @@
         <div class="case-schedule__col case-schedule__col--left">
           <p class="case-schedule__text">
             <strong>1.</strong> Добавлен переход к&nbsp;полноценному календарю
-            для&nbsp;долгосрочного планирования.
+            для&nbsp;долгосрочного планирования. Клик по&nbsp;кнопке открывает полный
+            календарь, позволяя выбрать любую дату и&nbsp;составить график на&nbsp;недели вперёд.
           </p>
         </div>
 
@@ -400,16 +701,20 @@
 
         <div class="case-schedule__col case-schedule__col--right">
           <p class="case-schedule__text">
-            <strong>2.</strong> Расширенный фильтр для&nbsp;точного поиска: время,
-            тип тренировки, тренер.
+            <strong>2.</strong> Расширенный фильтр для&nbsp;точного поиска. Если переключатель
+            «Дети/Взрослые» делит аудиторию глобально, то&nbsp;фильтр позволяет уточнить
+            запрос: выбрать конкретное время, тип тренировки, тренера.
           </p>
           <p class="case-schedule__text">
             <strong>3.</strong> Добавлены фильтры для&nbsp;точного поиска тренировок.
-            Пользователь не&nbsp;листает весь список вручную, а&nbsp;сразу выбирает нужное.
+            Пользователь не&nbsp;листает весь список вручную, а&nbsp;сразу выбирает нужное:
+            по&nbsp;дате, времени, типу тренировки, тренеру.
           </p>
         </div>
       </div>
-    </section>    <!-- ===== ЭКРАН ТРЕНИРОВОК ПОЛЬЗОВАТЕЛЯ ===== -->
+    </section>
+
+    <!-- ===== ЭКРАН ТРЕНИРОВОК ===== -->
     <section class="case-section" id="user-trainings">
       <div class="container">
         <h2 class="case-heading">Экран тренировок пользователя</h2>
@@ -425,7 +730,6 @@
               <p class="case-screen__text">
                 <strong>1.</strong> Разделение контекстов: «Предстоящие / Прошедшие».
                 Убирает визуальный шум и&nbsp;показывает только релевантные тренировки.
-                По&nbsp;умолчанию открыты «Предстоящие».
               </p>
             </div>
             <div class="case-screen__item">
@@ -494,15 +798,15 @@
         </div>
       </div>
     </section>
-
-    <!-- ===== ЛИЧНЫЙ КАБИНЕТ ===== -->
+        <!-- ===== ЛИЧНЫЙ КАБИНЕТ ===== -->
     <section class="case-section" id="profile">
       <div class="container">
         <h2 class="case-heading">Личный кабинет пользователя</h2>
         <p class="case-section__text">
           В&nbsp;разделе представлены два ключевых экрана: главный с&nbsp;информацией
           о&nbsp;бассейне и&nbsp;личный кабинет пользователя. Такое разделение позволяет
-          отделить справочную информацию от&nbsp;персональных данных.
+          отделить справочную информацию от&nbsp;персональных данных, не&nbsp;перегружая
+          экраны и&nbsp;упрощая навигацию.
         </p>
       </div>
 
@@ -511,7 +815,8 @@
           <p class="case-screen__text">
             <strong>1.</strong> Информация была разделена на&nbsp;два отдельных экрана:
             на&nbsp;главном размещена общая информация о&nbsp;бассейне (контакты, акции,
-            тренеры), а&nbsp;в&nbsp;личном кабинете — персональные данные пользователя.
+            тренеры), а&nbsp;в&nbsp;личном кабинете — персональные данные пользователя
+            (номер телефона, абонементы).
           </p>
         </div>
 
@@ -527,16 +832,17 @@
           </p>
         </div>
       </div>
-    </section>    <!-- ===== ПРОТОТИП ===== -->
+    </section>
+
+    <!-- ===== ПРОТОТИП ===== -->
     <section class="case-section" id="prototype">
       <div class="container">
         <h2 class="case-heading">Прототип</h2>
         <p class="case-section__text">
-          Я&nbsp;собрала интерактивный прототип в&nbsp;Figma и&nbsp;на&nbsp;основе него
-          провела 4&nbsp;UX-теста с&nbsp;4&nbsp;респондентами. За&nbsp;успешное выполнение
+          Я собрала интерактивный прототип в&nbsp;Figma и&nbsp;на&nbsp;основе него провела
+          4&nbsp;UX-теста с&nbsp;4&nbsp;респондентами. За&nbsp;успешное выполнение
           я&nbsp;считала прохождение задания без&nbsp;ошибок и&nbsp;затруднений.
         </p>
-
         <figure class="case-interview-photo">
           <img src="images/screen7.png" alt="Прототип BWT">
         </figure>
@@ -576,10 +882,11 @@
           На&nbsp;основе проведённых исследований, тестирования прототипа
           и&nbsp;последующей доработки решений был достигнут финальный результат.
           Повторная проверка подтвердила, что внедрённые изменения успешно решают
-          поставленные задачи.
+          поставленные задачи и&nbsp;соответствуют ожиданиям пользователей.
         </p>
 
         <div class="case-results">
+
           <div class="case-result">
             <h3 class="case-result__title">
               4 из 4 респондентов смогли записаться в среднем за 30 секунд
@@ -598,8 +905,9 @@
             </h3>
             <p class="case-result__text">
               Ранее после нажатия «Записаться» или&nbsp;«Отменить» пользователь
-              не&nbsp;получал обратной связи. В&nbsp;обновлённой версии добавлены экраны
-              подтверждения, а&nbsp;кнопки визуально разделены.
+              не&nbsp;получал обратной связи — непонятно, сработало действие или нет.
+              В&nbsp;обновлённой версии добавлены экраны подтверждения, а&nbsp;кнопки
+              визуально разделены.
             </p>
           </div>
 
@@ -609,10 +917,12 @@
             </h3>
             <p class="case-result__text">
               Ранее таб-бар был перегружен второстепенными разделами, а&nbsp;ключевые
-              сценарии терялись среди них. Теперь в&nbsp;таб-баре только основные разделы:
-              «Главная», «Расписание», «Мои записи», «Профиль».
+              сценарии (расписание, управление записями, профиль) терялись среди них.
+              Теперь в&nbsp;таб-баре только основные разделы: «Главная», «Расписание»,
+              «Мои записи», «Профиль».
             </p>
           </div>
+
         </div>
       </div>
     </section>
@@ -628,22 +938,27 @@
         </p>
 
         <div class="case-growth">
+
           <div class="case-growth__item">
             <span class="case-growth__num">01</span>
             <p class="case-growth__text">Онбординг для&nbsp;новых пользователей</p>
           </div>
+
           <div class="case-growth__item">
             <span class="case-growth__num">02</span>
             <p class="case-growth__text">Добавление возможности переноса записи</p>
           </div>
+
           <div class="case-growth__item">
             <span class="case-growth__num">03</span>
             <p class="case-growth__text">История посещений с&nbsp;визуализацией прогресса</p>
           </div>
+
           <div class="case-growth__item">
             <span class="case-growth__num">04</span>
             <p class="case-growth__text">Интеграция с&nbsp;онлайн-оплатой</p>
           </div>
+
         </div>
       </div>
     </section>
@@ -660,9 +975,10 @@
         </p>
 
         <div class="case-reflection">
+
           <div class="case-reflection__item">
             <h3 class="case-reflection__title">
-              Важность глубинных интервью
+              Важность глубинных интервью и исследовательской работы
             </h3>
             <p class="case-reflection__text">
               Проведение глубинных интервью полностью изменило моё понимание
@@ -677,20 +993,22 @@
               Разные пользователи — разные сценарии
             </h3>
             <p class="case-reflection__text">
-              Я&nbsp;увидела, что&nbsp;родители ищут выгоду, новички ищут безопасность,
-              а&nbsp;спортсмены ищут скорость. Нельзя сделать «один интерфейс для&nbsp;всех».
+              Я&nbsp;увидела, что&nbsp;родители ищут выгоду (акции, абонементы),
+              новички ищут безопасность (загруженность, простота), а&nbsp;спортсмены
+              ищут скорость (быстрая запись, расписание). Нельзя сделать «один интерфейс
+              для&nbsp;всех».
             </p>
           </div>
 
           <div class="case-reflection__item">
             <h3 class="case-reflection__title">
-              Интервью — это навык
+              Интервью — это навык, которому нужно учиться
             </h3>
             <p class="case-reflection__text">
               Качественное проведение интервью — это навык, требующий отдельного
               развития. Умение выстраивать диалог, избегать предвзятости
               и&nbsp;считывать истинные мотивы пользователя напрямую влияет
-              на&nbsp;достоверность данных.
+              на&nbsp;достоверность собранных данных.
             </p>
           </div>
 
@@ -700,53 +1018,51 @@
             </h3>
             <p class="case-reflection__text">
               Это было сложно принять. Я&nbsp;думала: «Мне&nbsp;бы понравилось вот так».
-              Но&nbsp;интервью показали: мои предпочтения&nbsp;≠ предпочтения пользователей.
+              Но&nbsp;интервью показали: мои предпочтения&nbsp;≠ предпочтения
+              пользователей.
             </p>
           </div>
+
         </div>
       </div>
     </section>
         <!-- ===== СПАСИБО ЗА ВНИМАНИЕ ===== -->
-    <section class="case-section case-thanks" id="thanks">
+    <section class="thanks section-stack" id="thanks">
       <div class="container">
-        <div class="case-thanks__inner">
-          <h2 class="case-thanks__title">Спасибо за внимание!</h2>
-          <p class="case-thanks__subtitle">
-            Буду рада обсудить проект и ответить на вопросы
-          </p>
-          <div class="case-thanks__cat">
-            <img src="images/cat.png" alt="Спасибо за внимание">
-          </div>
+        <div class="thanks__content">
+          <h2 class="thanks__title">Спасибо<br>за внимание!</h2>
+          <div class="thanks__emoji" aria-hidden="true">😊</div>
         </div>
       </div>
     </section>
 
-    <!-- ===== КОНТАКТЫ (КЕЙСА) ===== -->
-    <section class="case-section case-contacts" id="contacts">
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section class="contacts section-stack" id="contacts">
       <div class="container">
-        <h2 class="case-contacts__title">Давайте свяжемся</h2>
-        <p class="case-contacts__subtitle">
-          Открыта к предложениям о работе, стажировках и проектах
-        </p>
 
-        <div class="case-contacts__list">
-          <a href="mailto:petuhovamgn@gmail.com" class="case-contacts__item">
-            <span class="case-contacts__label">Email</span>
-            <span class="case-contacts__value">petuhovamgn@gmail.com</span>
+        <a href="mailto:petuhovamgn@gmail.com" class="contacts__email">
+          petuhovamgn@gmail.com
+        </a>
+
+        <div class="contacts__list">
+
+          <a href="https://t.me/sv_pt" target="_blank" rel="noopener" class="contacts__row">
+            <span class="contacts__label">Телеграм</span>
+            <span class="contacts__value">@sv_pt</span>
           </a>
-          <a href="https://t.me/sv_pt" target="_blank" rel="noopener" class="case-contacts__item">
-            <span class="case-contacts__label">Telegram</span>
-            <span class="case-contacts__value">@sv_pt</span>
+
+          <a href="tel:+79518186295" class="contacts__row">
+            <span class="contacts__label">Телефон</span>
+            <span class="contacts__value">+79518186295</span>
           </a>
-          <a href="https://vk.ru/svet_pt" target="_blank" rel="noopener" class="case-contacts__item">
-            <span class="case-contacts__label">ВК</span>
-            <span class="case-contacts__value">vk.ru/svet_pt</span>
+
+          <a href="https://vk.ru/svet_pt" target="_blank" rel="noopener" class="contacts__row">
+            <span class="contacts__label">ВК</span>
+            <span class="contacts__value">https://vk.ru/svet_pt</span>
           </a>
-          <a href="index.html" class="case-contacts__item">
-            <span class="case-contacts__label">Портфолио</span>
-            <span class="case-contacts__value">Вернуться на главную</span>
-          </a>
+
         </div>
+
       </div>
     </section>
 
@@ -778,8 +1094,7 @@
           '.case-compare__item img, ' +
           '.case-screen__phone img, ' +
           '.case-schedule__center img, ' +
-          '.case-confirm__phone img, ' +
-          '.case-thanks__cat img'
+          '.case-confirm__phone img'
         );
 
         images.forEach(function(img) {
@@ -821,6 +1136,27 @@
       } else {
         initLightbox();
       }
+    })();
+
+    /* ===== БУРГЕР-МЕНЮ ===== */
+    (function() {
+      var burger = document.getElementById('burgerBtn');
+      var mobileMenu = document.getElementById('mobileMenu');
+      if (!burger || !mobileMenu) return;
+
+      burger.addEventListener('click', function() {
+        burger.classList.toggle('is-open');
+        mobileMenu.classList.toggle('is-open');
+        document.body.style.overflow = mobileMenu.classList.contains('is-open') ? 'hidden' : '';
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          burger.classList.remove('is-open');
+          mobileMenu.classList.remove('is-open');
+          document.body.style.overflow = '';
+        });
+      });
     })();
 
     /* ===== ПЛАВНЫЙ СКРОЛЛ ПО ЯКОРЯМ ===== */
