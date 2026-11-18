@@ -1,0 +1,3995 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МувиМуд — Кейс | Петухова Светлана</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="case.css">
+</head>
+<body class="case-page">
+
+  <!-- ===== НАВБАР ===== -->
+  <header class="navbar-wrapper">
+    <a href="index.html" class="navbar__logo">
+      <span class="navbar__logo-emoji">🐓</span>
+    </a>
+
+    <nav class="navbar__pill">
+      <ul class="navbar__links">
+        <li><a href="index.html" class="navbar__link">На главную</a></li>
+        <li><a href="#problems" class="navbar__link">Проблемы</a></li>
+        <li><a href="#main-screen" class="navbar__link">Решение</a></li>
+        <li><a href="#contacts" class="navbar__link">Контакты</a></li>
+      </ul>
+      <a href="Files/resume.pdf" class="navbar__cta" target="_blank" rel="noopener">
+        <span>Резюме</span>
+        <svg class="navbar__arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </nav>
+
+    <button class="navbar__burger" id="burgerBtn" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="navbar__mobile-menu" id="mobileMenu">
+      <a href="index.html">На главную</a>
+      <a href="#problems">Проблемы</a>
+      <a href="#main-screen">Решение</a>
+      <a href="#contacts">Контакты</a>
+      <a href="Files/resume.pdf" class="navbar__cta" target="_blank" rel="noopener">
+        <span>Резюме</span>
+        <svg class="navbar__arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="case-main">
+
+    <!-- ===== HERO ===== -->
+    <section class="case-hero">
+      <div class="container">
+        <h1 class="case-hero__title">
+          МувиМуд — <br>
+          веб-сервис для подбора фильмов по&nbsp;настроению
+        </h1>
+        <p class="case-hero__subtitle">
+          Кейс о том, как создать платформу, которая помогает найти кино под текущее эмоциональное состояние
+        </p>
+
+        <!-- Кнопка прототипа наверху -->
+        <div style="margin-bottom: 40px;">
+          <a href="https://svptdsgn.github.io/mooviemood/index.html" target="_blank" rel="noopener" class="navbar__cta" style="display: inline-flex; padding: 16px 32px; font-size: 16px; background: #BFDB39; color: #17231D; border: none;">
+            <span>Открыть прототип</span>
+            <svg class="navbar__arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Одна фотография ноутбука -->
+        <div class="case-compare" style="display: flex; justify-content: center;">
+          <div class="case-compare__item" style="width: 100%; max-width: 900px;">
+            <img src="images/Movie1.png" alt="МувиМуд — прототип">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== КОНТЕКСТ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <div class="case-intro">
+          <div class="case-intro__left">
+            <h2 class="case-heading">Контекст</h2>
+            <p class="case-section__text">
+             Когда человек открывает онлайн-кинотеатр, он сталкивается с десятками подборок, сотнями постеров и стандартными фильтрами. Но далеко не всегда он знает какой жанр хочет посмотреть. Чаще пользователь приходит с запрососм под настроение. Для решения этой проблемы была разработана киноплатформа МувиМуд. МувиМуд — концепция киноплатформы, которая объединяет подбор по настроению, интеллектуальный поиск и персонализированные рекомендации, помогая быстрее перейти от желания посмотреть кино к конкретному выбору
+            </p>
+          </div>
+          <div class="case-intro__right">
+            <div class="case-intro__block">
+              <p class="case-intro__eyebrow">Роль</p>
+              <div class="case-intro__tags"><span class="case-chip">Продуктовый дизайнер</span></div>
+            </div>
+            <div class="case-intro__block">
+              <p class="case-intro__eyebrow">Год</p>
+              <div class="case-intro__tags"><span class="case-chip">2026</span></div>
+            </div>
+            <div class="case-intro__block">
+              <p class="case-intro__eyebrow">Тип</p>
+              <div class="case-intro__tags">
+                <span class="case-chip">Web</span>
+                <span class="case-chip">B2C</span>
+              </div>
+            </div>
+            <!-- Вернул HTML/CSS/JS, убрал Блокнот -->
+            <div class="case-intro__block">
+              <p class="case-intro__eyebrow">Инструменты</p>
+              <div class="case-intro__tags">
+                <span class="case-chip">Figma</span>
+                <span class="case-chip">HTML/CSS/JS</span>
+                <span class="case-chip">FigJam</span>
+                <span class="case-chip">Яндекс Телемост</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TL;DR ===== -->
+    <section class="case-section">
+      <style>
+        .tldr-grid { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 20px !important; margin-top: 40px !important; }
+        .tldr-card { display: flex !important; flex-direction: column !important; gap: 16px !important; padding: 32px !important; background: #F0F0F0 !important; border-radius: 20px !important; box-sizing: border-box !important; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .tldr-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(23, 35, 29, 0.08); }
+        .tldr-card__num { display: inline-flex !important; align-items: center !important; justify-content: center !important; width: 36px !important; height: 36px !important; flex-shrink: 0 !important; background: #FFFFFF !important; border-radius: 50% !important; font-size: 13px !important; font-weight: 600 !important; color: #17231D !important; margin: 0 !important; }
+        .tldr-card__title { font-size: 20px !important; font-weight: 600 !important; line-height: 1.25 !important; letter-spacing: -0.01em !important; color: #17231D !important; margin: 0 !important; }
+        .tldr-card__text { font-size: 15px !important; line-height: 1.6 !important; color: #17231D !important; opacity: 0.7 !important; margin: 0 !important; }
+        @media (max-width: 991px) { .tldr-grid { grid-template-columns: 1fr !important; } }
+        @media (max-width: 767px) { .tldr-card { padding: 24px !important; } .tldr-card__title { font-size: 17px !important; } .tldr-card__text { font-size: 14px !important; } }
+      </style>
+
+      <div class="container">
+        <h2 class="case-heading">Коротко о проекте</h2>
+        <div class="tldr-grid">
+          <div class="tldr-card">
+            <span class="tldr-card__num">01</span>
+            <h3 class="tldr-card__title">Проблема</h3>
+            <p class="tldr-card__text">
+              Пользователю сложно быстро найти фильм, который соответствует его текущему настроению.Пользователь долго листает каталоги, не находит подходящий вариант и в итоге затягивают выбор или вовсе откладывают просмотр
+            </p>
+          </div>
+          <div class="tldr-card">
+            <span class="tldr-card__num">02</span>
+            <h3 class="tldr-card__title">Что сделала</h3>
+            <p class="tldr-card__text">
+              Исследование → концепция → сбор интерактивного прототипа → проведение юзабилити-тестирования на 5 пользователях и доработка интерфейса по результатам тестирования
+            </p>
+          </div>
+          <div class="tldr-card">
+            <span class="tldr-card__num">03</span>
+            <h3 class="tldr-card__title">Результат</h3>
+            <p class="tldr-card__text">
+            Создан интерактивный прототип сервиса с несколькими сценариями поиска: подбором по настроению, поиском через текстовый запрос и расширенными фильтрами. По результатам тестирования интерфейс был доработан
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- ===== ДИСКАВЕРИ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Дискавери</h2>
+        <div class="case-discovery">
+          <div class="case-discovery__col" style="background: #F0F0F0 !important; border-radius: 20px; padding: 32px; box-sizing: border-box;">
+            <span class="case-discovery__label">Погружение в задачу</span>
+            <p class="case-discovery__text">
+              Изучила конкурентные решения, проанализировала пользовательские отзывы и провела интервью, чтобы разобраться в причинах сложностей при выборе фильма 
+            </p>
+          </div>
+          <div class="case-discovery__col" style="background: #F0F0F0 !important; border-radius: 20px; padding: 32px; box-sizing: border-box;">
+            <span class="case-discovery__label"> Формирование решения</span>
+            <p class="case-discovery__text">
+              Систематизировала наблюдения, выделила пользовательские потребности, сформулировала JTBD и определила основные сценарии сервиса
+            </p>
+          </div>
+          <div class="case-discovery__col" style="background: #F0F0F0 !important; border-radius: 20px; padding: 32px; box-sizing: border-box;">
+            <span class="case-discovery__label">Проектирование</span>
+            <p class="case-discovery__text">
+              Разработала структуру интерфейса и интерактивный прототип, проверила основные сценарии на пользователях и внесла изменения по результатам тестирования
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+<!-- ===== ПОДТВЕРЖДЕНИЕ ПРОБЛЕМЫ ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Изучение проблем</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      Чтобы понять, действительно ли пользователи сталкиваются с трудностями при выборе фильма, я использовала два источника информации: анализ пользовательских отзывов и глубинные интервью.
+    </p>
+
+    <style>
+      /* Сетка источников */
+      .sources-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 40px;
+      }
+      .source-card {
+        background: #F0F0F0;
+        border-radius: 16px;
+        padding: 22px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: background 0.2s ease;
+      }
+      .source-card:hover { background: #E8E8E8; }
+      .source-card__icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
+      .source-card__title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #17231D;
+        margin: 0;
+        line-height: 1.3;
+      }
+      .source-card__text {
+        font-size: 13px;
+        line-height: 1.45;
+        color: #17231D;
+        opacity: 0.7;
+        margin: 0;
+      }
+
+      /* Аккордеон отзывов */
+      .rev-slider {
+        position: relative;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto 40px;
+      }
+      .rev-slides {
+        position: relative;
+        width: 100%;
+        height: 460px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #FFFFFF;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      }
+      .rev-slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.45s ease;
+        pointer-events: none;
+        cursor: zoom-in;
+      }
+      .rev-slide.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .rev-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+      .rev-arrow {
+        position: absolute;
+        top: 230px;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        border: none;
+        color: #17231D;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        z-index: 5;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      }
+      .rev-arrow:hover { background: #17231D; color: #FFFFFF; }
+      .rev-arrow--prev { left: -60px; }
+      .rev-arrow--next { right: -60px; }
+      .rev-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .rev-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(23,35,29,0.2);
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .rev-dot.active { background: #17231D; transform: scale(1.25); }
+      .rev-title {
+        margin-top: 22px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        color: #17231D;
+        line-height: 1.4;
+      }
+
+      /* Лайтбокс */
+      .rev-lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.92);
+        backdrop-filter: blur(12px);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        cursor: zoom-out;
+      }
+      .rev-lightbox.active { display: flex; }
+      .rev-lightbox img {
+        max-width: 90vw;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 12px;
+        cursor: default;
+      }
+      .rev-lightbox .rl-close {
+        position: absolute;
+        top: 24px; right: 32px;
+        width: 44px; height: 44px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .rev-lightbox .rl-close:hover { background: rgba(255,255,255,0.2); }
+      .rev-lightbox .rl-nav {
+        position: absolute;
+        top: 50%; transform: translateY(-50%);
+        width: 48px; height: 48px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .rev-lightbox .rl-nav:hover { background: rgba(255,255,255,0.2); }
+      .rev-lightbox .rl-prev { left: 24px; }
+      .rev-lightbox .rl-next { right: 24px; }
+
+      @media (max-width: 900px) {
+        .rev-arrow--prev { left: 10px; }
+        .rev-arrow--next { right: 10px; }
+        .rev-slides { height: 380px; }
+        .rev-arrow { top: 190px; }
+      }
+      @media (max-width: 600px) {
+        .sources-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+
+    <!-- Два источника данных -->
+    <div class="sources-grid">
+      <div class="source-card">
+        <div class="source-card__icon">💬</div>
+        <h4 class="source-card__title">Отзывы пользователей</h4>
+        <p class="source-card__text">Анализ отзывов на Кинопоиске, App Store, IRecommend и Reddit — что раздражает в существующих сервисах.</p>
+      </div>
+      <div class="source-card">
+        <div class="source-card__icon">🎙</div>
+        <h4 class="source-card__title">Глубинные интервью</h4>
+        <p class="source-card__text">5 интервью с пользователями разных сценариев: уставшие после работы, киноманы, родители, новички.</p>
+      </div>
+    </div>
+
+    <!-- Аккордеон с отзывами (6 слайдов) -->
+    <div class="rev-slider">
+      <button class="rev-arrow rev-arrow--prev" onclick="changeRevSlide(-1)">‹</button>
+
+      <div class="rev-slides">
+        <div class="rev-slide active" onclick="openRevLightbox(0)">
+          <img src="images/otziv1.png" alt="Отзыв 1">
+        </div>
+        <div class="rev-slide" onclick="openRevLightbox(1)">
+          <img src="images/otziv2.png" alt="Отзыв 2">
+        </div>
+        <div class="rev-slide" onclick="openRevLightbox(2)">
+          <img src="images/otziv3.png" alt="Отзыв 3">
+        </div>
+        <div class="rev-slide" onclick="openRevLightbox(3)">
+          <img src="images/otziv4.png" alt="Отзыв 4">
+        </div>
+        <div class="rev-slide" onclick="openRevLightbox(4)">
+          <img src="images/otziv5.png" alt="Отзыв 5">
+        </div>
+        <div class="rev-slide" onclick="openRevLightbox(5)">
+          <img src="images/otziv6.png" alt="Отзыв 6">
+        </div>
+      </div>
+
+      <button class="rev-arrow rev-arrow--next" onclick="changeRevSlide(1)">›</button>
+
+      <div class="rev-dots">
+        <span class="rev-dot active" onclick="goToRevSlide(0)"></span>
+        <span class="rev-dot" onclick="goToRevSlide(1)"></span>
+        <span class="rev-dot" onclick="goToRevSlide(2)"></span>
+        <span class="rev-dot" onclick="goToRevSlide(3)"></span>
+        <span class="rev-dot" onclick="goToRevSlide(4)"></span>
+        <span class="rev-dot" onclick="goToRevSlide(5)"></span>
+      </div>
+
+      <div class="rev-title" id="revTitle">01 · Отзыв показывает, что пользователи испытывают сложности уже на этапе базовой фильтрации</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Лайтбокс отзывов -->
+<div class="rev-lightbox" id="revLightbox" onclick="closeRevLightbox(event)">
+  <button class="rl-close" onclick="closeRevLightbox(event)">×</button>
+  <button class="rl-nav rl-prev" onclick="navRevLightbox(event, -1)">‹</button>
+  <button class="rl-nav rl-next" onclick="navRevLightbox(event, 1)">›</button>
+  <img id="revLightboxImg" src="" alt="Отзыв в полном размере">
+</div>
+
+<script>
+  const revImages = [
+    'images/otziv1.png',
+    'images/otziv2.png',
+    'images/otziv3.png',
+    'images/otziv4.png',
+    'images/otziv5.png',
+    'images/otziv6.png'
+  ];
+  const revTitles = [
+    '01 · Отзыв показывает, что пользователи испытывают сложности уже на этапе базовой фильтрации',
+    '02 · Отзыв показывает, что оценки и просмотры — рабочий инструмент персонального выбора: без сортировки по оценкам пользователь теряет возможность ориентироваться на собственный вкус',
+    '03 · Отзыв показывает, что полный каталог не гарантирует выбор: пользователь готов смотреть, но не находит ни одного нужного фильма',
+    '04 · Отзыв показывает, что потребность в умном подборе реальна: пользователь не находит фильмы по своему вкусу даже у лидеров рынка и готов искать отдельный сервис, который рекомендует на основе истории просмотров',
+    '05 · Отзыв показывает, что на этапе предпросмотра о фильме нет никакой информации — только обложка. Чтобы узнать, о чём картина, пользователю приходится заходить на страницу каждого фильма: лишнее действие, которое повторяется десятки раз при выборе',
+    '06 · Отзыв показывает, что жанры в карточках некликабельны: зацепившись за интересный жанр, пользователь не может перейти к похожим фильмам и вынужден начинать поиск заново'
+  ];
+
+  let currentRevSlide = 0;
+  const revSlides = document.querySelectorAll('.rev-slide');
+  const revDots = document.querySelectorAll('.rev-dot');
+
+  function renderRevSlide(index) {
+    revSlides.forEach((s, i) => s.classList.toggle('active', i === index));
+    revDots.forEach((d, i) => d.classList.toggle('active', i === index));
+    document.getElementById('revTitle').textContent = revTitles[index];
+  }
+
+  function changeRevSlide(dir) {
+    currentRevSlide = (currentRevSlide + dir + revImages.length) % revImages.length;
+    renderRevSlide(currentRevSlide);
+  }
+
+  function goToRevSlide(index) {
+    currentRevSlide = index;
+    renderRevSlide(currentRevSlide);
+  }
+
+  let currentRevLightbox = 0;
+  function openRevLightbox(index) {
+    currentRevLightbox = index;
+    document.getElementById('revLightboxImg').src = revImages[index];
+    document.getElementById('revLightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeRevLightbox(event) {
+    if (event.target.id === 'revLightbox' || event.target.classList.contains('rl-close')) {
+      document.getElementById('revLightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  function navRevLightbox(event, dir) {
+    event.stopPropagation();
+    currentRevLightbox = (currentRevLightbox + dir + revImages.length) % revImages.length;
+    document.getElementById('revLightboxImg').src = revImages[currentRevLightbox];
+  }
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('revLightbox');
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape') { lb.classList.remove('active'); document.body.style.overflow = ''; }
+    if (e.key === 'ArrowLeft') navRevLightbox(e, -1);
+    if (e.key === 'ArrowRight') navRevLightbox(e, 1);
+  });
+</script>
+
+
+
+
+
+    <!-- ===== ПРОБЛЕМЫ ===== -->
+    <section class="case-section" id="problems">
+      <div class="container">
+        <h2 class="case-heading">Проблемы</h2>
+        <div class="case-grid case-grid--3">
+          <div class="case-card">
+            <span class="case-card__num">01</span>
+            <h3 class="case-card__title">Сложность выбора</h3>
+            <p class="case-card__text">
+              Когда нет конкретного запроса, пользователю приходится просматривать большое количество фильмов, сравнивать варианты и самостоятельно принимать решение
+            </p>
+          </div>
+          <div class="case-card">
+            <span class="case-card__num">02</span>
+            <h3 class="case-card__title">Ограниченность стандартных фильтров</h3>
+            <p class="case-card__text">
+              Жанр, рейтинг и год выхода не всегда помогают найти фильм под конкретное настроение или желаемую атмосферу
+            </p>
+          </div>
+          <div class="case-card">
+            <span class="case-card__num">03</span>
+            <h3 class="case-card__title">Недостаток информации для принятия решения</h3>
+            <p class="case-card__text">
+              Пользователь видит постер и рейтинг, но не понимает, чем именно этот фильм зацепит лично его. Без краткого описания ценности приходится либо рисковать, либо откладывать просмотр
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+      
+<!-- ===== КЛЮЧЕВЫЕ ИНСАЙТЫ ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Ключевые инсайты</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      В ходе исследования я выделила четыре ключевых инсайта. Каждый построен по структуре: что я увидела → что это значит → какую возможность это открывает для продукта.
+    </p>
+
+    <style>
+      .insights-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 32px;
+      }
+      .insight-card {
+        background: #F0F0F0;
+        border-radius: 20px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+      }
+      .insight-card__head {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .insight-card__num {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        color: #17231D;
+        font-size: 13px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .insight-card__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: #17231D;
+        margin: 0;
+        padding-top: 6px;
+      }
+
+      .insight-block {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .insight-block__label {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #17231D;
+        opacity: 0.5;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .insight-block__label--insight {
+        opacity: 1;
+        font-weight: 700;
+      }
+      .insight-block__text {
+        font-size: 14px;
+        line-height: 1.55;
+        color: #17231D;
+        opacity: 0.8;
+        margin: 0;
+      }
+      .insight-block--insight .insight-block__text {
+        opacity: 1;
+        font-weight: 500;
+      }
+
+      @media (max-width: 900px) {
+        .insights-grid { grid-template-columns: 1fr; }
+        .insight-card { padding: 24px; }
+      }
+    </style>
+
+    <div class="insights-grid">
+
+      <!-- Инсайт 01 -->
+      <div class="insight-card">
+        <div class="insight-card__head">
+          <span class="insight-card__num">01</span>
+          <h3 class="insight-card__title">Пользователю не всегда нужен конкретный жанр</h3>
+        </div>
+
+        <div class="insight-block">
+          <span class="insight-block__label">Наблюдение</span>
+          <p class="insight-block__text">
+            В ходе исследования я обратила внимание, что выбор фильма не всегда начинается с чёткого запроса. Иногда пользователь знает, какое впечатление хочет получить, но не может сформулировать это через стандартные параметры каталога.
+          </p>
+        </div>
+
+        <div class="insight-block insight-block--insight">
+          <span class="insight-block__label insight-block__label--insight">💡 Инсайт</span>
+          <p class="insight-block__text">
+            Люди выбирают кино не по жанру, а по настроению и контексту — «что-то лёгкое на вечер», «фильм для свидания», «чтобы отключить голову».
+          </p>
+        </div>
+
+        <div class="insight-block">
+          <span class="insight-block__label">Возможность для продукта</span>
+          <p class="insight-block__text">
+            Поиск должен учитывать настроение и атмосферу, а не ограничиваться жанрами.
+          </p>
+        </div>
+      </div>
+
+      <!-- Инсайт 02 -->
+      <div class="insight-card">
+        <div class="insight-card__head">
+          <span class="insight-card__num">02</span>
+          <h3 class="insight-card__title">Большой каталог не всегда помогает сделать выбор</h3>
+        </div>
+
+        <div class="insight-block">
+          <span class="insight-block__label">Наблюдение</span>
+          <p class="insight-block__text">
+            4 из 5 участников упоминали усталость от долгого просмотра вариантов и сложности с поиском подходящего фильма.
+          </p>
+        </div>
+
+        <div class="insight-block insight-block--insight">
+          <span class="insight-block__label insight-block__label--insight">💡 Инсайт</span>
+          <p class="insight-block__text">
+            Обилие вариантов не упрощает выбор, а усложняет его. Пользователь закрывает сервис, так и не решив, что посмотреть.
+          </p>
+        </div>
+
+        <div class="insight-block">
+          <span class="insight-block__label">Возможность для продукта</span>
+          <p class="insight-block__text">
+            Важно сократить количество нерелевантных вариантов и предложить более быстрый сценарий подбора.
+          </p>
+        </div>
+      </div>
+
+      <!-- Инсайт 03 -->
+      <div class="insight-card">
+        <div class="insight-card__head">
+          <span class="insight-card__num">03</span>
+          <h3 class="insight-card__title">Пользователю недостаточно рейтинга и жанра</h3>
+        </div>
+
+        <div class="insight-block">
+          <span class="insight-block__label">Наблюдение</span>
+          <p class="insight-block__text">
+            3 из 5 участников отмечали, что им не хватает информации, которая помогла бы понять, почему конкретный фильм может им понравиться.
+          </p>
+        </div>
+
+        <div class="insight-block insight-block--insight">
+          <span class="insight-block__label insight-block__label--insight">💡 Инсайт</span>
+          <p class="insight-block__text">
+            Рейтинга и жанра недостаточно для принятия решения. Нужна эмоциональная причина — «почему это зайдёт именно сейчас».
+          </p>
+        </div>
+
+        <div class="insight-block">
+          <span class="insight-block__label">Возможность для продукта</span>
+          <p class="insight-block__text">
+            Карточка фильма должна давать короткое и понятное объяснение его особенностей.
+          </p>
+        </div>
+      </div>
+
+      <!-- Инсайт 04 -->
+      <div class="insight-card">
+        <div class="insight-card__head">
+          <span class="insight-card__num">04</span>
+          <h3 class="insight-card__title">Поиск должен учитывать разные уровни определённости запроса</h3>
+        </div>
+
+        <div class="insight-block">
+          <span class="insight-block__label">Наблюдение</span>
+          <p class="insight-block__text">
+            Одному пользователю достаточно выбрать настроение, другому важно уточнить сюжет, атмосферу или темп фильма.
+          </p>
+        </div>
+
+        <div class="insight-block insight-block--insight">
+          <span class="insight-block__label insight-block__label--insight">💡 Инсайт</span>
+          <p class="insight-block__text">
+            Нет единого сценария выбора. Люди входят в сервис с разной глубиной запроса — от «хочу кино» до «ищу медленный триллер про маньяков».
+          </p>
+        </div>
+
+        <div class="insight-block">
+          <span class="insight-block__label">Возможность для продукта</span>
+          <p class="insight-block__text">
+            Нужно предусмотреть как быстрый подбор, так и более точный поиск с дополнительными параметрами.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== ПЕРСОНЫ ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Персоны</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      На основе интервью я выделила несколько типов поведения при выборе фильма. Они отличаются не столько демографическими характеристиками, сколько потребностями и тем, насколько точно пользователь понимает, что хочет посмотреть
+
+Персоны помогают показать эти различия и определить сценарии, которые должен поддерживать сервис
+    </p>
+
+    <!-- Фото по центру -->
+    <div style="margin: 40px 0;">
+      <img 
+        src="images/boli.png" 
+        alt="Персоны и их боли" 
+        class="lightbox-trigger" 
+        style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto; border-radius: 20px; cursor: zoom-in; box-shadow: 0 10px 30px rgba(0,0,0,0.05);"
+      >
+    </div>
+    
+  </div>
+</section>
+
+<!-- Модальное окно для просмотра изображения -->
+<div id="lightbox-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out;" onclick="closeLightbox()">
+  <img id="lightbox-image" src="" alt="Увеличенное изображение" style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 12px;">
+  <button onclick="closeLightbox()" style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; font-size: 24px; cursor: pointer;">×</button>
+</div>
+
+<script>
+  document.querySelectorAll('.lightbox-trigger').forEach(img => {
+    img.addEventListener('click', function() {
+      const modal = document.getElementById('lightbox-modal');
+      const modalImg = document.getElementById('lightbox-image');
+      modalImg.src = this.src;
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    const modal = document.getElementById('lightbox-modal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+
+
+<!-- ===== ДЖОБ СТОРИ ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Джоб стори</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      На основе персон и их болей я сформулировала ключевые сценарии использования продукта (JTBD) и связку «Боль → Решение». Это помогло перейти от абстрактных проблем к конкретным функциям интерфейса.
+    </p>
+
+    <style>
+      .jtbd-priority {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px 12px;
+        border-radius: 100px;
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      /* Высокий = зелёный */
+      .jtbd-priority--high {
+        background: #E8F5E9;
+        color: #2E7D32;
+        border: 1px solid #A5D6A7;
+      }
+      /* Средний = жёлтый */
+      .jtbd-priority--medium {
+        background: #F0F4C3;
+        color: #827717;
+        border: 1px solid #DCE775;
+      }
+      /* Низкий = красный */
+      .jtbd-priority--low {
+        background: #FFEBEE;
+        color: #C62828;
+        border: 1px solid #EF9A9A;
+      }
+
+      /* Сноска про приоритет */
+      .jtbd-note {
+        margin-top: 20px;
+        padding: 20px 24px;
+        background: #F0F0F0;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .jtbd-note__head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #17231D;
+        opacity: 0.7;
+      }
+      .jtbd-note__head svg {
+        width: 16px;
+        height: 16px;
+        opacity: 0.6;
+      }
+      .jtbd-note__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .jtbd-note__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #17231D;
+        opacity: 0.75;
+      }
+      .jtbd-note__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-top: 6px;
+      }
+      /* Точки в сноске — те же цвета, что и плашки */
+      .jtbd-note__dot--high { background: #2E7D32; }
+      .jtbd-note__dot--medium { background: #827717; }
+      .jtbd-note__dot--low { background: #C62828; }
+      .jtbd-note__item strong {
+        opacity: 1;
+        font-weight: 600;
+      }
+
+      @media (max-width: 900px) {
+        .jtbd-table-wrapper { overflow-x: auto; }
+        .jtbd-table { min-width: 900px; }
+      }
+    </style>
+
+    <div class="jtbd-table-wrapper" style="background: #FFFFFF; border-radius: 20px; overflow: hidden; border: 1px solid rgba(0,0,0,0.1);">
+      <table class="jtbd-table" style="width: 100%; border-collapse: collapse; text-align: left; table-layout: fixed;">
+        <thead>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.1); background: #FAFAFA;">
+            <th style="padding: 20px 24px; font-size: 16px; font-weight: 500; color: #888; width: 12%;">Приоритет</th>
+            <th style="padding: 20px 24px; font-size: 16px; font-weight: 500; color: #888; width: 33%;">Job Story</th>
+            <th style="padding: 20px 24px; font-size: 16px; font-weight: 500; color: #888; width: 27%;">Боли</th>
+            <th style="padding: 20px 24px; font-size: 16px; font-weight: 500; color: #888; width: 28%;">Решения</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <!-- Строка 1 — Высокий приоритет (зелёный) -->
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+            <td style="padding: 24px; vertical-align: top;">
+              <span class="jtbd-priority jtbd-priority--high">Высокий</span>
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #17231D; vertical-align: top;">
+              Когда я прихожу домой уставшая и не хочу думать, я хочу получить готовый список фильмов под мое текущее настроение, чтобы сразу включить кино и расслабиться.
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #555; vertical-align: top;">
+              <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">Бесконечный скроллинг каталога утомляет.</li>
+                <li>Непонятно, какой фильм подойдет под эмоциональное состояние.</li>
+              </ul>
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #17231D; vertical-align: top;">
+              <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">Кнопка «Подобрать случайно» (3 фильма по настроению).</li>
+                <li>Быстрый подбор через ИИ-чат на главной.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Строка 2 — Средний приоритет (жёлтый) -->
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+            <td style="padding: 24px; vertical-align: top;">
+              <span class="jtbd-priority jtbd-priority--medium">Средний</span>
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #17231D; vertical-align: top;">
+              Когда мне хочется посмотреть что-то специфическое (например, «медленное кино с атмосферой нуара»), я хочу найти фильм, который соответствует моему тонкому вкусу.
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #555; vertical-align: top;">
+              <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">Стандартные фильтры (жанр, год) не работают для сложных запросов.</li>
+                <li>Не хватает фильтров по атмосфере, темпу и сюжету.</li>
+              </ul>
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #17231D; vertical-align: top;">
+              <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">Расширенные фильтры (Сюжет и сеттинг, Тон и атмосфера, Темп).</li>
+                <li>ИИ-поиск по текстовому описанию.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Строка 3 — Высокий приоритет (зелёный) -->
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.1);">
+            <td style="padding: 24px; vertical-align: top;">
+              <span class="jtbd-priority jtbd-priority--high">Высокий</span>
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #17231D; vertical-align: top;">
+              Когда я собираюсь смотреть кино с семьей, я хочу быстро отфильтровать фильмы, которые не подходят детям, чтобы не прерывать просмотр.
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #555; vertical-align: top;">
+              <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">Сложно найти контент, интересный и детям, и взрослым.</li>
+                <li>Риск случайно включить сцену с насилием.</li>
+              </ul>
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #17231D; vertical-align: top;">
+              <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">Фильтр «Можно с детьми» и по возрасту.</li>
+                <li>Отдельная секция «Случай: Семейный вечер».</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Строка 4 — Средний приоритет (жёлтый) -->
+          <tr>
+            <td style="padding: 24px; vertical-align: top;">
+              <span class="jtbd-priority jtbd-priority--medium">Средний</span>
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #17231D; vertical-align: top;">
+              Когда я вижу незнакомый фильм, я хочу быстро понять, чем он меня зацепит, чтобы не тратить время на скучное кино.
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #555; vertical-align: top;">
+              <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">Рейтинга и жанра недостаточно для понимания ценности.</li>
+                <li>Нужно уходить на сторонние сайты за отзывами.</li>
+              </ul>
+            </td>
+            <td style="padding: 24px; font-size: 15px; line-height: 1.5; color: #17231D; vertical-align: top;">
+              <ul style="margin: 0; padding-left: 20px;">
+                <li style="margin-bottom: 8px;">Блок «Почему стоит посмотреть» (Глазик) с кратким ИИ-описанием.</li>
+                <li>Акцент на эмоциях и атмосфере в описании.</li>
+              </ul>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Сноска про приоритет -->
+    <div class="jtbd-note">
+      <div class="jtbd-note__head">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        Как определялся приоритет
+      </div>
+      <ul class="jtbd-note__list">
+        <li class="jtbd-note__item">
+          <span class="jtbd-note__dot jtbd-note__dot--high"></span>
+          <span><strong>Высокий приоритет</strong> — боль упоминалась у 4–5 респондентов, затрагивает большинство персон и блокирует основной сценарий использования сервиса.</span>
+        </li>
+        <li class="jtbd-note__item">
+          <span class="jtbd-note__dot jtbd-note__dot--medium"></span>
+          <span><strong>Средний приоритет</strong> — боль отмечали 2–3 респондента, важна для конкретной группы пользователей, но не критична для базового сценария.</span>
+        </li>
+        <li class="jtbd-note__item">
+          <span class="jtbd-note__dot jtbd-note__dot--low"></span>
+          <span><strong>Низкий приоритет</strong> — единичные упоминания, полезно реализовать, но не влияет на ключевые метрики продукта.</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- ===== ЗАДАЧИ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Задачи в&nbsp;рамках проекта</h2>
+        <p class="case-tasks__subtitle">
+          На&nbsp;основе выявленных проблем я&nbsp;сформулировала задачи, которые определили направление дальнейшей работы
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px;">
+          <div style="position: relative; padding: 32px 28px 28px; background: #F0F0F0; border-radius: 24px;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #ffffff; border-radius: 12px; margin-bottom: 60px; font-size: 22px;">⏱️</div>
+            <p style="font-size: 18px; font-weight: 500; line-height: 1.4; color: #17231D; margin: 0;">
+              Сократить количество действий, необходимых для перехода от желания посмотреть кино к выбору конкретного фильма.
+            </p>
+          </div>
+          <div style="position: relative; padding: 32px 28px 28px; background: #F0F0F0; border-radius: 24px;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #ffffff; border-radius: 12px; margin-bottom: 60px; font-size: 22px;">🎭</div>
+            <p style="font-size: 18px; font-weight: 500; line-height: 1.4; color: #17231D; margin: 0;">
+              Дать возможность искать фильмы не только по жанрам и стандартным параметрам, но и по настроению, атмосфере и содержанию.
+            </p>
+          </div>
+          <div style="position: relative; padding: 32px 28px 28px; background: #F0F0F0; border-radius: 24px;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #ffffff; border-radius: 12px; margin-bottom: 60px; font-size: 22px;">💡</div>
+            <p style="font-size: 18px; font-weight: 500; line-height: 1.4; color: #17231D; margin: 0;">
+              Предоставить пользователю достаточно информации о фильме, чтобы он мог оценить, подходит ли ему этот вариант, не переходя на сторонние ресурсы.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ===== КРИТЕРИИ УСПЕХА ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Критерии успеха</h2>
+        
+        <!-- Сетка из 3 колонок -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px;">
+          
+          <div style="background: #F0F0F0; border-radius: 20px; padding: 32px;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #ffffff; border-radius: 50%; font-size: 20px; font-weight: 600; color: #17231D; margin-bottom: 24px;">✓</div>
+            <p style="font-size: 18px; font-weight: 500; line-height: 1.45; color: #17231D; margin: 0;">
+              Пользователь находит подходящий фильм за 3–4 клика
+            </p>
+          </div>
+
+          <div style="background: #F0F0F0; border-radius: 20px; padding: 32px;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #ffffff; border-radius: 50%; font-size: 20px; font-weight: 600; color: #17231D; margin-bottom: 24px;">✓</div>
+            <p style="font-size: 18px; font-weight: 500; line-height: 1.45; color: #17231D; margin: 0;">
+              Пользователь понимает, почему фильм стоит посмотреть, благодаря блоку «Почему стоит посмотреть»
+            </p>
+          </div>
+
+          <div style="background: #F0F0F0; border-radius: 20px; padding: 32px;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #ffffff; border-radius: 50%; font-size: 20px; font-weight: 600; color: #17231D; margin-bottom: 24px;">✓</div>
+            <p style="font-size: 18px; font-weight: 500; line-height: 1.45; color: #17231D; margin: 0;">
+             Основные сценарии поиска доступны и не трубуют от пользователя лишних действий
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ЦЕННОСТЬ ПРИЛОЖЕНИЯ ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Ценность </h2>
+        <p class="case-section__text">
+          МувиМуд — сервис персонализированного подбора кино на основе эмоционального состояния пользователя
+        </p>
+        <div class="case-value">
+          <div class="case-value__card">
+            <span class="case-value__label">Для бизнеса</span>
+            <p class="case-value__text">
+              <strong>Ценность::</strong> более релевантные рекомендации могут повысить вероятность того, что пользователь найдёт подходящий фильм и продолжит пользоваться сервисом. Эту гипотезу можно проверить на следующем этапе — после запуска продукта и сбора поведенческой аналитики.
+            </p>
+          </div>
+          <div class="case-value__card">
+            <span class="case-value__label">Для пользователя</span>
+            <p class="case-value__text">
+              <strong>Ценность:</strong> закрыть самую частую боль — долгие поиски «того самого» фильма: вместо изучения жанров, рейтингов и рецензий достаточно обозначить своё настроение, и алгоритм быстро предложит подходящие варианты
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    
+<!-- ===== ГИПОТЕЗЫ ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Гипотезы</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      На основе пользовательских потребностей я сформулировала гипотезы о том, какие механики могут упростить выбор фильма.
+    </p>
+
+    <style>
+      .hyp-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .hyp-card {
+        background: #F0F0F0;
+        border-radius: 20px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        box-sizing: border-box;
+      }
+      .hyp-card--rejected {
+        border-left: 4px solid #EF4444;
+      }
+
+      .hyp-card__head {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .hyp-card__num {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        color: #17231D;
+        font-size: 13px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .hyp-card__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: #17231D;
+        margin: 0;
+        padding-top: 6px;
+      }
+
+      /* Статусы */
+      .hyp-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        align-self: flex-start;
+        padding: 6px 14px;
+        border-radius: 100px;
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      .hyp-badge--verified {
+        background: #E8F5E9;
+        color: #2E7D32;
+        border: 1px solid #A5D6A7;
+      }
+      .hyp-badge--pending {
+        background: #F0F4C3;
+        color: #827717;
+        border: 1px solid #DCE775;
+      }
+      .hyp-badge--rejected {
+        background: #FFEBEE;
+        color: #C62828;
+        border: 1px solid #EF9A9A;
+      }
+
+      /* Блоки предположение / решение */
+      .hyp-block__label {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #17231D;
+        opacity: 0.45;
+        margin-bottom: 6px;
+      }
+      .hyp-block__text {
+        font-size: 14px;
+        line-height: 1.55;
+        color: #17231D;
+        opacity: 0.8;
+        margin: 0;
+      }
+      .hyp-block__text strong {
+        opacity: 1;
+        font-weight: 600;
+      }
+
+      /* Сноска про статусы */
+      .hyp-note {
+        margin-top: 24px;
+        padding: 24px 28px;
+        background: #F0F0F0;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .hyp-note__head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #17231D;
+        opacity: 0.7;
+      }
+      .hyp-note__head svg { width: 16px; height: 16px; opacity: 0.6; }
+      .hyp-note__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .hyp-note__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #17231D;
+        opacity: 0.75;
+      }
+      .hyp-note__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-top: 6px;
+      }
+      .hyp-note__dot--verified { background: #2E7D32; }
+      .hyp-note__dot--pending { background: #827717; }
+      .hyp-note__dot--rejected { background: #C62828; }
+      .hyp-note__item strong { opacity: 1; font-weight: 600; }
+
+      @media (max-width: 900px) {
+        .hyp-grid { grid-template-columns: 1fr; }
+        .hyp-card { padding: 24px; }
+      }
+    </style>
+
+    <div class="hyp-grid">
+
+      <!-- 01 -->
+      <div class="hyp-card">
+        <div class="hyp-card__head">
+          <span class="hyp-card__num">01</span>
+          <h3 class="hyp-card__title">Быстрый подбор по настроению</h3>
+        </div>
+        <span class="hyp-badge hyp-badge--verified">Проверена в юзабилити-тестировании</span>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Предположение</div>
+          <p class="hyp-block__text">
+            Если предложить пользователю выбрать настроение и получить несколько подходящих фильмов, ему будет проще начать поиск без необходимости изучать весь каталог.
+          </p>
+        </div>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Решение</div>
+          <p class="hyp-block__text">Сценарий случайного подбора с выдачей трёх фильмов.</p>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="hyp-card">
+        <div class="hyp-card__head">
+          <span class="hyp-card__num">02</span>
+          <h3 class="hyp-card__title">Поиск через свободный текстовый запрос</h3>
+        </div>
+        <span class="hyp-badge hyp-badge--verified">Проверена в юзабилити-тестировании</span>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Предположение</div>
+          <p class="hyp-block__text">
+            Если пользователь сможет описать желаемый фильм своими словами, это поможет находить картины, которые сложно подобрать стандартными фильтрами.
+          </p>
+        </div>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Решение</div>
+          <p class="hyp-block__text">ИИ-помощник на главной странице.</p>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="hyp-card">
+        <div class="hyp-card__head">
+          <span class="hyp-card__num">03</span>
+          <h3 class="hyp-card__title">Объяснение ценности фильма</h3>
+        </div>
+        <span class="hyp-badge hyp-badge--verified">Проверена в юзабилити-тестировании</span>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Предположение</div>
+          <p class="hyp-block__text">
+            Если добавить короткое описание того, чем фильм может заинтересовать пользователя, ему будет проще принять решение о просмотре.
+          </p>
+        </div>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Решение</div>
+          <p class="hyp-block__text">Блок «Почему стоит посмотреть».</p>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="hyp-card">
+        <div class="hyp-card__head">
+          <span class="hyp-card__num">04</span>
+          <h3 class="hyp-card__title">Расширенные фильтры</h3>
+        </div>
+        <span class="hyp-badge hyp-badge--verified">Проверена в юзабилити-тестировании</span>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Предположение</div>
+          <p class="hyp-block__text">
+            Если разделить параметры поиска по смыслу и дать возможность уточнять настроение, сюжет и атмосферу, поиск станет более гибким.
+          </p>
+        </div>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Решение</div>
+          <p class="hyp-block__text">Основные и дополнительные фильтры.</p>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="hyp-card">
+        <div class="hyp-card__head">
+          <span class="hyp-card__num">05</span>
+          <h3 class="hyp-card__title">Похожие фильмы</h3>
+        </div>
+        <span class="hyp-badge hyp-badge--pending">Требует дополнительной проверки</span>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Предположение</div>
+          <p class="hyp-block__text">
+            Если предложить похожие фильмы на странице выбранной картины, пользователь сможет продолжить поиск без возвращения в каталог.
+          </p>
+        </div>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Решение</div>
+          <p class="hyp-block__text">Блок похожих фильмов.</p>
+        </div>
+      </div>
+
+      <!-- 06 -->
+      <div class="hyp-card hyp-card--rejected">
+        <div class="hyp-card__head">
+          <span class="hyp-card__num">06</span>
+          <h3 class="hyp-card__title">Тематические подборки</h3>
+        </div>
+        <span class="hyp-badge hyp-badge--rejected">От идеи отказалась после тестирования</span>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Предположение</div>
+          <p class="hyp-block__text">
+            Если разместить на главной готовые тематические подборки, пользователю будет проще начать поиск без формулирования запроса.
+          </p>
+        </div>
+        <div class="hyp-block">
+          <div class="hyp-block__label">Решение после проверки</div>
+          <p class="hyp-block__text">
+            От тематических подборок я отказалась, так как они перегружали главный экран и конкурировали с основными сценариями поиска.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Сноска про статусы -->
+    <div class="hyp-note">
+      <div class="hyp-note__head">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        Что означают статусы
+      </div>
+      <ul class="hyp-note__list">
+        <li class="hyp-note__item">
+          <span class="hyp-note__dot hyp-note__dot--verified"></span>
+          <span><strong>Проверена в юзабилити-тестировании</strong> — пользователь проходил этот сценарий в тесте, и решение помогло ему выполнить задачу.</span>
+        </li>
+        <li class="hyp-note__item">
+          <span class="hyp-note__dot hyp-note__dot--pending"></span>
+          <span><strong>Требует дополнительной проверки</strong> — гипотеза реализована и логична, но не была приоритетом в текущем тестировании; её эффект нужно оценивать на живом продукте.</span>
+        </li>
+        <li class="hyp-note__item">
+          <span class="hyp-note__dot hyp-note__dot--rejected"></span>
+          <span><strong>От идеи отказалась после тестирования</strong> — решение проверили в прототипе, и тестирование показало, что оно мешает основному сценарию.</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <!-- ===== ПЕРВЫЙ ПРОТОТИП ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Первый прототип</h2>
+        <p class="case-section__text">
+          На основе сформированных гипотез я перешла к созданию первого прототипа.
+
+На этом этапе мне хотелось объединить несколько способов поиска фильма: тематические подборки, подбор по настроению, фильтры и поиск через текстовый запрос.
+Поэтому следующим этапом стало тестирование прототипа, которое помогло выявить слабые места первоначального решения
+        </p>
+
+        <div style="background: #F0F0F0; border-radius: 24px; padding: 40px; margin-top: 40px;">
+          
+          <!-- Кнопка слева -->
+          <div style="text-align: left; margin-bottom: 40px;">
+            <a href="https://svptdsgn.github.io/Movie-prototype/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; padding: 10px 10px 10px 32px; background: #FFFFFF; color: #17231D; border: 1.5px solid #BFDB39; border-radius: 100px; font-size: 16px; font-weight: 500; text-decoration: none; transition: all 0.2s ease;" onmouseover="this.style.background='#F4FCE3';" onmouseout="this.style.background='#FFFFFF';">
+              <span>Посмотреть первый прототип</span>
+              <span style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #BFDB39; border-radius: 50%; color: #17231D;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+            <p style="font-size: 13px; color: #888; margin-top: 16px; margin-bottom: 0;">
+              *Архивная версия. В ней использовались тематические подборки, от которых мы позже отказались.
+            </p>
+          </div>
+
+          <!-- Сетка с картинками одинакового размера -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+            
+            <!-- Контейнер 1 -->
+            <div style="position: relative; width: 100%; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; background: #1A1A1A; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+              <img src="images/site1.png" alt="Первый прототип — экран 1" class="lightbox-trigger" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; display: block;">
+            </div>
+            
+            <!-- Контейнер 2 -->
+            <div style="position: relative; width: 100%; aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; background: #1A1A1A; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+              <img src="images/site2.png" alt="Первый прототип — экран 2" class="lightbox-trigger" style="width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; display: block;">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+<!-- ===== ТЕСТИРОВАНИЕ И ИТЕРАЦИЯ ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Тестирование и итерация</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      Собранный прототип я проверила на 5 респондентах с помощью юзабилити-тестирования и глубинных интервью. Это позволило увидеть реальное взаимодействие с интерфейсом, а не только догадки.
+    </p>
+
+    <!-- Фото по центру -->
+    <div style="text-align: center; margin: 40px 0;">
+      <img 
+        src="images/sozvon.png" 
+        alt="Проведение юзабилити-тестирования" 
+        style="display: block; max-width: 400px; max-height: 420px; width: 100%; height: auto; margin: 0 auto; border-radius: 16px; object-fit: contain;"
+      >
+      <p style="margin-top: 16px; font-size: 14px; color: #17231D; opacity: 0.6; font-style: italic;">
+        Скриншот глубинного интервью
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ===== ПРОБЛЕМА → РЕШЕНИЕ ===== -->
+<section class="case-section" id="main-screen">
+  <div class="container">
+    <h2 class="case-heading">Проблема → Решение</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      В первом прототипе я сосредоточилась на том, чтобы предоставить пользователю как можно больше возможностей для выбора. Однако на тот момент я ещё не понимала, насколько удобно эти сценарии будут работать вместе.  В ходе тестирования я наблюдала за взаимодействием с интерфейсом и выявила то, что существующий прототип не отвечает запросам пользователя. Для более точного протитпа я пошла от проблемы к решению    </p>
+
+    <style>
+      .pr-head {
+        display: grid;
+        grid-template-columns: 56px 1fr 64px 1fr;
+        gap: 20px;
+        align-items: center;
+        padding: 0 28px;
+        margin-bottom: 16px;
+      }
+      .pr-head__label {
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #17231D;
+        opacity: 0.45;
+      }
+      .pr-head__spacer { display: block; }
+
+      .pr-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .pr-row {
+        background: #F0F0F0;
+        border-radius: 20px;
+        padding: 24px 28px;
+        display: grid;
+        grid-template-columns: 56px 1fr 64px 1fr;
+        gap: 20px;
+        align-items: center;
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+      .pr-row:hover {
+        background: #E8E8E8;
+        transform: translateY(-2px);
+      }
+
+      .pr-num {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        color: #17231D;
+        font-size: 13px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .pr-problem {
+        font-size: 15px;
+        line-height: 1.5;
+        color: #17231D;
+        opacity: 0.7;
+        margin: 0;
+      }
+      .pr-problem__tag {
+        display: none;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #17231D;
+        opacity: 0.4;
+        margin-bottom: 6px;
+      }
+
+      .pr-arrow {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #BFDB39;
+        color: #17231D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        box-shadow: 0 6px 16px rgba(191, 219, 57, 0.35);
+      }
+      .pr-arrow svg { width: 18px; height: 18px; }
+
+      .pr-solution {
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #17231D;
+        margin: 0;
+      }
+      .pr-solution__tag {
+        display: none;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #17231D;
+        opacity: 0.4;
+        margin-bottom: 6px;
+      }
+
+      @media (max-width: 767px) {
+        .pr-head { display: none; }
+        .pr-row {
+          grid-template-columns: 1fr;
+          gap: 12px;
+          padding: 22px 20px;
+        }
+        .pr-num { justify-self: start; }
+        .pr-problem__tag,
+        .pr-solution__tag { display: block; }
+        .pr-arrow {
+          justify-self: start;
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+
+    <!-- Шапка колонок (десктоп) -->
+    <div class="pr-head">
+      <span class="pr-head__spacer"></span>
+      <span class="pr-head__label">Проблема пользователя</span>
+      <span class="pr-head__spacer"></span>
+      <span class="pr-head__label">Решение</span>
+    </div>
+
+    <div class="pr-list">
+
+      <div class="pr-row">
+        <span class="pr-num">01</span>
+        <p class="pr-problem">
+          <span class="pr-problem__tag">Проблема</span>
+          Не знает, что посмотреть
+        </p>
+        <span class="pr-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+        <p class="pr-solution">
+          <span class="pr-solution__tag">Решение</span>
+          Подбор по настроению
+        </p>
+      </div>
+
+      <div class="pr-row">
+        <span class="pr-num">02</span>
+        <p class="pr-problem">
+          <span class="pr-problem__tag">Проблема</span>
+          Не хочет изучать сотни карточек
+        </p>
+        <span class="pr-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+        <p class="pr-solution">
+          <span class="pr-solution__tag">Решение</span>
+          Случайная подборка из трёх фильмов
+        </p>
+      </div>
+
+      <div class="pr-row">
+        <span class="pr-num">03</span>
+        <p class="pr-problem">
+          <span class="pr-problem__tag">Проблема</span>
+          Не может выразить запрос через фильтры
+        </p>
+        <span class="pr-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+        <p class="pr-solution">
+          <span class="pr-solution__tag">Решение</span>
+          ИИ-помощник
+        </p>
+      </div>
+
+      <div class="pr-row">
+        <span class="pr-num">04</span>
+        <p class="pr-problem">
+          <span class="pr-problem__tag">Проблема</span>
+          Не понимает, подойдёт ли фильм
+        </p>
+        <span class="pr-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+        <p class="pr-solution">
+          <span class="pr-solution__tag">Решение</span>
+          Блок «Почему стоит посмотреть»
+        </p>
+      </div>
+
+      <div class="pr-row">
+        <span class="pr-num">05</span>
+        <p class="pr-problem">
+          <span class="pr-problem__tag">Проблема</span>
+          Ищет кино с определённой атмосферой
+        </p>
+        <span class="pr-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+        <p class="pr-solution">
+          <span class="pr-solution__tag">Решение</span>
+          Расширенные фильтры
+        </p>
+      </div>
+
+      <div class="pr-row">
+        <span class="pr-num">06</span>
+        <p class="pr-problem">
+          <span class="pr-problem__tag">Проблема</span>
+          Хочет продолжить поиск похожего контента
+        </p>
+        <span class="pr-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+        <p class="pr-solution">
+          <span class="pr-solution__tag">Решение</span>
+          Рекомендации похожих фильмов
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- ===== ПРОЦЕСС РАБОТЫ ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Повторное проектирование</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+     После выделения проблем и решения я вернулась к этапу проектирования и пересмотрела структуру главной страницы.
+
+Вместо большого количества конкурирующих элементов я решила выделить три основных сценария.
+Я также пересмотрела расположение элементов и информационную иерархию, чтобы основные действия были заметнее, а дополнительные возможности не перегружали интерфейс.
+
+Таким образом, вторая версия стала результатом пересмотра первоначальной логики взаимодействия.
+    </p>
+
+    <style>
+      .process-accordion {
+        background: #F0F0F0;
+        border-radius: 20px;
+        padding: 32px;
+        position: relative;
+        box-sizing: border-box;
+      }
+      .process-slider {
+        position: relative;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .process-slides {
+        position: relative;
+        width: 100%;
+        /* фиксируем высоту, чтобы секция была в один скролл */
+        height: 460px;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #FFFFFF;
+        border: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      }
+      .process-slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        transform: translateX(40px);
+        transition: opacity 0.45s ease, transform 0.45s ease;
+        pointer-events: none;
+        cursor: zoom-in;
+      }
+      .process-slide.active {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+      }
+      .process-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+      /* стрелки */
+      .process-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        border: 1px solid rgba(0,0,0,0.1);
+        color: #17231D;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        z-index: 5;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+      .process-arrow:hover {
+        background: #17231D;
+        color: #FFFFFF;
+        border-color: #17231D;
+      }
+      .process-arrow--prev { left: -22px; }
+      .process-arrow--next { right: -22px; }
+      /* точки-индикаторы */
+      .process-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .process-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(23,35,29,0.2);
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .process-dot.active {
+        background: #17231D;
+        transform: scale(1.25);
+      }
+      /* подпись под слайдом */
+      .process-caption {
+        margin-top: 24px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #17231D;
+        opacity: 0.8;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 48px;
+      }
+      .process-caption strong {
+        display: block;
+        font-weight: 600;
+        opacity: 1;
+        margin-bottom: 6px;
+      }
+
+      /* Лайтбокс для процесс-блока (отдельный id, не конфликтует с отзывами) */
+      .process-lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.92);
+        backdrop-filter: blur(12px);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        cursor: zoom-out;
+      }
+      .process-lightbox.active { display: flex; }
+      .process-lightbox img {
+        max-width: 90vw;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 12px;
+        cursor: default;
+      }
+      .process-lightbox .pl-close {
+        position: absolute;
+        top: 24px;
+        right: 32px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .process-lightbox .pl-close:hover { background: rgba(255,255,255,0.2); }
+      .process-lightbox .pl-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .process-lightbox .pl-nav:hover { background: rgba(255,255,255,0.2); }
+      .process-lightbox .pl-prev { left: 24px; }
+      .process-lightbox .pl-next { right: 24px; }
+
+      @media (max-width: 768px) {
+        .process-slides { height: 380px; }
+        .process-arrow--prev { left: 8px; }
+        .process-arrow--next { right: 8px; }
+        .process-accordion { padding: 24px 16px; }
+      }
+    </style>
+
+    <div class="process-accordion">
+      <div class="process-slider">
+        <button class="process-arrow process-arrow--prev" onclick="changeProcessSlide(-1)">‹</button>
+
+        <div class="process-slides">
+          <div class="process-slide active" onclick="openProcessLightbox(0)">
+            <img src="images/bloknot1.png" alt="Набросок структуры главной страницы">
+          </div>
+          <div class="process-slide" onclick="openProcessLightbox(1)">
+            <img src="images/bloknot2.png" alt="Набросок карточки фильма">
+          </div>
+          <div class="process-slide" onclick="openProcessLightbox(2)">
+            <img src="images/bloknot3.png" alt="Набросок ИИ-подбора">
+          </div>
+        </div>
+
+        <button class="process-arrow process-arrow--next" onclick="changeProcessSlide(1)">›</button>
+
+        <div class="process-dots">
+          <span class="process-dot active" onclick="goToProcessSlide(0)"></span>
+          <span class="process-dot" onclick="goToProcessSlide(1)"></span>
+          <span class="process-dot" onclick="goToProcessSlide(2)"></span>
+        </div>
+
+        <div class="process-caption" id="processCaption">
+          <strong>01 · Структура и сценарии</strong>
+          Первый набросок структуры главной. Собрала в одном экране карусель фильмов, кнопку случайного подбора и ИИ-чат — чтобы пользователь мог войти в сервис с разной глубиной запроса
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Лайтбокс для процесса -->
+<div class="process-lightbox" id="processLightbox" onclick="closeProcessLightbox(event)">
+  <button class="pl-close" onclick="closeProcessLightbox(event)">×</button>
+  <button class="pl-nav pl-prev" onclick="navigateProcessLightbox(event, -1)">‹</button>
+  <button class="pl-nav pl-next" onclick="navigateProcessLightbox(event, 1)">›</button>
+  <img id="processLightboxImg" src="" alt="Набросок в полном размере">
+</div>
+
+<script>
+  const processImages = [
+    'images/bloknot1.png',
+    'images/bloknot2.png',
+    'images/bloknot3.png'
+  ];
+  const processCaptions = [
+    '<strong>01 · Структура и сценарии</strong>Первые наброски главной страницы: карусель, точки входа в ИИ-подбор и расположение каталога. На этом этапе зафиксировала, что сервис ведёт пользователя от состояния к выбору, а не от жанра.',
+    '<strong>02 · Карточка фильма</strong>Второй уровень глубины: фильтры по настроению, жанрам и сеттингам. Здесь пользователь переходит от «хочу фильм» к «хочу фильм про маньяков с неожиданным концом» ',
+    '<strong>03 · Короткие нарезки из ключевых сцен дают ощущение атмосферы за 30 секунд — быстрее, чем читать рецензию, и честнее, чем смотреть трейлер, где часто показывают всё самое зрелищное и spoilят сюжет.'
+  ];
+
+  let currentProcessSlide = 0;
+  const processSlides = document.querySelectorAll('.process-slide');
+  const processDots = document.querySelectorAll('.process-dot');
+
+  function renderProcessSlide(index) {
+    processSlides.forEach((s, i) => s.classList.toggle('active', i === index));
+    processDots.forEach((d, i) => d.classList.toggle('active', i === index));
+    document.getElementById('processCaption').innerHTML = processCaptions[index];
+  }
+
+  function changeProcessSlide(dir) {
+    currentProcessSlide = (currentProcessSlide + dir + processImages.length) % processImages.length;
+    renderProcessSlide(currentProcessSlide);
+  }
+
+  function goToProcessSlide(index) {
+    currentProcessSlide = index;
+    renderProcessSlide(currentProcessSlide);
+  }
+
+  // Лайтбокс процесса
+  let currentProcessLightbox = 0;
+  function openProcessLightbox(index) {
+    currentProcessLightbox = index;
+    document.getElementById('processLightboxImg').src = processImages[index];
+    document.getElementById('processLightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeProcessLightbox(event) {
+    if (event.target.id === 'processLightbox' || event.target.classList.contains('pl-close')) {
+      document.getElementById('processLightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  function navigateProcessLightbox(event, dir) {
+    event.stopPropagation();
+    currentProcessLightbox = (currentProcessLightbox + dir + processImages.length) % processImages.length;
+    document.getElementById('processLightboxImg').src = processImages[currentProcessLightbox];
+  }
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('processLightbox');
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape') { lb.classList.remove('active'); document.body.style.overflow = ''; }
+    if (e.key === 'ArrowLeft') navigateProcessLightbox(e, -1);
+    if (e.key === 'ArrowRight') navigateProcessLightbox(e, 1);
+  });
+</script>
+
+
+
+
+
+  
+<!-- ===== ЮЗЕР ФЛОУ (НОВЫЙ РАЗДЕЛ) ===== -->
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-heading">Юзер флоу</h2>
+        <p class="case-section__text">
+          Перед детальной проработкой экранов был описан основной путь пользователя внутри сервиса. Все сценарии приводят пользователя к одной основной задаче - быстро выбрать вариант для просмотра под настроение
+        </p>
+        
+        <!-- Контейнер для двух картинок в ряд -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; align-items: start;">
+          <figure class="case-interview-photo" style="margin: 0;">
+            <!-- 1 картинка: Главный экран -->
+            <img src="images/Untitled.png" alt="Юзер флоу — Главный экран">
+            <figcaption style="text-align: center; margin-top: 12px; font-size: 14px; color: #888;">1. Главный экран</figcaption>
+          </figure>
+          <figure class="case-interview-photo" style="margin: 0;">
+            <!-- 2 картинка: Страница фильма -->
+            <img src="images/Untitled%20(1).png" alt="Юзер флоу — Страница фильма">
+            <figcaption style="text-align: center; margin-top: 12px; font-size: 14px; color: #888;">2. Страница фильма</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- ===== ГЛАВНАЯ СТРАНИЦА ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Главная страница</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      Интерфейс построен вокруг трёх точек входа: карусель рекомендаций, случайный подбор по настроению и ИИ-чат. Каждый путь ведёт к странице фильма, но решает разные задачи пользователя.
+    </p>
+
+    <style>
+      .main-slider {
+        position: relative;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .main-slides {
+        position: relative;
+        width: 100%;
+        height: 460px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #FFFFFF;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      }
+      .main-slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.45s ease;
+        pointer-events: none;
+        cursor: zoom-in;
+      }
+      .main-slide.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .main-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+
+      /* Стрелки — снаружи карточки */
+      .main-arrow {
+        position: absolute;
+        top: 230px;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        border: none;
+        color: #17231D;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        z-index: 5;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      }
+      .main-arrow:hover {
+        background: #17231D;
+        color: #FFFFFF;
+      }
+      .main-arrow--prev { left: -60px; }
+      .main-arrow--next { right: -60px; }
+
+      /* Точки */
+      .main-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .main-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(23,35,29,0.2);
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .main-dot.active {
+        background: #17231D;
+        transform: scale(1.25);
+      }
+
+      /* Заголовок + краткое описание под точками */
+      .main-title {
+        margin-top: 22px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        color: #17231D;
+        line-height: 1.4;
+        min-height: 24px;
+      }
+      .main-desc {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+        color: #17231D;
+        opacity: 0.7;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 44px;
+      }
+      .main-desc strong {
+        font-weight: 600;
+        opacity: 1;
+      }
+
+      /* Лайтбокс */
+      .main-lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.92);
+        backdrop-filter: blur(12px);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        cursor: zoom-out;
+      }
+      .main-lightbox.active { display: flex; }
+      .main-lightbox img {
+        max-width: 90vw;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 12px;
+        cursor: default;
+      }
+      .main-lightbox .ml-close {
+        position: absolute;
+        top: 24px; right: 32px;
+        width: 44px; height: 44px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .main-lightbox .ml-close:hover { background: rgba(255,255,255,0.2); }
+      .main-lightbox .ml-nav {
+        position: absolute;
+        top: 50%; transform: translateY(-50%);
+        width: 48px; height: 48px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .main-lightbox .ml-nav:hover { background: rgba(255,255,255,0.2); }
+      .main-lightbox .ml-prev { left: 24px; }
+      .main-lightbox .ml-next { right: 24px; }
+
+      @media (max-width: 900px) {
+        .main-arrow--prev { left: 10px; }
+        .main-arrow--next { right: 10px; }
+        .main-slides { height: 380px; }
+        .main-arrow { top: 190px; }
+      }
+    </style>
+
+    <div class="main-slider">
+      <button class="main-arrow main-arrow--prev" onclick="changeMainSlide(-1)">‹</button>
+
+      <div class="main-slides">
+        <div class="main-slide active" onclick="openMainLightbox(0)">
+          <img src="images/ekran1.png" alt="Главная страница с каруселью и глазиком">
+        </div>
+        <div class="main-slide" onclick="openMainLightbox(1)">
+          <img src="images/ekran2.png" alt="Модалка случайного подбора">
+        </div>
+        <div class="main-slide" onclick="openMainLightbox(2)">
+          <img src="images/ekran3.png" alt="ИИ-чат">
+        </div>
+      </div>
+
+      <button class="main-arrow main-arrow--next" onclick="changeMainSlide(1)">›</button>
+
+      <div class="main-dots">
+        <span class="main-dot active" onclick="goToMainSlide(0)"></span>
+        <span class="main-dot" onclick="goToMainSlide(1)"></span>
+        <span class="main-dot" onclick="goToMainSlide(2)"></span>
+      </div>
+
+      <div class="main-title" id="mainTitle">01 · Карусель и кнопка «Глазик»</div>
+      <p class="main-desc" id="mainDesc">
+        Главная экран показывает рекомендации в виде веера карточек. На каждой карточке есть <strong>кнопка «Глазик»</strong> — по клику открывается модалка с постером, бейджами (рейтинг, год, длительность, страна, возраст) и кратким ИИ-описанием «Почему стоит посмотреть». Это снимает необходимость читать длинный синопсис и сразу объясняет, чем фильм зацепит именно сейчас.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Лайтбокс главной страницы -->
+<div class="main-lightbox" id="mainLightbox" onclick="closeMainLightbox(event)">
+  <button class="ml-close" onclick="closeMainLightbox(event)">×</button>
+  <button class="ml-nav ml-prev" onclick="navigateMainLightbox(event, -1)">‹</button>
+  <button class="ml-nav ml-next" onclick="navigateMainLightbox(event, 1)">›</button>
+  <img id="mainLightboxImg" src="" alt="Скриншот в полном размере">
+</div>
+
+<script>
+  const mainImages = [
+    'images/ekran1.png',
+    'images/ekran2.png',
+    'images/ekran3.png'
+  ];
+  const mainTitles = [
+    '01 · Карусель и кнопка «Глазик»',
+    '02 · Случайный подбор по настроению',
+    '03 · ИИ-чат для сложных запросов'
+  ];
+  const mainDescs = [
+    'Главный экран показывает рекомендации в виде веера карточек. На каждой карточке есть <strong>кнопка «Глазик»</strong> — по клику открывается модалка с постером, бейджами (рейтинг, год, длительность, страна, возраст) и кратким ИИ-описанием «Почему стоит посмотреть». Это снимает необходимость читать длинный синопсис и сразу объясняет, чем фильм зацепит именно сейчас.',
+    'Кнопка «Подобрать случайно» открывает модалку с фильтрами: настроение (грустное, весёлое, мистичное, тревожное, романтичное), формат (фильм, мультфильм, документальный), характер (популярное, любимое, новое) и длительность. Пользователь выбирает состояние — сервис показывает фильм под него, решая проблему «паралича выбора».',
+    'Фиолетовая иконка ИИ открывает чат, где можно описать запрос своими словами: «хочу что-то лёгкое на вечер» или «посоветуй триллер с неожиданным финалом». Это работает для сложных и неосознанных желаний, которые не выразить стандартными фильтрами по жанрам.'
+  ];
+
+  let currentMainSlide = 0;
+  const mainSlides = document.querySelectorAll('.main-slide');
+  const mainDots = document.querySelectorAll('.main-dot');
+
+  function renderMainSlide(index) {
+    mainSlides.forEach((s, i) => s.classList.toggle('active', i === index));
+    mainDots.forEach((d, i) => d.classList.toggle('active', i === index));
+    document.getElementById('mainTitle').textContent = mainTitles[index];
+    document.getElementById('mainDesc').innerHTML = mainDescs[index];
+  }
+
+  function changeMainSlide(dir) {
+    currentMainSlide = (currentMainSlide + dir + mainImages.length) % mainImages.length;
+    renderMainSlide(currentMainSlide);
+  }
+
+  function goToMainSlide(index) {
+    currentMainSlide = index;
+    renderMainSlide(currentMainSlide);
+  }
+
+  // Лайтбокс главной страницы
+  let currentMainLightbox = 0;
+  function openMainLightbox(index) {
+    currentMainLightbox = index;
+    document.getElementById('mainLightboxImg').src = mainImages[index];
+    document.getElementById('mainLightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMainLightbox(event) {
+    if (event.target.id === 'mainLightbox' || event.target.classList.contains('ml-close')) {
+      document.getElementById('mainLightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  function navigateMainLightbox(event, dir) {
+    event.stopPropagation();
+    currentMainLightbox = (currentMainLightbox + dir + mainImages.length) % mainImages.length;
+    document.getElementById('mainLightboxImg').src = mainImages[currentMainLightbox];
+  }
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('mainLightbox');
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape') { lb.classList.remove('active'); document.body.style.overflow = ''; }
+    if (e.key === 'ArrowLeft') navigateMainLightbox(e, -1);
+    if (e.key === 'ArrowRight') navigateMainLightbox(e, 1);
+  });
+</script>
+
+
+
+
+
+
+<!-- ===== КАТАЛОГ ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Каталог</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      Каталог предназначен для пользователей, которые хотят самостоятельно просматривать доступные фильмы и постепенно уточнять поиск.
+
+      Я использовала сетку карточек, чтобы пользователь мог одновременно видеть несколько вариантов и сравнивать их по основным характеристикам.
+
+      В карточках отображаются ключевые параметры фильма, а сортировка помогает изменить порядок выдачи в зависимости от приоритетов пользователя.
+
+      Для получения дополнительной информации предусмотрен переход к краткому описанию фильма.
+    </p>
+
+    <style>
+      .catalog-slider {
+        position: relative;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .catalog-slides {
+        position: relative;
+        width: 100%;
+        height: 460px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #FFFFFF;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      }
+      .catalog-slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.45s ease;
+        pointer-events: none;
+        cursor: zoom-in;
+      }
+      .catalog-slide.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .catalog-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+
+      /* Стрелки — снаружи карточки */
+      .catalog-arrow {
+        position: absolute;
+        top: 230px;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        border: none;
+        color: #17231D;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        z-index: 5;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      }
+      .catalog-arrow:hover {
+        background: #17231D;
+        color: #FFFFFF;
+      }
+      .catalog-arrow--prev { left: -60px; }
+      .catalog-arrow--next { right: -60px; }
+
+      /* Точки */
+      .catalog-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .catalog-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(23,35,29,0.2);
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .catalog-dot.active {
+        background: #17231D;
+        transform: scale(1.25);
+      }
+
+      /* Заголовок + краткое описание под точками */
+      .catalog-title {
+        margin-top: 22px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        color: #17231D;
+        line-height: 1.4;
+        min-height: 24px;
+      }
+      .catalog-desc {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+        color: #17231D;
+        opacity: 0.7;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 44px;
+      }
+      .catalog-desc strong {
+        font-weight: 600;
+        opacity: 1;
+      }
+
+      /* Лайтбокс */
+      .catalog-lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.92);
+        backdrop-filter: blur(12px);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        cursor: zoom-out;
+      }
+      .catalog-lightbox.active { display: flex; }
+      .catalog-lightbox img {
+        max-width: 90vw;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 12px;
+        cursor: default;
+      }
+      .catalog-lightbox .cl-close {
+        position: absolute;
+        top: 24px; right: 32px;
+        width: 44px; height: 44px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .catalog-lightbox .cl-close:hover { background: rgba(255,255,255,0.2); }
+      .catalog-lightbox .cl-nav {
+        position: absolute;
+        top: 50%; transform: translateY(-50%);
+        width: 48px; height: 48px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .catalog-lightbox .cl-nav:hover { background: rgba(255,255,255,0.2); }
+      .catalog-lightbox .cl-prev { left: 24px; }
+      .catalog-lightbox .cl-next { right: 24px; }
+
+      @media (max-width: 900px) {
+        .catalog-arrow--prev { left: 10px; }
+        .catalog-arrow--next { right: 10px; }
+        .catalog-slides { height: 380px; }
+        .catalog-arrow { top: 190px; }
+      }
+    </style>
+
+    <div class="catalog-slider">
+      <button class="catalog-arrow catalog-arrow--prev" onclick="changeCatalogSlide(-1)">‹</button>
+
+      <div class="catalog-slides">
+        <div class="catalog-slide active" onclick="openCatalogLightbox(0)">
+          <img src="images/ekran4.png" alt="Общий вид каталога">
+        </div>
+        <div class="catalog-slide" onclick="openCatalogLightbox(1)">
+          <img src="images/ekran5.png" alt="Фильтры каталога">
+        </div>
+        <div class="catalog-slide" onclick="openCatalogLightbox(2)">
+          <img src="images/ekran6.png" alt="Система фильтров">
+        </div>
+        <div class="catalog-slide" onclick="openCatalogLightbox(3)">
+          <img src="images/ekran17.png" alt="Функция Почему стоит посмотреть">
+        </div>
+      </div>
+
+      <button class="catalog-arrow catalog-arrow--next" onclick="changeCatalogSlide(1)">›</button>
+
+      <div class="catalog-dots">
+        <span class="catalog-dot active" onclick="goToCatalogSlide(0)"></span>
+        <span class="catalog-dot" onclick="goToCatalogSlide(1)"></span>
+        <span class="catalog-dot" onclick="goToCatalogSlide(2)"></span>
+        <span class="catalog-dot" onclick="goToCatalogSlide(3)"></span>
+      </div>
+
+      <div class="catalog-title" id="catalogTitle">01 · Сетка фильмов и сортировка</div>
+      <p class="catalog-desc" id="catalogDesc">
+        Каталог показывает все фильмы сеткой постеров с рейтингом, годом, длительностью и страной. Сверху — сортировка: <strong>по соответствию, рейтингу, новизне или популярности</strong>. Это позволяет быстро перестроить выдачу под конкретный запрос, не теряя визуального обзора.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Лайтбокс каталога -->
+<div class="catalog-lightbox" id="catalogLightbox" onclick="closeCatalogLightbox(event)">
+  <button class="cl-close" onclick="closeCatalogLightbox(event)">×</button>
+  <button class="cl-nav cl-prev" onclick="navigateCatalogLightbox(event, -1)">‹</button>
+  <button class="cl-nav cl-next" onclick="navigateCatalogLightbox(event, 1)">›</button>
+  <img id="catalogLightboxImg" src="" alt="Скриншот в полном размере">
+</div>
+
+<script>
+  const catalogImages = [
+    'images/ekran4.png',
+    'images/ekran5.png',
+    'images/ekran6.png',
+    'images/ekran17.png'
+  ];
+  const catalogTitles = [
+    '01 · Сетка фильмов и сортировка',
+    '02 · Фильтры по основным и дополнительным параметрам',
+    '03 · Система фильтров',
+    '04 · Краткое объяснение ценности фильма'
+  ];
+  const catalogDescs = [
+    'Каталог показывает все фильмы сеткой постеров с рейтингом, годом, длительностью и страной. Сверху — сортировка: <strong>по соответствию, рейтингу, новизне или популярности</strong>. Это позволяет быстро перестроить выдачу под конкретный запрос, не теряя визуального обзора.',
+    'Сверху — сортировка: по соответствию, рейтингу, новизне или популярности. Сортировка сверху (по соответствию, рейтингу, новизне, популярности) сокращает время выбора: пользователь подстраивает выдачу под свою цель в моменте',
+    'Справа — панель фильтров с двумя вкладками: «Основные» (страна, год, продолжительность, рейтинг, возраст) и «Дополнительные» (жанры, случай, сюжет и сеттинг, тон и атмосфера, темп). Такое разделение не перегружает интерфейс и позволяет точнее сузить поиск',
+    'На каждой карточке есть иконка глаза. По клику открывается модалка с блоком <strong>«Почему стоит посмотреть»</strong> — коротким ИИ-описанием, которое объясняет, чем фильм зацепит именно сейчас, без необходимости читать длинный синопсис.'
+  ];
+
+  let currentCatalogSlide = 0;
+  const catalogSlides = document.querySelectorAll('.catalog-slide');
+  const catalogDots = document.querySelectorAll('.catalog-dot');
+
+  function renderCatalogSlide(index) {
+    catalogSlides.forEach((s, i) => s.classList.toggle('active', i === index));
+    catalogDots.forEach((d, i) => d.classList.toggle('active', i === index));
+    document.getElementById('catalogTitle').textContent = catalogTitles[index];
+    document.getElementById('catalogDesc').innerHTML = catalogDescs[index];
+  }
+
+  function changeCatalogSlide(dir) {
+    currentCatalogSlide = (currentCatalogSlide + dir + catalogImages.length) % catalogImages.length;
+    renderCatalogSlide(currentCatalogSlide);
+  }
+
+  function goToCatalogSlide(index) {
+    currentCatalogSlide = index;
+    renderCatalogSlide(currentCatalogSlide);
+  }
+
+  // Лайтбокс каталога
+  let currentCatalogLightbox = 0;
+  function openCatalogLightbox(index) {
+    currentCatalogLightbox = index;
+    document.getElementById('catalogLightboxImg').src = catalogImages[index];
+    document.getElementById('catalogLightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeCatalogLightbox(event) {
+    if (event.target.id === 'catalogLightbox' || event.target.classList.contains('cl-close')) {
+      document.getElementById('catalogLightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  function navigateCatalogLightbox(event, dir) {
+    event.stopPropagation();
+    currentCatalogLightbox = (currentCatalogLightbox + dir + catalogImages.length) % catalogImages.length;
+    document.getElementById('catalogLightboxImg').src = catalogImages[currentCatalogLightbox];
+  }
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('catalogLightbox');
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape') { lb.classList.remove('active'); document.body.style.overflow = ''; }
+    if (e.key === 'ArrowLeft') navigateCatalogLightbox(e, -1);
+    if (e.key === 'ArrowRight') navigateCatalogLightbox(e, 1);
+  });
+</script>
+
+
+
+
+<!-- ===== ФИЛЬТРЫ ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Фильтры</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+      Система фильтров разделена на две вкладки: «Основные» для быстрого сужения поиска и «Дополнительные» для точного подбора по настроению, сюжету и атмосфере. Это позволяет не перегружать интерфейс, но даёт глубину тем, кто ищет конкретное. Такое разделение позволяет не показывать все параметры одновременно и сохранять возможность более детального поиска для пользователей с конкретными предпочтениями.
+    </p>
+
+    <style>
+      .filters-slider {
+        position: relative;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .filters-slides {
+        position: relative;
+        width: 100%;
+        height: 460px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #FFFFFF;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      }
+      .filters-slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.45s ease;
+        pointer-events: none;
+        cursor: zoom-in;
+      }
+      .filters-slide.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .filters-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+
+      .filters-arrow {
+        position: absolute;
+        top: 230px;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        border: none;
+        color: #17231D;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        z-index: 5;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      }
+      .filters-arrow:hover {
+        background: #17231D;
+        color: #FFFFFF;
+      }
+      .filters-arrow--prev { left: -60px; }
+      .filters-arrow--next { right: -60px; }
+
+      .filters-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .filters-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(23,35,29,0.2);
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .filters-dot.active {
+        background: #17231D;
+        transform: scale(1.25);
+      }
+
+      .filters-title {
+        margin-top: 22px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        color: #17231D;
+        line-height: 1.4;
+        min-height: 24px;
+      }
+      .filters-desc {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+        color: #17231D;
+        opacity: 0.7;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 44px;
+      }
+      .filters-desc strong {
+        font-weight: 600;
+        opacity: 1;
+      }
+
+      .filters-lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.92);
+        backdrop-filter: blur(12px);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        cursor: zoom-out;
+      }
+      .filters-lightbox.active { display: flex; }
+      .filters-lightbox img {
+        max-width: 90vw;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 12px;
+        cursor: default;
+      }
+      .filters-lightbox .fl-close {
+        position: absolute;
+        top: 24px; right: 32px;
+        width: 44px; height: 44px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .filters-lightbox .fl-close:hover { background: rgba(255,255,255,0.2); }
+      .filters-lightbox .fl-nav {
+        position: absolute;
+        top: 50%; transform: translateY(-50%);
+        width: 48px; height: 48px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .filters-lightbox .fl-nav:hover { background: rgba(255,255,255,0.2); }
+      .filters-lightbox .fl-prev { left: 24px; }
+      .filters-lightbox .fl-next { right: 24px; }
+
+      @media (max-width: 900px) {
+        .filters-arrow--prev { left: 10px; }
+        .filters-arrow--next { right: 10px; }
+        .filters-slides { height: 380px; }
+        .filters-arrow { top: 190px; }
+      }
+    </style>
+
+    <div class="filters-slider">
+      <button class="filters-arrow filters-arrow--prev" onclick="changeFiltersSlide(-1)">‹</button>
+
+      <div class="filters-slides">
+        <div class="filters-slide active" onclick="openFiltersLightbox(0)">
+          <img src="images/ekran7.png" alt="Вкладка Основные фильтры">
+        </div>
+        <div class="filters-slide" onclick="openFiltersLightbox(1)">
+          <img src="images/ekran8.png" alt="Фильтры по году и продолжительности">
+        </div>
+        <div class="filters-slide" onclick="openFiltersLightbox(2)">
+          <img src="images/ekran9.png" alt="Вкладка Дополнительные фильтры">
+        </div>
+        <div class="filters-slide" onclick="openFiltersLightbox(3)">
+          <img src="images/ekran10.png" alt="Фильтры по сюжету и сеттингу">
+        </div>
+        <div class="filters-slide" onclick="openFiltersLightbox(4)">
+          <img src="images/ekran11.png" alt="Фильтры по тону и темпу">
+        </div>
+      </div>
+
+      <button class="filters-arrow filters-arrow--next" onclick="changeFiltersSlide(1)">›</button>
+
+      <div class="filters-dots">
+        <span class="filters-dot active" onclick="goToFiltersSlide(0)"></span>
+        <span class="filters-dot" onclick="goToFiltersSlide(1)"></span>
+        <span class="filters-dot" onclick="goToFiltersSlide(2)"></span>
+        <span class="filters-dot" onclick="goToFiltersSlide(3)"></span>
+        <span class="filters-dot" onclick="goToFiltersSlide(4)"></span>
+      </div>
+
+      <div class="filters-title" id="filtersTitle">01 · Вкладка «Основные»</div>
+      <p class="filters-desc" id="filtersDesc">
+        Первая вкладка фильтров содержит базовые параметры: <strong>страна, год выхода, продолжительность, рейтинг и возраст</strong>. Это позволяет быстро сузить каталог до нужного диапазона, не перегружая интерфейс деталями.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Лайтбокс фильтров -->
+<div class="filters-lightbox" id="filtersLightbox" onclick="closeFiltersLightbox(event)">
+  <button class="fl-close" onclick="closeFiltersLightbox(event)">×</button>
+  <button class="fl-nav fl-prev" onclick="navigateFiltersLightbox(event, -1)">‹</button>
+  <button class="fl-nav fl-next" onclick="navigateFiltersLightbox(event, 1)">›</button>
+  <img id="filtersLightboxImg" src="" alt="Скриншот в полном размере">
+</div>
+
+<script>
+  const filtersImages = [
+    'images/ekran7.png',
+    'images/ekran8.png',
+    'images/ekran9.png',
+    'images/ekran10.png',
+    'images/ekran11.png'
+  ];
+  const filtersTitles = [
+    '01 · Вкладка «Основные фильтры» ',
+    '02 · Вкладка дополнительные фильтры по «жанру»',
+    '03 · Вкладка дополнительные фильтры по «случаю»',
+    '04 · Вкладка дополнительные фильтры по «сюжету» ',
+    '05 · Вкладка дополнительные фильтры по «Тон, атмосфера и темп»'
+  ];
+  const filtersDescs = [
+    'Первая вкладка фильтров содержит базовые параметры: <strong>страна, год выхода, продолжительность, рейтинг и возраст</strong>. Это позволяет быстро сузить каталог до нужного диапазона, не перегружая интерфейс деталями.',
+    'Жанры — первый и самый быстрый срез каталога: пользователь сразу отсекает всё лишнее',
+    'Вторая вкладка открывает доступ к <strong>глубоким фильтрам по настроению и контексту</strong>: жанры, случай (семейный вечер, свидание, одинокий вечер), сюжетные тропы, тон и темп. Это для тех, кто ищет не просто «драму», а «медленное кино про маньяков с неожиданным концом».',
+    'Раздел «Сюжет и сеттинг» включает специфические тропы: <strong>маньяки и убийцы, гонки и скорость, неладное в доме, погоня и преследование, ограбления и аферы, выживание</strong>. Это позволяет найти фильм по конкретному сюжетному крючку, а не по абстрактному жанру.',
+    'Последний блок фильтров — <strong>тон и атмосфера</strong> (мрачное и напряжённое, солнечное и лёгкое, вдохновляющее, странное и сюрреалистичное) и <strong>темп</strong> (динамичный экшн, медленное кино, разговорный). Это финальный уровень точности для подбора под текущее состояние.'
+  ];
+
+  let currentFiltersSlide = 0;
+  const filtersSlides = document.querySelectorAll('.filters-slide');
+  const filtersDots = document.querySelectorAll('.filters-dot');
+
+  function renderFiltersSlide(index) {
+    filtersSlides.forEach((s, i) => s.classList.toggle('active', i === index));
+    filtersDots.forEach((d, i) => d.classList.toggle('active', i === index));
+    document.getElementById('filtersTitle').textContent = filtersTitles[index];
+    document.getElementById('filtersDesc').innerHTML = filtersDescs[index];
+  }
+
+  function changeFiltersSlide(dir) {
+    currentFiltersSlide = (currentFiltersSlide + dir + filtersImages.length) % filtersImages.length;
+    renderFiltersSlide(currentFiltersSlide);
+  }
+
+  function goToFiltersSlide(index) {
+    currentFiltersSlide = index;
+    renderFiltersSlide(currentFiltersSlide);
+  }
+
+  let currentFiltersLightbox = 0;
+  function openFiltersLightbox(index) {
+    currentFiltersLightbox = index;
+    document.getElementById('filtersLightboxImg').src = filtersImages[index];
+    document.getElementById('filtersLightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeFiltersLightbox(event) {
+    if (event.target.id === 'filtersLightbox' || event.target.classList.contains('fl-close')) {
+      document.getElementById('filtersLightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  function navigateFiltersLightbox(event, dir) {
+    event.stopPropagation();
+    currentFiltersLightbox = (currentFiltersLightbox + dir + filtersImages.length) % filtersImages.length;
+    document.getElementById('filtersLightboxImg').src = filtersImages[currentFiltersLightbox];
+  }
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('filtersLightbox');
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape') { lb.classList.remove('active'); document.body.style.overflow = ''; }
+    if (e.key === 'ArrowLeft') navigateFiltersLightbox(e, -1);
+    if (e.key === 'ArrowRight') navigateFiltersLightbox(e, 1);
+  });
+</script>
+
+
+
+
+
+
+<!-- ===== СТРАНИЦА ФИЛЬМА ===== -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="case-heading">Страница фильма</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px;">
+     Страница фильма завершает сценарий поиска и помогает пользователю принять решение о просмотре. Я разделила информацию на несколько уровней: сначала пользователь видит основные сведения о фильме и действия, которые может выполнить, затем получает более подробное описание, оценки и дополнительный контент
+    </p>
+
+    <style>
+      .movie-slider {
+        position: relative;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .movie-slides {
+        position: relative;
+        width: 100%;
+        height: 460px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #FFFFFF;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      }
+      .movie-slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.45s ease;
+        pointer-events: none;
+        cursor: zoom-in;
+      }
+      .movie-slide.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .movie-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+
+      .movie-arrow {
+        position: absolute;
+        top: 230px;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        border: none;
+        color: #17231D;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        z-index: 5;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      }
+      .movie-arrow:hover {
+        background: #17231D;
+        color: #FFFFFF;
+      }
+      .movie-arrow--prev { left: -60px; }
+      .movie-arrow--next { right: -60px; }
+
+      .movie-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 22px;
+      }
+      .movie-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(23,35,29,0.2);
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+      .movie-dot.active {
+        background: #17231D;
+        transform: scale(1.25);
+      }
+
+      .movie-title {
+        margin-top: 22px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        color: #17231D;
+        line-height: 1.4;
+        min-height: 24px;
+      }
+      .movie-desc {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+        color: #17231D;
+        opacity: 0.7;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 44px;
+      }
+      .movie-desc strong {
+        font-weight: 600;
+        opacity: 1;
+      }
+
+      .movie-lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.92);
+        backdrop-filter: blur(12px);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        cursor: zoom-out;
+      }
+      .movie-lightbox.active { display: flex; }
+      .movie-lightbox img {
+        max-width: 90vw;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 12px;
+        cursor: default;
+      }
+      .movie-lightbox .ml-close {
+        position: absolute;
+        top: 24px; right: 32px;
+        width: 44px; height: 44px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .movie-lightbox .ml-close:hover { background: rgba(255,255,255,0.2); }
+      .movie-lightbox .ml-nav {
+        position: absolute;
+        top: 50%; transform: translateY(-50%);
+        width: 48px; height: 48px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff; font-size: 22px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .movie-lightbox .ml-nav:hover { background: rgba(255,255,255,0.2); }
+      .movie-lightbox .ml-prev { left: 24px; }
+      .movie-lightbox .ml-next { right: 24px; }
+
+      @media (max-width: 900px) {
+        .movie-arrow--prev { left: 10px; }
+        .movie-arrow--next { right: 10px; }
+        .movie-slides { height: 380px; }
+        .movie-arrow { top: 190px; }
+      }
+    </style>
+
+    <div class="movie-slider">
+      <button class="movie-arrow movie-arrow--prev" onclick="changeMovieSlide(-1)">‹</button>
+
+      <div class="movie-slides">
+        <div class="movie-slide active" onclick="openMovieLightbox(0)">
+          <img src="images/ekran12.png" alt="Hero-блок страницы фильма">
+        </div>
+        <div class="movie-slide" onclick="openMovieLightbox(1)">
+          <img src="images/ekran13.png" alt="ИИ-описание и синопсис">
+        </div>
+        <div class="movie-slide" onclick="openMovieLightbox(2)">
+          <img src="images/ekran14.png" alt="Рейтинг и отзывы">
+        </div>
+        <div class="movie-slide" onclick="openMovieLightbox(3)">
+          <img src="images/ekran15.png" alt="Клипы и команда">
+        </div>
+        <div class="movie-slide" onclick="openMovieLightbox(4)">
+          <img src="images/ekran16.png" alt="Похожие, факты и награды">
+        </div>
+      </div>
+
+      <button class="movie-arrow movie-arrow--next" onclick="changeMovieSlide(1)">›</button>
+
+      <div class="movie-dots">
+        <span class="movie-dot active" onclick="goToMovieSlide(0)"></span>
+        <span class="movie-dot" onclick="goToMovieSlide(1)"></span>
+        <span class="movie-dot" onclick="goToMovieSlide(2)"></span>
+        <span class="movie-dot" onclick="goToMovieSlide(3)"></span>
+        <span class="movie-dot" onclick="goToMovieSlide(4)"></span>
+      </div>
+
+      <div class="movie-title" id="movieTitle">01 · Главный экран</div>
+      <p class="movie-desc" id="movieDesc">
+      Раздел «почему стоит посмотреть» с ИИ-описанием, которое объясняет, чем фильм зацепит именно сейчас, и классический синопсис. Это даёт пользователю выбор: быстрое решение через ИИ или глубокое погружение через описание сюжета.Основное действие - переход к просмотру. Дополнительное - сохранить, отметить просмотренным, скрыть. Информационное поле - посмотреть трейлер. 
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Лайтбокс страницы фильма -->
+<div class="movie-lightbox" id="movieLightbox" onclick="closeMovieLightbox(event)">
+  <button class="ml-close" onclick="closeMovieLightbox(event)">×</button>
+  <button class="ml-nav ml-prev" onclick="navigateMovieLightbox(event, -1)">‹</button>
+  <button class="ml-nav ml-next" onclick="navigateMovieLightbox(event, 1)">›</button>
+  <img id="movieLightboxImg" src="" alt="Скриншот в полном размере">
+</div>
+
+<script>
+  const movieImages = [
+    'images/ekran12.png',
+    'images/ekran13.png',
+    'images/ekran14.png',
+    'images/ekran15.png',
+    'images/ekran16.png'
+  ];
+  const movieTitles = [
+    '01 · Страница фильма',
+    '02 · Яркие моменты в формате коротких видео',
+    '03 · Рейтинг и отзывы',
+    '04 · Актеры и команда',
+    '05 · Похожие, факты и награды'
+  ];
+  const movieDescs = [
+    'Раздел «почему стоит посмотреть» с ИИ-описанием, которое объясняет, чем фильм зацепит именно сейчас, и классический синопсис. Это даёт пользователю выбор: быстрое решение через ИИ или глубокое погружение через описание сюжета.Основное действие - переход к просмотру. Дополнительное - сохранить, отметить просмотренным, скрыть. Информационное поле - посмотреть трейлер. ',
+    'Иногда зритель начинает смотреть фильм, потому что случайно увидел яркую сцену из него. Раздел «Яркие моменты» создаёт именно такой триггер: короткое видео вызывает интерес и подталкивает перейти к полному просмотру',
+    'Подробный синопсис помогает оценить фильм до начала просмотра: пользователь понимает, о чём картина, какой в ней сюжет и конфликт — и решает, его ли это. Это снижает риск разочарования и «брошенных» фильмов на первых минутахКрупная цифра рейтинга с кнопками «Нравится / Не нравится» и блок отзывов. Пользователь может оставить свою оценку, а отзывы других помогают принять решение. Кнопка «Читать все отзывы» ведёт к полному списку',
+    'Я разделила команду на блоки-вкладки (актёры, режиссёр, продюсеры, сценаристы, композитор), чтобы визуально отделить категории: один взгляд — и понятно, кто за что отвечает. Плоский список',
+    'Нижняя часть страницы: <strong>похожие фильмы</strong> с фильтрацией по настроению и жанру (продолжает подборку в том же состоянии), <strong>несколько фактов</strong> со ссылками на источники и <strong>награды</strong>. Это даёт полный контекст и удерживает пользователя внутри сервиса'
+  ];
+
+  let currentMovieSlide = 0;
+  const movieSlides = document.querySelectorAll('.movie-slide');
+  const movieDots = document.querySelectorAll('.movie-dot');
+
+  function renderMovieSlide(index) {
+    movieSlides.forEach((s, i) => s.classList.toggle('active', i === index));
+    movieDots.forEach((d, i) => d.classList.toggle('active', i === index));
+    document.getElementById('movieTitle').textContent = movieTitles[index];
+    document.getElementById('movieDesc').innerHTML = movieDescs[index];
+  }
+
+  function changeMovieSlide(dir) {
+    currentMovieSlide = (currentMovieSlide + dir + movieImages.length) % movieImages.length;
+    renderMovieSlide(currentMovieSlide);
+  }
+
+  function goToMovieSlide(index) {
+    currentMovieSlide = index;
+    renderMovieSlide(currentMovieSlide);
+  }
+
+  let currentMovieLightbox = 0;
+  function openMovieLightbox(index) {
+    currentMovieLightbox = index;
+    document.getElementById('movieLightboxImg').src = movieImages[index];
+    document.getElementById('movieLightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMovieLightbox(event) {
+    if (event.target.id === 'movieLightbox' || event.target.classList.contains('ml-close')) {
+      document.getElementById('movieLightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  function navigateMovieLightbox(event, dir) {
+    event.stopPropagation();
+    currentMovieLightbox = (currentMovieLightbox + dir + movieImages.length) % movieImages.length;
+    document.getElementById('movieLightboxImg').src = movieImages[currentMovieLightbox];
+  }
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('movieLightbox');
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape') { lb.classList.remove('active'); document.body.style.overflow = ''; }
+    if (e.key === 'ArrowLeft') navigateMovieLightbox(e, -1);
+    if (e.key === 'ArrowRight') navigateMovieLightbox(e, 1);
+  });
+</script>
+
+
+
+
+
+
+
+
+<!-- ===== СТИЛИ ФИНАЛЬНОЙ ЧАСТИ (чистый, светлый стиль) ===== -->
+<style>
+  /* Кнопка прототипа */
+  .fin-cta {
+    background: #F0F0F0;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .fin-cta__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #17231D;
+    margin: 0 0 12px;
+  }
+  .fin-cta__text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #17231D;
+    opacity: 0.7;
+    margin: 0 auto 28px;
+    max-width: 560px;
+  }
+  .fin-cta__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #17231D;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 30px;
+    border-radius: 100px;
+    transition: all 0.25s ease;
+  }
+  .fin-cta__btn:hover {
+    background: #243029;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(23,35,29,0.15);
+  }
+  .fin-cta__btn svg { width: 16px; height: 16px; }
+
+  /* Заглушки для тестов */
+  .fin-tests {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+  }
+  .fin-test-placeholder {
+    background: #E8E8E8;
+    border: 2px dashed rgba(23,35,29,0.15);
+    border-radius: 16px;
+    aspect-ratio: 16 / 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #17231D;
+    opacity: 0.5;
+    text-align: center;
+    padding: 20px;
+  }
+  .fin-test-placeholder__icon { font-size: 28px; }
+  .fin-test-placeholder__label { font-size: 14px; font-weight: 600; }
+  .fin-test-placeholder__hint { font-size: 12px; }
+
+  /* Результат - чистый список, без "ИИ-шных" цифр */
+  .fin-results-list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .fin-result-item {
+    background: #F0F0F0;
+    border-radius: 16px;
+    padding: 24px 28px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .fin-result-item__icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #17231D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .fin-result-item__content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #17231D;
+    margin: 0 0 6px;
+  }
+  .fin-result-item__content p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #17231D;
+    opacity: 0.75;
+    margin: 0;
+  }
+
+  /* Точки роста */
+  .fin-growth {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .fin-growth-card {
+    background: #F0F0F0;
+    border-radius: 16px;
+    padding: 24px;
+  }
+  .fin-growth-card__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #17231D;
+    margin: 0 0 8px;
+  }
+  .fin-growth-card__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #17231D;
+    opacity: 0.7;
+    margin: 0;
+  }
+
+  /* Рефлексия */
+  .fin-reflect {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+  }
+  .fin-reflect-card {
+    background: #F0F0F0;
+    border-radius: 20px;
+    padding: 28px;
+  }
+  .fin-reflect-card__title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #17231D;
+    margin: 0 0 12px;
+    line-height: 1.3;
+  }
+  .fin-reflect-card__text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #17231D;
+    opacity: 0.75;
+    margin: 0;
+  }
+
+  @media (max-width: 900px) {
+    .fin-tests, .fin-growth, .fin-reflect { grid-template-columns: 1fr; }
+  }
+</style>
+
+<!-- ===== ПРОСМОТР ПРОТОТИПА ===== -->
+<section class="case-section">
+  <div class="container">
+    <div class="fin-cta">
+      <h3 class="fin-cta__title">Интерактивный прототип</h3>
+      <p class="fin-cta__text">Прототип родемонстрирует концепцию интерфейса и позволит оценить основные ux-решения</p>
+      <a class="fin-cta__btn" href="https://svptdsgn.github.io/mooviemood/index.html" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        Протестировать МувиМуд
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== РЕЗУЛЬТАТ ===== -->
+<section class="case-section" id="result">
+  <div class="container">
+    <h2 class="case-heading">Результат</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 20px;">
+      В результате работы я создала интерактивный прототип сервиса, который поддерживает несколько сценариев выбора фильма: быстрый подбор по настроению, поиск по текстовому запросу и уточнение результатов через фильтры.
+    </p>
+    <p class="case-tasks__subtitle" style="margin-bottom: 40px; font-weight: 600; opacity: 0.9;">
+      По итогам тестирования и доработки интерфейса каждая из исходных проблем получила своё решение:
+    </p>
+
+    <style>
+      .result-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .result-card {
+        background: #F0F0F0;
+        border-radius: 20px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        box-sizing: border-box;
+      }
+      .result-card__head {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .result-card__num {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        color: #17231D;
+        font-size: 13px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .result-card__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: #17231D;
+        margin: 0;
+        padding-top: 6px;
+      }
+
+      .result-block {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding-left: 50px;
+      }
+      .result-block__label {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #17231D;
+        opacity: 0.45;
+      }
+      .result-block__text {
+        font-size: 14px;
+        line-height: 1.55;
+        color: #17231D;
+        opacity: 0.8;
+        margin: 0;
+      }
+      .result-block--effect .result-block__text {
+        opacity: 1;
+        font-weight: 500;
+      }
+
+      @media (max-width: 900px) {
+        .result-grid { grid-template-columns: 1fr; }
+        .result-card { padding: 24px; }
+        .result-block { padding-left: 0; }
+      }
+    </style>
+
+    <div class="result-grid">
+
+      <!-- 01: Проблема огромного выбора -->
+      <div class="result-card">
+        <div class="result-card__head">
+          <span class="result-card__num">01</span>
+          <h3 class="result-card__title">Пересмотрела структуру главной страницы</h3>
+        </div>
+
+        <div class="result-block">
+          <span class="result-block__label">Проблема</span>
+          <p class="result-block__text">
+            Огромный выбор превращал поиск в утомительный скроллинг. Пользователи закрывали сервис, так и не выбрав фильм.
+          </p>
+        </div>
+
+        <div class="result-block">
+          <span class="result-block__label">Решение</span>
+          <p class="result-block__text">
+            Отказалась от тематических подборок и сделала акцент на трёх основных сценариях: карусель, случайный подбор и ИИ-чат.
+          </p>
+        </div>
+
+        <div class="result-block result-block--effect">
+          <span class="result-block__label">Эффект</span>
+          <p class="result-block__text">
+            Пользователь больше не теряется в горизонтальных лентах — сразу видит понятные точки входа под свой запрос.
+          </p>
+        </div>
+      </div>
+
+      <!-- 02: Проблема формальных параметров -->
+      <div class="result-card">
+        <div class="result-card__head">
+          <span class="result-card__num">02</span>
+          <h3 class="result-card__title">Разделила фильтры по уровню детализации</h3>
+        </div>
+
+        <div class="result-block">
+          <span class="result-block__label">Проблема</span>
+          <p class="result-block__text">
+            Стандартные фильтры по жанрам не отвечали эмоциональному запросу. Люди искали «что-то лёгкое на вечер», а не «комедию».
+          </p>
+        </div>
+
+        <div class="result-block">
+          <span class="result-block__label">Решение</span>
+          <p class="result-block__text">
+            Основные параметры (страна, год, рейтинг) для быстрого поиска, дополнительные (настроение, сюжет, темп) для точного подбора.
+          </p>
+        </div>
+
+        <div class="result-block result-block--effect">
+          <span class="result-block__label">Эффект</span>
+          <p class="result-block__text">
+            Пользователь может искать как по настроению, так и по конкретным параметрам — сервис подстраивается под разную глубину запроса.
+          </p>
+        </div>
+      </div>
+
+      <!-- 03: Проблема «зачем смотреть» -->
+      <div class="result-card">
+        <div class="result-card__head">
+          <span class="result-card__num">03</span>
+          <h3 class="result-card__title">Добавила контекст для принятия решения</h3>
+        </div>
+
+        <div class="result-block">
+          <span class="result-block__label">Проблема</span>
+          <p class="result-block__text">
+            Рейтинга и жанра недостаточно, чтобы понять, чем фильм зацепит. Приходилось уходить на сторонние сайты за рецензиями.
+          </p>
+        </div>
+
+        <div class="result-block">
+          <span class="result-block__label">Решение</span>
+          <p class="result-block__text">
+            Блок «Почему стоит посмотреть» с кратким ИИ-описанием на странице фильма.
+          </p>
+        </div>
+
+        <div class="result-block result-block--effect">
+          <span class="result-block__label">Эффект</span>
+          <p class="result-block__text">
+            Пользователь получает эмоциональный контекст сразу — не нужно читать длинный синопсис или искать отзывы.
+          </p>
+        </div>
+      </div>
+
+      <!-- 04: Итог — прототип -->
+      <div class="result-card">
+        <div class="result-card__head">
+          <span class="result-card__num">04</span>
+          <h3 class="result-card__title">Собрала интерактивный прототип</h3>
+        </div>
+
+        <div class="result-block">
+          <span class="result-block__label">Задача</span>
+          <p class="result-block__text">
+            Показать, как все решения работают вместе — от первого экрана до страницы фильма.
+          </p>
+        </div>
+
+        <div class="result-block">
+          <span class="result-block__label">Решение</span>
+          <p class="result-block__text">
+            Реализовала основные экраны и переходы: главная, каталог с фильтрами, страница фильма, ИИ-чат.
+          </p>
+        </div>
+
+        <div class="result-block result-block--effect">
+          <span class="result-block__label">Эффект</span>
+          <p class="result-block__text">
+            Прототип демонстрирует целостный пользовательский путь — можно потыкать и увидеть, как сервис решает проблемы на каждом шаге.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ===== ТОЧКИ РОСТА ===== -->
+<section class="case-section" id="growth">
+  <div class="container">
+    <h2 class="case-heading">Точки роста</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 0;">
+      Текущая версия закрывает базовые сценарии. Ниже — направления, в которых сервис можно развивать дальше.
+    </p>
+
+    <style>
+      .fin-growth {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 32px;
+      }
+      .fin-growth-card {
+        background: #F0F0F0;
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-sizing: border-box;
+      }
+      .fin-growth-card__num {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        color: #17231D;
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .fin-growth-card__title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #17231D;
+        margin: 0;
+        line-height: 1.3;
+      }
+      .fin-growth-card__text {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #17231D;
+        opacity: 0.7;
+        margin: 0;
+      }
+
+      /* Карточка на всю ширину — для важной идеи */
+      .fin-growth-card--wide {
+        grid-column: 1 / -1;
+      }
+
+      @media (max-width: 900px) {
+        .fin-growth { grid-template-columns: 1fr; }
+        .fin-growth-card--wide { grid-column: auto; }
+      }
+    </style>
+
+    <div class="fin-growth">
+
+      <div class="fin-growth-card">
+        <span class="fin-growth-card__num">01</span>
+        <h4 class="fin-growth-card__title">Папки для сохранённых фильмов</h4>
+        <p class="fin-growth-card__text">
+          Группировка «Смотрю сейчас», «На выходные», «Семейное» — чтобы избранное превратилось в удобную коллекцию, а не в плоский список
+        </p>
+      </div>
+
+      <div class="fin-growth-card">
+        <span class="fin-growth-card__num">02</span>
+        <h4 class="fin-growth-card__title">Совместный просмотр</h4>
+        <p class="fin-growth-card__text">
+          Возможность создать «комнату» с друзьями, вместе выбрать фильм под общее настроение через ИИ и смотреть его синхронно
+        </p>
+      </div>
+
+      <div class="fin-growth-card">
+        <span class="fin-growth-card__num">03</span>
+        <h4 class="fin-growth-card__title">Умная история просмотров</h4>
+        <p class="fin-growth-card__text">
+          Сервис сам запоминает, что пользователь уже видел, и учитывает это в ИИ-рекомендациях, избавляя от необходимости вручную ставить галочку «Просмотрено»
+        </p>
+      </div>
+
+      <div class="fin-growth-card">
+        <span class="fin-growth-card__num">04</span>
+        <h4 class="fin-growth-card__title">Кликабельные жанры и связанные фильмы</h4>
+        <p class="fin-growth-card__text">
+          Сейчас жанры на странице фильма — просто текст. Если сделать их кликабельными, пользователь сможет одним тапом перейти к подборке похожих картин сразу из фильма, не листая до подборки в конце
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== РЕФЛЕКСИЯ ===== -->
+<section class="case-section" id="reflection">
+  <div class="container">
+    <h2 class="case-heading">Рефлексия</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 0;">
+      Этот проект стал для меня важным шагом в продуктовом дизайне. Я прошла путь от исследования до проверки гипотез и столкнулась с тем, что мои первоначальные идеи не всегда работают.
+    </p>
+
+    <div class="fin-reflect">
+      <div class="fin-reflect-card">
+        <h3 class="fin-reflect-card__title">Интервью меняют всё</h3>
+        <p class="fin-reflect-card__text">
+          Я думала, что людям просто «неудобно скроллить каталог». Но исследование показало, что за этим стоит страх потратить вечер зря и эмоциональная усталость. Это полностью перевернуло мой подход к проектированию.
+        </p>
+      </div>
+      <div class="fin-reflect-card">
+        <h3 class="fin-reflect-card__title">Я — не моя целевая аудитория</h3>
+        <p class="fin-reflect-card__text">
+          Это было сложно принять. Мне нравились тематические подборки на главной, но тесты показали, что они создают визуальный шум и путают пользователей. Пришлось без сожалений убрать то, что нравилось мне, но не работало для них.
+        </p>
+      </div>
+      <div class="fin-reflect-card">
+        <h3 class="fin-reflect-card__title">Прототипирование экономит время</h3>
+        <p class="fin-reflect-card__text">
+          Если бы я сразу начала писать чистовой код, переделывать логику фильтров после тестов было бы мучительно. Интерактивный прототип позволил найти ошибки в UX до того, как они стали техническим долгом.
+        </p>
+      </div>
+      <div class="fin-reflect-card">
+        <h3 class="fin-reflect-card__title">Простота сложнее, чем кажется</h3>
+        <p class="fin-reflect-card__text">
+          Сделать одну кнопку «Подобрать случайно», которая реально работает, оказалось сложнее, чем нарисовать десять вкладок с фильтрами. Настоящая простота требует глубокого понимания контекста пользователя.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ===== РЕФЛЕКСИЯ ===== -->
+<section class="case-section" id="reflection">
+  <div class="container">
+    <h2 class="case-heading">Рефлексия</h2>
+    <p class="case-tasks__subtitle" style="margin-bottom: 0;">
+      Этот проект стал для меня важным шагом в продуктовом дизайне. Я прошла путь от исследования до проверки гипотез и столкнулась с тем, что мои первоначальные идеи не всегда работают.
+    </p>
+
+    <div class="fin-reflect">
+      <div class="fin-reflect-card">
+        <h3 class="fin-reflect-card__title">Интервью меняют всё</h3>
+        <p class="fin-reflect-card__text">Я думала, что людям просто «неудобно скроллить каталог». Но исследование показало, что за этим стоит страх потратить вечер зря и эмоциональная усталость. Это полностью перевернуло мой подход к проектированию.</p>
+      </div>
+      <div class="fin-reflect-card">
+        <h3 class="fin-reflect-card__title">Я — не моя целевая аудитория</h3>
+        <p class="fin-reflect-card__text">Это было сложно принять. Мне нравились тематические подборки на главной, но тесты показали, что они создают визуальный шум и путают пользователей. Пришлось без сожалений убрать то, что нравилось мне, но не работало для них.</p>
+      </div>
+      <div class="fin-reflect-card">
+        <h3 class="fin-reflect-card__title">Прототипирование экономит время</h3>
+        <p class="fin-reflect-card__text">Если бы я сразу начала писать чистовой код, переделывать логику фильтров после тестов было бы мучительно. Интерактивный прототип позволил найти ошибки в UX до того, как они стали техническим долгом.</p>
+      </div>
+      <div class="fin-reflect-card">
+        <h3 class="fin-reflect-card__title">Простота сложнее, чем кажется</h3>
+        <p class="fin-reflect-card__text">Сделать одну кнопку «Подобрать случайно», которая реально работает, оказалось сложнее, чем нарисовать десять вкладок с фильтрами. Настоящая простота требует глубокого понимания контекста пользователя.</p>
+      </div
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <!-- ===== СПАСИБО ЗА ВНИМАНИЕ ===== -->
+    <section class="thanks section-stack" id="thanks" style="padding: 100px 0; background: var(--bg); border-radius: 40px 40px 0 0; box-shadow: 0 -20px 40px rgba(23,35,29,0.06); margin-top: -40px; position: relative; z-index: 6; text-align: center;">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h2 style="font-size: 96px; font-weight: 500; line-height: 1.05; letter-spacing: -0.03em; color: #17231D; margin: 0;">
+          Спасибо<br>за внимание!
+        </h2>
+        <div style="font-size: 80px; line-height: 1; margin-top: 20px;" aria-hidden="true">😊</div>
+      </div>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section class="contacts section-stack" id="contacts" style="padding: 80px 0; background: var(--bg); border-radius: 40px 40px 0 0; box-shadow: 0 -20px 40px rgba(23,35,29,0.06); margin-top: -40px; position: relative; z-index: 7;">
+      <div class="container">
+        <a href="mailto:petuhovamgn@gmail.com" style="display: inline-block; font-size: clamp(36px, 6vw, 96px); font-weight: 500; line-height: 1.05; letter-spacing: -0.03em; color: #17231D; margin-bottom: 20px; word-break: break-word; text-decoration: none;">
+          petuhovamgn@gmail.com
+        </a>
+        <div style="display: flex; flex-direction: column; border-top: 1px solid rgba(23,35,29,0.15); margin-top: 40px;">
+          <a href="https://t.me/sv_pt" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(23,35,29,0.15); font-size: 16px; color: #17231D; text-decoration: none;">
+            <span>Телеграм</span>
+            <span>@sv_pt</span>
+          </a>
+          <a href="tel:+79518186295" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(23,35,29,0.15); font-size: 16px; color: #17231D; text-decoration: none;">
+            <span>Телефон</span>
+            <span>+79518186295</span>
+          </a>
+          <a href="https://vk.ru/svet_pt" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid rgba(23,35,29,0.15); font-size: 16px; color: #17231D; text-decoration: none;">
+            <span>ВК</span>
+            <span>https://vk.ru/svet_pt</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== ЛАЙТБОКС ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="Просмотр">
+  </div>
+
+  <script>
+  /* ===== ЛАЙТБОКС ===== */
+  (function() {
+    function initLightbox() {
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = document.getElementById('lightboxImg');
+      var closeBtn = document.getElementById('lightboxClose');
+      if (!lightbox || !lightboxImg || !closeBtn) return;
+
+      var images = document.querySelectorAll(
+        '.case-interview-photo img, .case-process__item img, .case-compare__item img, .case-screen__phone img, .case-schedule__center img, .case-confirm__phone img'
+      );
+
+      images.forEach(function(img) {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          lightboxImg.src = this.src;
+          lightboxImg.alt = this.alt || '';
+          lightbox.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function close() {
+        lightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', function(e) { e.stopPropagation(); close(); });
+      lightbox.addEventListener('click', function(e) { if (e.target === lightbox) close(); });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('is-open')) close();
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+      initLightbox();
+    }
+  })();
+
+  /* ===== БУРГЕР-МЕНЮ ===== */
+  (function() {
+    var burger = document.getElementById('burgerBtn');
+    var mobileMenu = document.getElementById('mobileMenu');
+    if (!burger || !mobileMenu) return;
+
+    burger.addEventListener('click', function() {
+      burger.classList.toggle('is-open');
+      mobileMenu.classList.toggle('is-open');
+      document.body.style.overflow = mobileMenu.classList.contains('is-open') ? 'hidden' : '';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        burger.classList.remove('is-open');
+        mobileMenu.classList.remove('is-open');
+        document.body.style.overflow = '';
+      });
+    });
+  })();
+  </script>
+
+</body>
+</html>
